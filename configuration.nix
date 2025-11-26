@@ -103,6 +103,8 @@ git
 		unzip
 zoxide
 ripgrep
+		thefuck
+		btop
    ];
 
   # Some programs need SUID wrappers, can be configured further or are

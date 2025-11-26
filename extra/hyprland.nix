@@ -8,11 +8,12 @@ services.xserver.enable = true;
 services.displayManager.ly.enable = true;
 environment.systemPackages = with pkgs;[
 	kitty
-	dunst
+	swaynotificationcenter
 	waybar
 	ly
 	rofi
 		hyprshot
+		hyprpicker
 ];
 xdg.portal.enable = true;
 	fonts.packages = with pkgs; [
