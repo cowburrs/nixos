@@ -9,10 +9,22 @@
     [
       ./hardware-configuration.nix
       ./extra/hyprland.nix
+      ./extra/fcitx5.nix
       ./core/fonts.nix
     ];
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+nix = {
+  settings = {
+    substitute = true;
+    substituters = [
+      "https://yazi.cachix.org"
+    ];
+    trusted-public-keys = [
+      "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="
+    ];
+  };
+};
   # Systemd(Crazy that you can switch)
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -22,6 +34,9 @@
 
   # Set your time zone.
    time.timeZone = "Australia/Sydney";
+
+	# Allow funky licenses
+	nixpkgs.config.allowUnfree = true;
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -82,8 +97,12 @@ git
      eza
      networkmanagerapplet
      gcc
-		nerd-fonts.jetbrains-mono
-
+		nodejs_24
+		python3
+		cargo
+		unzip
+zoxide
+ripgrep
    ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -108,7 +127,7 @@ git
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
   # accidentally delete configuration.nix.
-   system.copySystemConfiguration = true;
+   # system.copySystemConfiguration = true;
 
   # This option defines the first version of NixOS you have installed on this particular machine,
   # and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.
@@ -129,5 +148,6 @@ git
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   system.stateVersion = "25.05"; # Did you read the comment?
 
+	# Yazi cachix test
 }
 
