@@ -9,7 +9,6 @@
     [
       ./hardware-configuration.nix
       ./extra/hyprland.nix
-      ./extra/yazi.nix
       ./core/fonts.nix
     ];
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
