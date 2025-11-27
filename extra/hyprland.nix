@@ -14,6 +14,7 @@ environment.systemPackages = with pkgs;[
 	rofi
 		hyprshot
 		hyprpicker
+		brightnessctl
 ];
 xdg.portal.enable = true;
 	fonts.packages = with pkgs; [
