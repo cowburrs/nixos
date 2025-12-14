@@ -11,6 +11,7 @@
     ./extra/fcitx5.nix
     ./core/fonts.nix
     ./core/nvidia.nix
+    ./core/fingerprint.nix
   ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -100,6 +101,9 @@
     btop
     nixfmt
     lshw
+    glxinfo
+    fastfetch
+    pv
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

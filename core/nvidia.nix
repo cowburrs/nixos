@@ -4,7 +4,11 @@
   hardware.graphics = { enable = true; };
 
   # Load nvidia driver for Xorg and Wayland
-  services.xserver.videoDrivers = [ "nvidia" ];
+
+  services.xserver.videoDrivers = [
+    "modesetting" # example for Intel iGPU; use "amdgpu" here instead if your iGPU is AMD
+    "nvidia"
+  ];
 
   hardware.nvidia = {
 
@@ -37,9 +41,22 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
     prime = {
       # Make sure to use the correct Bus ID values for your system!
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
       intelBusId = "PCI:0:2:0";
-      nvidiaBusId = "PCI:14:0:0";
+      nvidiaBusId = "PCI:1:0:0";
       # amdgpuBusId = "PCI:54:0:0"; For AMD GPU
     };
   };
+
+  environment.systemPackages = with pkgs;
+    [
+      # mission-center
+      # nvtopPackages.nvidia
+      # phoronix-test-suite
+      # unigine-sanctuary
+      # intel-gpu-tools
+    ];
 }
