@@ -18,7 +18,7 @@
 
   outputs = { self, nixpkgs, yazi, zen-browser, ... }@inputs: {
     # Please replace my-nixos with your hostname
-    nixosConfigurations.cow = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.burrs = nixpkgs.lib.nixosSystem {
       modules = [
         # Import the previous configuration.nix we used,
         # so the old configuration file still takes effect

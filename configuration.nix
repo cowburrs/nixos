@@ -5,14 +5,9 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [
-    ./hardware-configuration.nix
-    ./extra/hyprland.nix
-    ./extra/fcitx5.nix
-    ./core/fonts.nix
-    ./core/nvidia.nix
-    ./core/fingerprint.nix
-  ];
+  imports = [ /etc/nixos/hardware-configuration.nix ]
+    ++ lib.filesystem.listFilesRecursive ./extra/.
+    ++ lib.filesystem.listFilesRecursive ./core/.;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   nix = {
@@ -147,7 +142,7 @@
   # and migrated your data accordingly.
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
-  system.stateVersion = "25.05"; # Did you read the comment?
+  system.stateVersion = "25.11"; # Did you read the comment?
 
   # tlp
   services.tlp = {
