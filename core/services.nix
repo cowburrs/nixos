@@ -37,7 +37,7 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
-  #hyprland
+  # Hyprland
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -46,4 +46,8 @@
   services.xserver.enable = true;
   services.displayManager.ly.enable = true;
   services.desktopManager.plasma6.enable = true;
+
+  # Configure keymap in X11
+  # services.xserver.xkb.layout = "us";
+  # services.xserver.xkb.options = "eurosign:e,caps:escape";
 }
