@@ -36,4 +36,14 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+
+  #hyprland
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
+  services.xserver.enable = true;
+  services.displayManager.ly.enable = true;
+  services.desktopManager.plasma6.enable = true;
 }

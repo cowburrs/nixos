@@ -27,22 +27,23 @@
       trusted-public-keys = [ "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k=" ];
     };
   };
+
   # Systemd(Crazy that you can switch)
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "cow"; # Define your hostname.
-  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
+  # Necessary for backlight
+  hardware.i2c.enable = true;
+
+  nix.gc.automatic = true;
+  nix.gc.options = "--delete-older-than +3";
   # Set your time zone.
   time.timeZone = "Australia/Sydney";
 
   # Allow funky licenses
   nixpkgs.config.allowUnfree = true;
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
@@ -62,7 +63,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.burrs = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "i2c" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [ tree ];
   };
 
@@ -76,11 +77,6 @@
 
   # List services that you want to enable:
 
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  networking.firewall.enable = false;
 
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
@@ -106,5 +102,4 @@
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   system.stateVersion = "25.11"; # Did you read the comment?
 
-  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
 }
