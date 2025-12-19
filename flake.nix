@@ -19,11 +19,7 @@
 
   outputs =
     {
-      self,
       nixpkgs,
-      yazi,
-      zen-browser,
-      spicetify-nix,
       ...
     }@inputs:
     {
@@ -31,60 +27,10 @@
       # Please replace my-nixos with your hostname
       nixosConfigurations.burrs = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-
-        # imports = [
-        #   # For NixOS
-        # ];
+        specialArgs = { inherit inputs; };
         modules = [
-          # Import the previous configuration.nix we used,
-          # so the old configuration file still takes effect
-          ./configuration.nix
-
           inputs.spicetify-nix.nixosModules.default
-
-          (
-            { pkgs, ... }:
-            {
-              environment.systemPackages = [
-                (yazi.packages.${pkgs.system}.default.override {
-                  _7zz = pkgs._7zz-rar; # Support for RAR extraction
-                })
-                zen-browser.packages.${pkgs.system}.default
-              ];
-
-              programs.spicetify =
-                let
-                  spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
-                in
-                {
-                  enable = true;
-
-                  enabledExtensions = with spicePkgs.extensions; [
-                    adblock
-                    hidePodcasts
-                    keyboardShortcut
-                    fullAppDisplay
-                    volumePercentage
-                    copyLyrics
-                    shuffle # shuffle+ (special characters are sanitized out of extension names)
-                  ];
-                  enabledCustomApps = with spicePkgs.apps; [
-                    newReleases
-                    ncsVisualizer
-                    marketplace
-                  ];
-                  enabledSnippets = with spicePkgs.snippets; [
-                    rotatingCoverart
-                    pointer
-                  ];
-
-                  theme = spicePkgs.themes.comfy;
-                  # theme = spicePkgs.themes.catppuccin;
-                  # colorScheme = "macchiato";
-                };
-
-            }
-          )
+          ./burrs.nix
         ];
       };
     };

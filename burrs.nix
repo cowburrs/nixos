@@ -13,12 +13,8 @@
   imports = [
     /etc/nixos/hardware-configuration.nix
   ]
-  ++ lib.filesystem.listFilesRecursive ./extra/.
-  ++ lib.filesystem.listFilesRecursive ./core/.;
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
+  ++ lib.filesystem.listFilesRecursive ./shared/core/.
+  ++ lib.filesystem.listFilesRecursive ./shared/extra/.;
 
   # Dont change this.
   system.stateVersion = "25.11"; # Did you read the comment?
