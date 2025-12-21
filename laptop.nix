@@ -15,9 +15,9 @@
   ]
   ++ lib.filesystem.listFilesRecursive ./shared/core/.
   ++ lib.filesystem.listFilesRecursive ./shared/extra/.
-  ++ lib.filesystem.listFilesRecursive ./burrs/core/.
-  ++ lib.filesystem.listFilesRecursive ./burrs/extra/.;
+  ++ lib.filesystem.listFilesRecursive ./laptop/core/.
+  ++ lib.filesystem.listFilesRecursive ./laptop/extra/.;
 
   # Dont change this.
-  system.stateVersion = "25.11"; # Did you read the comment?
+  system.stateVersion = "25.05"; # Did you read the comment?
 }

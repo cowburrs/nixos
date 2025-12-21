@@ -5,18 +5,6 @@
   ...
 }:
 {
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    # Add any missing dynamic libraries for unpackaged programs
-    # here, NOT in environment.systemPackages
-  ];
-
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  };
-
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -69,25 +57,19 @@
     inputs.zen-browser.packages.${pkgs.system}.default
     kitty
     playerctl
-    wev
     dunst
     waybar
-    ly
     rofi
     hyprshot
     hyprpicker
     hyprlock
-    brightnessctl
     vesktop
     vlc
-    syncthing
     hyprpolkitagent
     kdePackages.dolphin
     usbutils
     osu-lazer-bin
-    brightnessctl
     kdePackages.okular
-    brave
     neovim
     git
     wget
@@ -105,28 +87,33 @@
     btop
     nixfmt
     fastfetch
-    cava
     krita
-    hyprls
     nix-search-cli
-    ast-grep
     logseq
-    lutris
-    bitwig-studio
-    ddcutil
-    wezterm
     p7zip
     obs-studio
     wlogout
     qdirstat
     lua
-    stylua
+    stow
+    ffmpeg
+    libreoffice-qt
+    wev
+    screenfetch
+	efibootmgr
+
+    # Formatters
     ast-grep
+    stylua
     prettier
     isort
     black
-    stow
-    heroic
-    lutris
+    zprint
+
+    # LSP Servers
+    lua-language-server
+    nil
+    nixd
+    hyprls
   ];
 }

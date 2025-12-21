@@ -4,6 +4,7 @@
   inputs = {
     # NixOS official package source, using the nixos-25.05 branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     yazi.url = "github:sxyazi/yazi";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
@@ -15,23 +16,52 @@
       };
     };
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    catppuccin.url = "github:catppuccin/nix";
+    musnix.url = "github:musnix/musnix";
   };
 
   outputs =
     {
+      self,
       nixpkgs,
+      nixpkgs-unstable,
       ...
     }@inputs:
     {
+      nixosConfigurations =
+        let
+          system = "x86_64-linux";
 
-      # Please replace my-nixos with your hostname
-      nixosConfigurations.burrs = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [
-          inputs.spicetify-nix.nixosModules.default
-          ./burrs.nix
-        ];
-      };
+          # Shared modules
+          sharedModules = [
+            inputs.catppuccin.nixosModules.catppuccin
+            inputs.musnix.nixosModules.musnix
+            inputs.spicetify-nix.nixosModules.default
+          ];
+
+          # Shared specialArgs
+          sharedArgs = {
+            inherit inputs;
+            pkgs-unstable = import nixpkgs-unstable {
+              inherit system;
+              config.allowUnfree = true;
+              # config.allowBroken = true;
+            };
+          };
+        in
+        {
+          burrs = nixpkgs.lib.nixosSystem {
+            inherit system;
+            modules = sharedModules ++ [ ./burrs.nix ];
+            specialArgs = sharedArgs;
+          };
+
+          laptop = nixpkgs.lib.nixosSystem {
+            inherit system;
+            modules = sharedModules ++ [ ./laptop.nix ];
+            specialArgs = sharedArgs;
+          };
+        };
     };
+
 }
