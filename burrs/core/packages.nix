@@ -39,6 +39,7 @@
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
+	  lunar-client
       # (tetrio-desktop.override { withTetrioPlus = true; }) # currently broken
     ]);
 }
