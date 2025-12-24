@@ -120,6 +120,7 @@
     nixd
     hyprls
 
-	nethogs
+    nethogs
+    music-discord-rpc
   ];
 }
