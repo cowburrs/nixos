@@ -17,6 +17,13 @@
     enable = true;
     capSysNice = true;
   };
+  programs.obs-studio = {
+    enable = true;
+    enableVirtualCamera = true;
+    plugins = with pkgs.obs-studio-plugins; [
+      droidcam-obs
+    ];
+  };
 
   environment.systemPackages =
     with pkgs;
@@ -31,15 +38,18 @@
       vital
       mesa-demos
       kdePackages.kdenlive
-
       # Eye candy
       terminaltexteffects
       cava
       gum
+
+      godot-mono
+      droidcam
+
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
-	  lunar-client
+      lunar-client
       # (tetrio-desktop.override { withTetrioPlus = true; }) # currently broken
     ]);
 }

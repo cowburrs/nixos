@@ -18,6 +18,16 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     catppuccin.url = "github:catppuccin/nix";
     musnix.url = "github:musnix/musnix";
+    hyprland.url = "github:hyprwm/hyprland?";
+    rose-pine-hyprcursor = {
+      url = "github:ndom91/rose-pine-hyprcursor";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hyprlang.follows = "hyprland/hyprlang";
+    };
+    mikuboot = {
+      url = "gitlab:evysgarden/mikuboot";
+      inputs.nixpkgs.follows = ""; # only useful for the package output
+    };
   };
 
   outputs =
@@ -37,6 +47,7 @@
             inputs.catppuccin.nixosModules.catppuccin
             inputs.musnix.nixosModules.musnix
             inputs.spicetify-nix.nixosModules.default
+            inputs.mikuboot.nixosModules.default
           ];
 
           # Shared specialArgs

@@ -16,7 +16,7 @@
   };
   users.users.guest = {
     isNormalUser = true;
-    hashedPassword = "";
+    password = "";
     extraGroups = [ ];
   };
 }

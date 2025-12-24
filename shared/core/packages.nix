@@ -44,10 +44,10 @@
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+  };
 
   # Packages
   environment.systemPackages = with pkgs; [
@@ -55,6 +55,7 @@
       _7zz = pkgs._7zz-rar; # Support for RAR extraction
     })
     inputs.zen-browser.packages.${pkgs.system}.default
+    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
     kitty
     playerctl
     dunst
@@ -64,6 +65,9 @@
     hyprpicker
     hyprlock
     vesktop
+    (discord.override {
+      withVencord = true; # can do this here too
+    })
     vlc
     hyprpolkitagent
     kdePackages.dolphin
@@ -91,7 +95,6 @@
     nix-search-cli
     logseq
     p7zip
-    obs-studio
     wlogout
     qdirstat
     lua
@@ -100,7 +103,8 @@
     libreoffice-qt
     wev
     screenfetch
-	efibootmgr
+    efibootmgr
+    hyprcursor
 
     # Formatters
     ast-grep
@@ -115,5 +119,7 @@
     nil
     nixd
     hyprls
+
+	nethogs
   ];
 }

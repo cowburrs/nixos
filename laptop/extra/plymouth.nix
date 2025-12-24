@@ -4,15 +4,15 @@
 
     plymouth = {
       enable = true;
-      theme = "tech_b";
+      theme = "mikuboot";
       themePackages = with pkgs; [
-        # By default we would install all themes
         (adi1090x-plymouth-themes.override {
           selected_themes = [
             "spin"
             "tech_b"
           ];
         })
+        pkgs.mikuboot
       ];
     };
 
@@ -30,6 +30,11 @@
     # It's still possible to open the bootloader list by pressing any key
     # It will just not appear on screen unless a key is pressed
     # loader.timeout = 0;
+  };
 
+  systemd.services.plymouth-quit = {
+    serviceConfig.ExecStartPre = [
+      "/run/current-system/sw/bin/sleep 5"
+    ];
   };
 }
