@@ -27,6 +27,8 @@
     asterisk = "";
     vi_mode = true;
   };
+  # Bluetooth
+  services.blueman.enable = true;
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";

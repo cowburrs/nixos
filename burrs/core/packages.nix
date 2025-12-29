@@ -42,14 +42,20 @@
       terminaltexteffects
       cava
       gum
+      mangohud
+      wine
+      discord-rpc
 
       godot-mono
       droidcam
+      lshw # Installed for davincibox
+      davinci-resolve
 
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
       lunar-client
+      mesa
       # (tetrio-desktop.override { withTetrioPlus = true; }) # currently broken
     ]);
 }

@@ -10,6 +10,8 @@
     xwayland.enable = true;
   };
 
+  programs.firefox.enable = true;
+
   programs.spicetify =
     let
       spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
@@ -64,10 +66,6 @@
     hyprshot
     hyprpicker
     hyprlock
-    vesktop
-    (discord.override {
-      withVencord = true; # can do this here too
-    })
     vlc
     hyprpolkitagent
     kdePackages.dolphin
@@ -122,5 +120,11 @@
 
     nethogs
     music-discord-rpc
+    (discord.override {
+      withOpenASAR = true; # can do this here too
+      withVencord = true;
+    })
+    wttrbar
+		wezterm
   ];
 }

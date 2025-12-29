@@ -7,5 +7,6 @@
     nerd-fonts.zed-mono
     nerd-fonts.jetbrains-mono
     inter
+    font-awesome
   ];
 }
