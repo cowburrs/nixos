@@ -125,6 +125,10 @@
       withVencord = true;
     })
     wttrbar
-		wezterm
+    wezterm
+    waybar-mpris
+    jsonfmt
+    biome
+    v4l-utils
   ];
 }
