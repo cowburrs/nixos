@@ -10,7 +10,15 @@
     xwayland.enable = true;
   };
 
-  programs.firefox.enable = true;
+  programs.firefox = {
+    enable = true;
+    # You can use lockPref, defaultPref and Pref
+    # autoConfig = '''';
+    # autoConfigFiles = [
+    #   /home/burrs/.config/firefox/autoConfig.js
+    # ];
+    autoConfig = builtins.readFile /home/burrs/.config/firefox/autoConfig.js;
+  };
 
   programs.spicetify =
     let
@@ -130,5 +138,9 @@
     jsonfmt
     biome
     v4l-utils
+    libnotify
+    vesktop
+    # One day make the debug stuff a shell, so that it doesn't have to bloat everything
+    speedtest-cli
   ];
 }
