@@ -64,7 +64,6 @@
     (inputs.yazi.packages.${pkgs.system}.default.override {
       _7zz = pkgs._7zz-rar; # Support for RAR extraction
     })
-    inputs.zen-browser.packages.${pkgs.system}.default
     inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
     kitty
     playerctl
