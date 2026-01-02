@@ -26,6 +26,7 @@
   services.displayManager.ly.settings = {
     asterisk = "";
     vi_mode = true;
+		clear_password = true;
   };
   # Bluetooth
   services.blueman.enable = true;

@@ -28,7 +28,7 @@
         smth = pkgs.fetchFromGitHub {
           owner = "SiriusAhu";
           repo = "Persona_5_Royal_Grub_Themes";
-          rev = "main";
+          rev = "07f4660631d6002aafe9f14dfa77849e979477ac";
           sha256 = "sha256-5aR1b/4/NhJlnXtz4Un0kDzatl7BHLHRDCavj6QjKVk=";
         };
       in

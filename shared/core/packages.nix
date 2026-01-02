@@ -141,5 +141,7 @@
     vesktop
     # One day make the debug stuff a shell, so that it doesn't have to bloat everything
     speedtest-cli
+		mission-center
+		r2modman
   ];
 }

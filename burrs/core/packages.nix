@@ -50,7 +50,7 @@
       droidcam
       lshw # Installed for davincibox
       davinci-resolve
-
+			steamtinkerlaunch
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
