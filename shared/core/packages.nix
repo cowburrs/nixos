@@ -143,5 +143,6 @@
     mission-center
 
     r2modman
+		trash-cli
   ];
 }
