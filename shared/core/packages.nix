@@ -108,7 +108,6 @@
     libreoffice-qt
     wev
     screenfetch
-    efibootmgr
     hyprcursor
 
     # Formatters
@@ -118,6 +117,8 @@
     isort
     black
     zprint
+    jsonfmt
+    biome
 
     # LSP Servers
     lua-language-server
@@ -126,6 +127,7 @@
     hyprls
 
     nethogs
+    efibootmgr
     music-discord-rpc
     (discord.override {
       withOpenASAR = true; # can do this here too
@@ -134,14 +136,12 @@
     wttrbar
     wezterm
     waybar-mpris
-    jsonfmt
-    biome
-    v4l-utils
-    libnotify
-    vesktop
+
     # One day make the debug stuff a shell, so that it doesn't have to bloat everything
+    libnotify
     speedtest-cli
-		mission-center
-		r2modman
+    mission-center
+
+    r2modman
   ];
 }
