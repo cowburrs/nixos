@@ -8,7 +8,7 @@
 {
   programs.hyprland = {
     enable = true;
-    withUWSM = true; # recommended for most users
+    # withUWSM = true; # recommended for most users
     xwayland.enable = true; # Xwayland can be disabled.
   };
 
@@ -49,6 +49,9 @@
       ];
 
       theme = spicePkgs.themes.comfy;
+			# Colourschemes here: https://github.com/Comfy-Themes/Spicetify/blob/main/Comfy/color.ini
+      colorScheme = "catppuccin-macchiato";
+
       # theme = spicePkgs.themes.catppuccin;
       # colorScheme = "macchiato";
     };
@@ -69,7 +72,7 @@
     inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
     kitty
     playerctl
-    dunst
+    mako
     waybar
     rofi
     hyprshot
