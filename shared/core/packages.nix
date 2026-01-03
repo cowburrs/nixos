@@ -2,12 +2,14 @@
   config,
   pkgs,
   inputs,
+	nixpkgs,
   ...
 }:
 {
   programs.hyprland = {
     enable = true;
-    xwayland.enable = true;
+    withUWSM = true; # recommended for most users
+    xwayland.enable = true; # Xwayland can be disabled.
   };
 
   programs.firefox = {

@@ -51,6 +51,7 @@
       lshw # Installed for davincibox
       davinci-resolve
 			steamtinkerlaunch
+			gowall
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
