@@ -22,6 +22,14 @@
     enableVirtualCamera = true;
     plugins = with pkgs.obs-studio-plugins; [
       droidcam-obs
+      waveform
+      obs-shaderfilter
+      wlrobs
+      obs-backgroundremoval
+      obs-pipewire-audio-capture
+      obs-vaapi # optional AMD hardware acceleration
+      obs-gstreamer
+      obs-vkcapture
     ];
   };
 
@@ -44,19 +52,22 @@
       gum
       mangohud
       wine
+      pipes
+      cmatrix
       discord-rpc
 
       godot-mono
       droidcam
       lshw # Installed for davincibox
       davinci-resolve
-			steamtinkerlaunch
-			gowall
+      steamtinkerlaunch
+      gowall
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
       lunar-client
       mesa
+      osu-lazer-bin
       # (tetrio-desktop.override { withTetrioPlus = true; }) # currently broken
     ]);
 }

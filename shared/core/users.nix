@@ -12,6 +12,7 @@
     extraGroups = [
       "wheel"
       "i2c"
+			"video"
     ]; # Enable ‘sudo’ for the user.
   };
   users.users.guest = {

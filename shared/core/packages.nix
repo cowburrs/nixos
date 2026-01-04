@@ -2,14 +2,17 @@
   config,
   pkgs,
   inputs,
-	nixpkgs,
+  nixpkgs,
+  pkgs-unstable,
   ...
 }:
 {
   programs.hyprland = {
-    enable = true;
     # withUWSM = true; # recommended for most users
+    enable = true;
     xwayland.enable = true; # Xwayland can be disabled.
+    package = pkgs-unstable.hyprland;
+    portalPackage = pkgs-unstable.xdg-desktop-portal-hyprland;
   };
 
   programs.firefox = {
@@ -49,11 +52,16 @@
       ];
 
       theme = spicePkgs.themes.comfy;
-			# Colourschemes here: https://github.com/Comfy-Themes/Spicetify/blob/main/Comfy/color.ini
+      # Colourschemes here: https://github.com/Comfy-Themes/Spicetify/blob/main/Comfy/color.ini
       colorScheme = "catppuccin-macchiato";
+
+      # theme = spicePkgs.themes.text;
+      # # # Colourschemes here: https://github.com/spicetify/spicetify-themes/blob/e58220adfeffd1b87fa129003609d530a4e5925b/text/color.ini
+      # colorScheme = "CatppuccinMacchiato";
 
       # theme = spicePkgs.themes.catppuccin;
       # colorScheme = "macchiato";
+
     };
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -82,7 +90,6 @@
     hyprpolkitagent
     kdePackages.dolphin
     usbutils
-    osu-lazer-bin
     kdePackages.okular
     neovim
     git
@@ -148,6 +155,8 @@
     mission-center
 
     r2modman
-		trash-cli
+    trash-cli
+    thunderbird
+    tldr
   ];
 }

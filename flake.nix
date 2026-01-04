@@ -15,7 +15,7 @@
       # inputs.hyprlang.follows = "hyprland/hyprlang";
     };
     mikuboot = {
-      url = "gitlab:evysgarden/mikuboot";
+      url = "github:cowburrs/mikuboot";
       inputs.nixpkgs.follows = ""; # only useful for the package output
     };
   };
