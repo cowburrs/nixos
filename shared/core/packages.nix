@@ -158,5 +158,6 @@
     trash-cli
     thunderbird
     tldr
+		v4l-utils
   ];
 }

@@ -19,7 +19,8 @@
   };
   programs.obs-studio = {
     enable = true;
-    enableVirtualCamera = true;
+    # enableVirtualCamera = true;
+    # ^^ its fucking bait don't ever use this bullshit. it overrides modprobe holy bait fuck you virtual camera you wasted multiple hours
     plugins = with pkgs.obs-studio-plugins; [
       droidcam-obs
       waveform
