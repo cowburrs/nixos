@@ -8,6 +8,10 @@
   services.pipewire = {
     enable = true;
     pulse.enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    # If you want to use JACK applications, uncomment the following
+    jack.enable = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).

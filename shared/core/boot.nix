@@ -28,7 +28,7 @@
     configurationLimit = 5;
     theme =
       let
-        smth = pkgs.fetchFromGitHub {
+        repo = pkgs.fetchFromGitHub {
           owner = "cowburrs";
           repo = "p5rgrub";
           rev = "5f8fc1b5bb84c0d065ff4ef60f9ac9f3816fdf92";
@@ -36,7 +36,8 @@
           # sha256 = lib.fakeHash;
         };
       in
-      smth + "/themes/navi";
+      repo + "/themes/navi";
+    # src = "${repo}/themes/navi"; # This also works, you just need to concatenate a string.
     timeout = 10;
 
   };

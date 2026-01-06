@@ -158,6 +158,7 @@
     trash-cli
     thunderbird
     tldr
-		v4l-utils
+    v4l-utils
+    easyeffects
   ];
 }
