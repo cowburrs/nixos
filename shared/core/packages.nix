@@ -139,7 +139,6 @@
     hyprls
 
     nethogs
-    efibootmgr
     music-discord-rpc
     (discord.override {
       withOpenASAR = true; # can do this here too
@@ -160,5 +159,12 @@
     tldr
     v4l-utils
     easyeffects
+		neomutt
+		jq # for muting specific active windows in hyrpalnd
+		tesseract
+		imagemagick
+		beautysh
+		libnotify
+		hyprpaper
   ];
 }

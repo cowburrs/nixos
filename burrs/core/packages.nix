@@ -47,7 +47,6 @@
       reaper
       vital
       mesa-demos
-      kdePackages.kdenlive
       # Eye candy
       terminaltexteffects
       cava
@@ -64,6 +63,8 @@
       davinci-resolve
       steamtinkerlaunch
       gowall
+			ani-cli
+			figlet
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop

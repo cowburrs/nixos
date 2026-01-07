@@ -12,12 +12,14 @@
     extraGroups = [
       "wheel"
       "i2c"
-			"video"
+      "video"
     ]; # Enable ‘sudo’ for the user.
   };
+
   users.users.guest = {
     isNormalUser = true;
-    password = "";
-    extraGroups = [ ];
+    password = null;
+		extraGroups = [];
   };
+
 }

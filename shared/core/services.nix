@@ -17,13 +17,15 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
 
+	# I don't use ssh?
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
-  services.syncthing = {
-    enable = true;
-    openDefaultPorts = true; # Open ports in the firewall for Syncthing. (NOTE: this will not open syncthing gui port)
-  };
+	# No need anymore
+  # services.syncthing = {
+  #   enable = true;
+  #   openDefaultPorts = true; # Open ports in the firewall for Syncthing. (NOTE: this will not open syncthing gui port)
+  # };
 
   services.xserver.enable = true;
   services.displayManager.ly.enable = true;
@@ -32,6 +34,7 @@
     vi_mode = true;
     clear_password = true;
   };
+
   # Bluetooth
   services.blueman.enable = true;
 

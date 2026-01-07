@@ -5,6 +5,6 @@
   ...
 }:
 {
-  # Set your time zone.
+  # Set your time zone. Also coincidentally half dox yourself.
   time.timeZone = "Australia/Sydney";
 }
