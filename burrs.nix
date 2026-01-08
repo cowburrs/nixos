@@ -11,7 +11,7 @@
 
 {
   imports = [
-    /etc/nixos/hardware-configuration.nix
+        /etc/nixos/hardware-configuration.nix # Fuck i don't care, fuck purity, this is the most elegant solution, although its not 'pure' its literally best practice.
   ]
   ++ lib.filesystem.listFilesRecursive ./shared/core/.
   ++ lib.filesystem.listFilesRecursive ./shared/extra/.

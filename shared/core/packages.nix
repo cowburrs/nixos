@@ -22,7 +22,7 @@
     # autoConfigFiles = [
     #   /home/burrs/.config/firefox/autoConfig.js
     # ];
-    autoConfig = builtins.readFile /home/burrs/.config/firefox/autoConfig.js;
+    autoConfig = builtins.readFile ../../resources/autoConfig.js;
   };
 
   programs.spicetify =
