@@ -169,5 +169,6 @@
     glib
     kdePackages.qt6ct
 		nh
+		mpv
   ];
 }

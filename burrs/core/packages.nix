@@ -65,6 +65,7 @@
       gowall
 			ani-cli
 			figlet
+			audacious
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
