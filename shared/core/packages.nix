@@ -73,102 +73,104 @@
   };
 
   # Packages
-  environment.systemPackages = with pkgs; [
-    (inputs.yazi.packages.${pkgs.system}.default.override {
-      _7zz = pkgs._7zz-rar; # Support for RAR extraction
-    })
-    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
-    kitty
-    playerctl
-    mako
-    waybar
-    rofi
-    hyprshot
-    hyprpicker
-    hyprlock
-    vlc
-    hyprpolkitagent
-    kdePackages.dolphin
-    usbutils
-    kdePackages.okular
-    neovim
-    git
-    wget
-    wl-clipboard
-    fzf
-    eza
-    networkmanagerapplet
-    gcc
-    nodejs_24
-    python3
-    cargo
-    unzip
-    zoxide
-    ripgrep
-    btop
-    nixfmt
-    fastfetch
-    krita
-    logseq
-    p7zip
-    wlogout
-    qdirstat
-    lua
-    stow
-    ffmpeg
-    libreoffice-qt
-    wev
-    screenfetch
-    hyprcursor
+  environment.systemPackages =
+    with pkgs;
+    [
+      inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+      kitty
+      playerctl
+      mako
+      waybar
+      rofi
+      hyprshot
+      hyprpicker
+      hyprlock
+      vlc
+      hyprpolkitagent
+      kdePackages.dolphin
+      usbutils
+      kdePackages.okular
+      neovim
+      git
+      wget
+      wl-clipboard
+      fzf
+      eza
+      networkmanagerapplet
+      gcc
+      nodejs_24
+      python3
+      cargo
+      unzip
+      zoxide
+      ripgrep
+      btop
+      nixfmt
+      fastfetch
+      krita
+      logseq
+      p7zip
+      wlogout
+      qdirstat
+      lua
+      stow
+      ffmpeg
+      libreoffice-qt
+      wev
+      screenfetch
+      hyprcursor
 
-    # Formatters
-    ast-grep
-    stylua
-    prettier
-    isort
-    black
-    zprint
-    jsonfmt
-    biome
+      # Formatters
+      ast-grep
+      stylua
+      prettier
+      isort
+      black
+      zprint
+      jsonfmt
+      biome
 
-    # LSP Servers
-    lua-language-server
-    nil
-    nixd
-    hyprls
+      # LSP Servers
+      lua-language-server
+      nil
+      nixd
+      hyprls
 
-    nethogs
-    music-discord-rpc
-    (discord.override {
-      withOpenASAR = true; # can do this here too
-      withVencord = true;
-    })
-    wttrbar
-    wezterm
-    waybar-mpris
+      nethogs
+      music-discord-rpc
+      (discord.override {
+        withOpenASAR = true; # can do this here too
+        withVencord = true;
+      })
+      wttrbar
+      wezterm
+      waybar-mpris
 
-    # One day make the debug stuff a shell, so that it doesn't have to bloat everything
-    libnotify
-    speedtest-cli
-    mission-center
+      # One day make the debug stuff a shell, so that it doesn't have to bloat everything
+      libnotify
+      speedtest-cli
+      mission-center
 
-    r2modman
-    trash-cli
-    thunderbird
-    tldr
-    v4l-utils
-    easyeffects
-    neomutt
-    jq # for muting specific active windows in hyrpalnd
-    tesseract
-    imagemagick
-    beautysh
-    libnotify
-    hyprpaper
-    rofi-network-manager
-    glib
-    kdePackages.qt6ct
-		nh
-		mpv
-  ];
+      r2modman
+      trash-cli
+      thunderbird
+      tldr
+      v4l-utils
+      easyeffects
+      neomutt
+      jq # for muting specific active windows in hyrpalnd
+      tesseract
+      imagemagick
+      beautysh
+      libnotify
+      hyprpaper
+      rofi-network-manager
+      glib
+      kdePackages.qt6ct
+      nh
+      mpv
+    ]
+    ++ (with pkgs-unstable; [
+      yazi
+    ]);
 }

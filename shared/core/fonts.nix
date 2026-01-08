@@ -8,5 +8,6 @@
     nerd-fonts.jetbrains-mono
     inter
     font-awesome
+		aporetic
   ];
 }
