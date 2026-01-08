@@ -1,5 +1,5 @@
 {
-  description = "A simple NixOS flake";
+  description = "Burrs flake";
 
   inputs = {
     # NixOS official package source, using the nixos-25.05 branch here
@@ -63,6 +63,11 @@
             specialArgs = sharedArgs;
           };
         };
+			# nh doesnt build without this idk why
+      packages.x86_64-linux = {
+        burrs = self.nixosConfigurations.burrs;
+        laptop = self.nixosConfigurations.laptop;
+      };
     };
 
 }

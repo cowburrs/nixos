@@ -109,7 +109,6 @@
     nixfmt
     fastfetch
     krita
-    nix-search-cli
     logseq
     p7zip
     wlogout
@@ -159,12 +158,16 @@
     tldr
     v4l-utils
     easyeffects
-		neomutt
-		jq # for muting specific active windows in hyrpalnd
-		tesseract
-		imagemagick
-		beautysh
-		libnotify
-		hyprpaper
+    neomutt
+    jq # for muting specific active windows in hyrpalnd
+    tesseract
+    imagemagick
+    beautysh
+    libnotify
+    hyprpaper
+    rofi-network-manager
+    glib
+    kdePackages.qt6ct
+		nh
   ];
 }
