@@ -169,8 +169,12 @@
       kdePackages.qt6ct
       nh
       mpv
+			gh
     ]
     ++ (with pkgs-unstable; [
-      yazi
+      (yazi.override
+      {
+        _7zz = pkgs._7zz-rar;
+      })
     ]);
 }

@@ -3,11 +3,10 @@
 {
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
-    jetbrains-mono
-    nerd-fonts.zed-mono
-    nerd-fonts.jetbrains-mono
-    inter
-    font-awesome
-		aporetic
+    nerd-fonts.jetbrains-mono # you don't need actual jetbrains mono afaik if you have this font
+    aporetic
+		fantasque-sans-mono
+		noto-fonts
+		comfortaa
   ];
 }

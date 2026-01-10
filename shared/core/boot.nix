@@ -9,17 +9,6 @@
   boot.loader.systemd-boot.enable = false;
   # boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  # OBS
-  boot.kernelModules = [ "v4l2loopback" ];
-  boot.extraModulePackages = with config.boot.kernelPackages; [
-    v4l2loopback
-  ];
-  boot.extraModprobeConfig = ''
-    options v4l2loopback devices=4 \
-      video_nr=1,2 \
-      card_label="DroidCam,OBS Cam" \
-      exclusive_caps=1
-  '';
   boot.loader.grub = {
     enable = true;
     efiSupport = true;
@@ -39,7 +28,5 @@
       repo + "/themes/navi";
     # src = "${repo}/themes/navi"; # This also works, you just need to concatenate a string.
     timeout = 10;
-
   };
-
 }

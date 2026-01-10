@@ -31,7 +31,7 @@
       obs-vaapi # optional AMD hardware acceleration
       obs-gstreamer
       obs-vkcapture
-			obs-livesplit-one
+      obs-livesplit-one
     ];
   };
 
@@ -63,9 +63,13 @@
       davinci-resolve
       steamtinkerlaunch
       gowall
-			ani-cli
-			figlet
-			audacious
+      ani-cli
+      figlet
+      audacious
+      (nexusmods-app.override
+      {
+        _7zz = pkgs._7zz-rar;
+      })
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
