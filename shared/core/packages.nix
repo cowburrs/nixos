@@ -169,11 +169,13 @@
       kdePackages.qt6ct
       nh
       mpv
-			gh
+      gh
+      rustc
+      rust-analyzer
+			rustfmt
     ]
     ++ (with pkgs-unstable; [
-      (yazi.override
-      {
+      (yazi.override {
         _7zz = pkgs._7zz-rar;
       })
     ]);
