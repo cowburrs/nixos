@@ -53,7 +53,6 @@
 
   environment.systemPackages = with pkgs;
     [
-      # mission-center
       # nvtopPackages.nvidia
       # phoronix-test-suite
       # unigine-sanctuary
