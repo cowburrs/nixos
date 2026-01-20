@@ -173,6 +173,7 @@
       rustc
       rust-analyzer
 			rustfmt
+			protonvpn-gui
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {

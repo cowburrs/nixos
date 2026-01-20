@@ -17,6 +17,7 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   networking.firewall.enable = true;
+  # networking.firewall.checkReversePath = "loose";
 
   # Disable NetworkManager's internal DNS resolution
   networking.networkmanager.dns = "none";

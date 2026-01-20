@@ -8,7 +8,7 @@
   # Systemd(Crazy that you can switch)
   boot.loader.systemd-boot.enable = false;
   # boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_latest; # TODO: Maybe use zen here idk
   boot.loader.grub = {
     enable = true;
     efiSupport = true;

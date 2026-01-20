@@ -70,6 +70,7 @@
       {
         _7zz = pkgs._7zz-rar;
       })
+			librewolf
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
