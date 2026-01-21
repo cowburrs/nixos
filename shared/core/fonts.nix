@@ -8,5 +8,6 @@
 		fantasque-sans-mono
 		noto-fonts
 		comfortaa
+		public-sans # The university font
   ];
 }

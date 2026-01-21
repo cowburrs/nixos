@@ -13,6 +13,7 @@
       "wheel"
       "i2c"
       "video"
+			"audio" # musnix
     ]; # Enable ‘sudo’ for the user.
   };
 

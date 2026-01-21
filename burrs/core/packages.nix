@@ -66,10 +66,6 @@
       ani-cli
       figlet
       audacious
-      (nexusmods-app.override
-      {
-        _7zz = pkgs._7zz-rar;
-      })
 			librewolf
     ]
     ++ (with pkgs-unstable; [

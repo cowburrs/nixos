@@ -15,6 +15,8 @@
     portalPackage = pkgs-unstable.xdg-desktop-portal-hyprland;
   };
 
+  # programs.nix-ld.enable = true; # Not the nix way ig, its ok i don't need it atm
+
   programs.firefox = {
     enable = true;
     # You can use lockPref, defaultPref and Pref
@@ -172,8 +174,9 @@
       gh
       rustc
       rust-analyzer
-			rustfmt
-			protonvpn-gui
+      rustfmt
+      protonvpn-gui
+      icu
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
