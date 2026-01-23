@@ -177,6 +177,8 @@
       rustfmt
       protonvpn-gui
       icu
+			sox
+			gitsnip
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
