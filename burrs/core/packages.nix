@@ -67,6 +67,7 @@
       figlet
       audacious
 			librewolf
+			lsp-plugins
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
