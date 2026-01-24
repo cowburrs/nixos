@@ -79,7 +79,6 @@
     with pkgs;
     [
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
-      kitty
       playerctl
       mako
       waybar
