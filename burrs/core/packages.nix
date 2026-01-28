@@ -66,7 +66,6 @@
       ani-cli
       figlet
       audacious
-			librewolf
 			lsp-plugins
     ]
     ++ (with pkgs-unstable; [
