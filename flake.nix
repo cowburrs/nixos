@@ -4,9 +4,13 @@
   inputs = {
     # NixOS official package source, using the nixos-25.05 branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    catppuccin = {
+			# TODO: Change this as well when changing nixurl
+      url = "github:catppuccin/nix/release-25.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-    catppuccin.url = "github:catppuccin/nix";
     musnix.url = "github:musnix/musnix";
     rose-pine-hyprcursor = {
       url = "github:ndom91/rose-pine-hyprcursor";
@@ -62,7 +66,7 @@
             specialArgs = sharedArgs;
           };
         };
-			# nh doesnt build without this idk why
+      # nh doesnt build without this idk why
       packages.x86_64-linux = {
         burrs = self.nixosConfigurations.burrs;
         laptop = self.nixosConfigurations.laptop;

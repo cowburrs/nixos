@@ -57,12 +57,12 @@
       cmatrix
       discord-rpc
 
-      godot-mono
+      godot
       droidcam
       lshw # Installed for davincibox
       davinci-resolve
       steamtinkerlaunch
-      gowall
+      # gowall
       ani-cli
       figlet
       audacious
