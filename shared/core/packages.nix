@@ -178,6 +178,7 @@
       icu
 			sox
 			gitsnip
+			rpl
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {

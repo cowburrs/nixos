@@ -66,7 +66,16 @@
       ani-cli
       figlet
       audacious
-			lsp-plugins
+      lsp-plugins
+      modrinth-app
+      prismlauncher
+      bottles
+      lmms
+			qsynth
+			soundfont-ydp-grand
+			soundfont-fluid
+			sfizz
+			x42-gmsynth
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
