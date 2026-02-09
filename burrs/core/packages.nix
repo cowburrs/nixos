@@ -76,6 +76,7 @@
 			soundfont-fluid
 			sfizz
 			x42-gmsynth
+			gparted
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
