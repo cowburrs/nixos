@@ -77,6 +77,8 @@
 			sfizz
 			x42-gmsynth
 			gparted
+			# handbrake
+			anki
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
