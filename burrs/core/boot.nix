@@ -6,6 +6,7 @@
 }:
 {
   # OBS
+  boot.kernelPackages = pkgs.linuxPackages_latest; # TODO: Maybe use zen here idk
   boot.kernelModules = [ "v4l2loopback" ];
   boot.extraModulePackages = with config.boot.kernelPackages; [
     v4l2loopback
