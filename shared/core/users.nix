@@ -14,6 +14,7 @@
       "i2c"
       "video"
 			"audio" # musnix
+			"networkmanager"
     ]; # Enable ‘sudo’ for the user.
   };
 
