@@ -81,7 +81,6 @@
 			anki
     ]
     ++ (with pkgs-unstable; [
-      tetrio-desktop
       lunar-client
       mesa
       osu-lazer-bin

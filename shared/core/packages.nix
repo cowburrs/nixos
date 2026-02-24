@@ -176,15 +176,19 @@
       rustfmt
       protonvpn-gui
       icu
-			sox
-			gitsnip
-			rpl
-			haskell-language-server
-			ormolu
+      sox
+      gitsnip
+      rpl
+      haskell-language-server
+      ormolu
+      ghc
+			chromium
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
         _7zz = pkgs._7zz-rar;
+
       })
+      tetrio-desktop
     ]);
 }
