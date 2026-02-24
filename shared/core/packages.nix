@@ -179,6 +179,8 @@
 			sox
 			gitsnip
 			rpl
+			haskell-language-server
+			ormolu
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
