@@ -2,11 +2,11 @@
 {
   # Suspend first
   boot.kernelParams = [
-    "resume_offset=208748544"
+    "resume_offset=2240512"
     "mem_sleep_default=deep"
   ];
 
-  boot.resumeDevice = "/dev/disk/by-uuid/f1945c61-ae98-48fe-afa2-2114265bb857";
+  boot.resumeDevice = "/dev/disk/by-uuid/0ca5a399-172e-436f-931d-5392b08b231e";
 
   powerManagement.enable = true;
 
