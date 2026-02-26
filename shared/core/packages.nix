@@ -183,6 +183,7 @@
       ormolu
       ghc
 			chromium
+			morgen
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
