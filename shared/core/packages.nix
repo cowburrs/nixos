@@ -184,6 +184,7 @@
       ghc
 			chromium
 			morgen
+			gocryptfs
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
