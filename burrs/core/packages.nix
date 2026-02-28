@@ -67,7 +67,6 @@
       figlet
       audacious
       lsp-plugins
-      modrinth-app
       prismlauncher
       bottles
       lmms

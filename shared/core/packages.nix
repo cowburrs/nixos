@@ -185,6 +185,7 @@
 			chromium
 			morgen
 			cryfs
+			xournalpp
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
