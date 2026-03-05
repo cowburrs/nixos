@@ -186,6 +186,7 @@
 			morgen
 			cryfs
 			xournalpp
+			arduino-ide
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
