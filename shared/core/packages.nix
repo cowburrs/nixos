@@ -187,6 +187,8 @@
 			cryfs
 			xournalpp
 			arduino-ide
+			arduino-cli
+			arduino-language-server
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {

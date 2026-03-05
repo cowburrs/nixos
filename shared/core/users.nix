@@ -15,6 +15,8 @@
       "video"
 			"audio" # musnix
 			"networkmanager"
+			"plugdev"
+			"dialout"
     ]; # Enable ‘sudo’ for the user.
   };
 
