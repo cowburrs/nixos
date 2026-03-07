@@ -189,6 +189,7 @@
 			arduino-ide
 			arduino-cli
 			arduino-language-server
+			clang
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
