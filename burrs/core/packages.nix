@@ -11,6 +11,9 @@
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
     gamescopeSession.enable = true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
   };
   programs.gamemode.enable = true;
   programs.gamescope = {
@@ -70,14 +73,14 @@
       prismlauncher
       bottles
       lmms
-			qsynth
-			soundfont-ydp-grand
-			soundfont-fluid
-			sfizz
-			x42-gmsynth
-			gparted
-			# handbrake
-			anki
+      qsynth
+      soundfont-ydp-grand
+      soundfont-fluid
+      sfizz
+      x42-gmsynth
+      gparted
+      # handbrake
+      anki
     ]
     ++ (with pkgs-unstable; [
       lunar-client
