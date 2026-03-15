@@ -10,13 +10,6 @@
 
   powerManagement.enable = true;
 
-  swapDevices = [
-    {
-      device = "/var/lib/swapfile";
-      size = 32 * 1024; # 32GB
-    }
-  ];
-
   # services.power-profiles-daemon.enable = true;
   # Suspend first then hibernate when closing the lid
   # Hibernate on power button pressed

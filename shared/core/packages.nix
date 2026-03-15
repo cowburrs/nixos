@@ -189,13 +189,13 @@
 			arduino-ide
 			arduino-cli
 			arduino-language-server
-			clang
+			appimage-run
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
         _7zz = pkgs._7zz-rar;
 
       })
-      tetrio-desktop
+      # tetrio-desktop
     ]);
 }
