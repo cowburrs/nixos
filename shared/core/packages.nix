@@ -15,7 +15,7 @@
     portalPackage = pkgs-unstable.xdg-desktop-portal-hyprland;
   };
 
-  # programs.nix-ld.enable = true; # Not the nix way ig, its ok i don't need it atm
+  programs.nix-ld.enable = true; # Not the nix way ig, its ok i don't need it atm
 
   programs.firefox = {
     enable = true;
@@ -100,7 +100,11 @@
       networkmanagerapplet
       gcc
       nodejs_24
-      python3
+      (pkgs.python3.withPackages (
+        python-pkgs: with python-pkgs; [
+          pyserial
+        ]
+      ))
       cargo
       unzip
       zoxide
@@ -182,20 +186,21 @@
       haskell-language-server
       ormolu
       ghc
-			chromium
-			morgen
-			cryfs
-			xournalpp
-			arduino-ide
-			arduino-cli
-			arduino-language-server
-			appimage-run
+      chromium
+      morgen
+      cryfs
+      xournalpp
+      arduino-ide
+      arduino-cli
+      arduino-language-server
+      appimage-run
+			arduino
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
         _7zz = pkgs._7zz-rar;
 
       })
-      # tetrio-desktop
+      tetrio-desktop
     ]);
 }

@@ -92,6 +92,7 @@
       gparted
       # handbrake
       anki
+      drumgizmo
     ]
     ++ (with pkgs-unstable; [
       lunar-client
