@@ -14,7 +14,7 @@
     extraCompatPackages = with pkgs; [
       proton-ge-bin
     ];
-    package = pkgs.steam.override {
+    package = pkgs.millennium-steam.override {
       extraEnv = {
         MANGOHUD = true;
         OBS_VKCAPTURE = true;
@@ -93,6 +93,8 @@
       # handbrake
       anki
       drumgizmo
+      reaper-sws-extension
+      reaper-reapack-extension
     ]
     ++ (with pkgs-unstable; [
       lunar-client

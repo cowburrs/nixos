@@ -15,7 +15,7 @@
     portalPackage = pkgs-unstable.xdg-desktop-portal-hyprland;
   };
 
-  programs.nix-ld.enable = true; # Not the nix way ig, its ok i don't need it atm
+  # programs.nix-ld.enable = true; # Not the nix way ig, its ok i don't need it atm
 
   programs.firefox = {
     enable = true;
@@ -194,7 +194,8 @@
       arduino-cli
       arduino-language-server
       appimage-run
-			arduino
+      arduino
+      fritzing
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
