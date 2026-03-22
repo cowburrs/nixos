@@ -197,6 +197,7 @@
       arduino
       fritzing
 			timer
+			pyright
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
