@@ -196,6 +196,7 @@
       appimage-run
       arduino
       fritzing
+			timer
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
