@@ -196,8 +196,10 @@
       appimage-run
       arduino
       fritzing
-			timer
-			pyright
+      timer
+      pyright
+      hunspell
+			hunspellDicts.en-au
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
