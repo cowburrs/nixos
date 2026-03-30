@@ -95,6 +95,7 @@
       drumgizmo
       reaper-sws-extension
       reaper-reapack-extension
+			sqlite
     ]
     ++ (with pkgs-unstable; [
       lunar-client
