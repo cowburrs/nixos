@@ -202,6 +202,7 @@
       pyright
       hunspell
 			hunspellDicts.en-au
+			viddy
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
