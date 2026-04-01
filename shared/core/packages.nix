@@ -107,6 +107,10 @@
 					pyqt6
 					uncertainties
 					pint
+					pandas
+					matplotlib
+					numpy
+					odfpy
         ]
       ))
       cargo
