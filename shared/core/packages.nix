@@ -106,6 +106,7 @@
 					holidays
 					pyqt6
 					uncertainties
+					pint
         ]
       ))
       cargo
