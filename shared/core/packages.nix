@@ -105,6 +105,7 @@
           pyserial
 					holidays
 					pyqt6
+					uncertainties
         ]
       ))
       cargo
