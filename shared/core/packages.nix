@@ -103,14 +103,14 @@
       (pkgs.python3.withPackages (
         python-pkgs: with python-pkgs; [
           pyserial
-					holidays
-					pyqt6
-					uncertainties
-					pint
-					pandas
-					matplotlib
-					numpy
-					odfpy
+          holidays
+          pyqt6
+          uncertainties
+          pint
+          pandas
+          matplotlib
+          numpy
+          odfpy
         ]
       ))
       cargo
@@ -207,8 +207,8 @@
       timer
       pyright
       hunspell
-			hunspellDicts.en-au
-			viddy
+      hunspellDicts.en-au
+      viddy
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
