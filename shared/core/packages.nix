@@ -113,6 +113,13 @@
           odfpy
         ]
       ))
+      (pkgs.lua.withPackages (
+        luaPackages: with luaPackages; [
+          dkjson
+					luafilesystem
+					penlight
+        ]
+      ))
       cargo
       unzip
       zoxide
@@ -125,7 +132,6 @@
       p7zip
       wlogout
       qdirstat
-      lua
       stow
       ffmpeg
       libreoffice-qt
