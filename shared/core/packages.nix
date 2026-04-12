@@ -216,6 +216,7 @@
       hunspellDicts.en-au
       viddy
       xrandr
+      gum
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {

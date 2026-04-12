@@ -63,7 +63,6 @@
       # Eye candy
       terminaltexteffects
       cava
-      gum
       mangohud
       wine
       pipes
