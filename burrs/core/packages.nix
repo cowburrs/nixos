@@ -54,7 +54,6 @@
     [
       heroic
       lutris
-      bitwig-studio
       ddcutil
       brave
       blender

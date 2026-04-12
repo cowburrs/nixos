@@ -116,8 +116,8 @@
       (pkgs.lua.withPackages (
         luaPackages: with luaPackages; [
           dkjson
-					luafilesystem
-					penlight
+          luafilesystem
+          penlight
         ]
       ))
       cargo
@@ -129,6 +129,7 @@
       fastfetch
       krita
       logseq
+
       p7zip
       wlogout
       qdirstat
@@ -201,7 +202,6 @@
       ormolu
       ghc
       chromium
-      morgen
       cryfs
       xournalpp
       arduino-ide
@@ -215,6 +215,7 @@
       hunspell
       hunspellDicts.en-au
       viddy
+      xrandr
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {
