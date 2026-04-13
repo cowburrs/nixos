@@ -79,7 +79,17 @@
       figlet
       audacious
       lsp-plugins
-      prismlauncher
+      (prismlauncher.override {
+        additionalPrograms = [ ffmpeg ];
+
+        jdks = [
+          graalvmPackages.graalvm-ce
+          zulu8
+          zulu17
+          zulu
+          zulu25
+        ];
+      })
       bottles
       lmms
       qsynth
@@ -93,7 +103,7 @@
       drumgizmo
       reaper-sws-extension
       reaper-reapack-extension
-			sqlite
+      sqlite
     ]
     ++ (with pkgs-unstable; [
       lunar-client

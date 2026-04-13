@@ -113,13 +113,6 @@
           odfpy
         ]
       ))
-      (pkgs.lua.withPackages (
-        luaPackages: with luaPackages; [
-          dkjson
-          luafilesystem
-          penlight
-        ]
-      ))
       cargo
       unzip
       zoxide
