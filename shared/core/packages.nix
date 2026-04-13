@@ -101,9 +101,7 @@
       gcc
       nodejs_24
       (pkgs.python3.withPackages (
-        python-pkgs:
-        with python-pkgs;
-        [
+        python-pkgs: with python-pkgs; [
           pyserial
           holidays
           pyqt6
@@ -123,7 +121,6 @@
       nixfmt
       fastfetch
       krita
-      logseq
 
       p7zip
       wlogout
