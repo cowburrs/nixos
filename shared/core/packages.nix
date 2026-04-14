@@ -19,11 +19,6 @@
 
   programs.firefox = {
     enable = true;
-    # You can use lockPref, defaultPref and Pref
-    # autoConfig = '''';
-    # autoConfigFiles = [
-    #   /home/burrs/.config/firefox/autoConfig.js
-    # ];
     autoConfig = builtins.readFile ../../resources/autoConfig.js;
   };
 
@@ -74,6 +69,8 @@
     enableSSHSupport = true;
   };
 
+  programs.direnv.enable = true;
+
   # Packages
   environment.systemPackages =
     with pkgs;
@@ -100,7 +97,7 @@
       networkmanagerapplet
       gcc
       nodejs_24
-		# python
+      # python
       # (pkgs.python3.withPackages (
       #   python-pkgs: with python-pkgs; [
       #     pyserial
@@ -202,7 +199,6 @@
       arduino-language-server
       appimage-run
       arduino
-      fritzing
       timer
       pyright
       hunspell
@@ -210,6 +206,8 @@
       viddy
       xrandr
       gum
+      clang-tools
+      taplo
     ]
     ++ (with pkgs-unstable; [
       (yazi.override {

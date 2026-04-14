@@ -67,11 +67,14 @@
             specialArgs = sharedArgs;
           };
         };
-      # nh doesnt build without this idk why
-      packages.x86_64-linux = {
-        burrs = self.nixosConfigurations.burrs;
-        laptop = self.nixosConfigurations.laptop;
-      };
+      # # nh doesnt build without this idk why
+		# easter egg of a simpler time in my life
+		# no you dont need it for a rebuild idk why i wrote this down
+		# haha its kinda silly funny icl
+      # packages.x86_64-linux = {
+      #   burrs = self.nixosConfigurations.burrs;
+      #   laptop = self.nixosConfigurations.laptop;
+      # };
     };
 
 }
