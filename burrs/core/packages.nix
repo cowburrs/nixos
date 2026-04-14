@@ -103,6 +103,7 @@
       drumgizmo
       reaper-sws-extension
       reaper-reapack-extension
+      r2modman
       sqlite
     ]
     ++ (with pkgs-unstable; [

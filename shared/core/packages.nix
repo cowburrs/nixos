@@ -100,19 +100,20 @@
       networkmanagerapplet
       gcc
       nodejs_24
-      (pkgs.python3.withPackages (
-        python-pkgs: with python-pkgs; [
-          pyserial
-          holidays
-          pyqt6
-          uncertainties
-          pint
-          pandas
-          matplotlib
-          numpy
-          odfpy
-        ]
-      ))
+		# python
+      # (pkgs.python3.withPackages (
+      #   python-pkgs: with python-pkgs; [
+      #     pyserial
+      #     holidays
+      #     pyqt6
+      #     uncertainties
+      #     pint
+      #     pandas
+      #     matplotlib
+      #     numpy
+      #     odfpy
+      #   ]
+      # ))
       cargo
       unzip
       zoxide
@@ -164,7 +165,6 @@
       speedtest-cli
       mission-center
 
-      r2modman
       trash-cli
       thunderbird
       tldr
