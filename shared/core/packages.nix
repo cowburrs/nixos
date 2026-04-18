@@ -210,6 +210,6 @@
     ]
     ++ (with pkgs-unstable; [
       yazi
-      # tetrio-desktop
+      tetrio-desktop
     ]);
 }
