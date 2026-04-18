@@ -14,7 +14,7 @@
     device = "nodev"; # idk what it means but its on the wiki
     efiInstallAsRemovable = true;
     configurationLimit = 5;
-    theme =
+    theme = #TODO: change this to a flake
       let
         repo = pkgs.fetchFromGitHub {
           owner = "cowburrs";

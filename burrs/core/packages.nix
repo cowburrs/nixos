@@ -67,7 +67,6 @@
       wine
       pipes
       cmatrix
-      discord-rpc
 
       godot
       droidcam

@@ -4,6 +4,7 @@
   inputs,
   nixpkgs,
   pkgs-unstable,
+  lib,
   ...
 }:
 {
@@ -68,8 +69,6 @@
     enable = true;
     enableSSHSupport = true;
   };
-
-  programs.direnv.enable = true;
 
   # Packages
   environment.systemPackages =
@@ -210,10 +209,7 @@
       taplo
     ]
     ++ (with pkgs-unstable; [
-      (yazi.override {
-        _7zz = pkgs._7zz-rar;
-
-      })
-      tetrio-desktop
+      yazi
+      # tetrio-desktop
     ]);
 }

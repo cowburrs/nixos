@@ -2,6 +2,7 @@
   config,
   lib,
   pkgs,
+  nixpkgs-unstable,
   ...
 }:
 {
@@ -14,5 +15,6 @@
       "flakes"
     ];
   };
+  nix.registry.nixpkgs-unstable.flake = nixpkgs-unstable;
   nix.settings.auto-optimise-store = true;
 }

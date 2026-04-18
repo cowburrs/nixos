@@ -22,6 +22,14 @@
       inputs.nixpkgs.follows = ""; # only useful for the package output
     };
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    catppuccin-bat = {
+      url = "github:catppuccin/bat";
+      flake = false;
+    };
+    home-manager = {
+      url = "github:nix-community/home-manager/release-25.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -32,6 +40,7 @@
       ...
     }@inputs:
     {
+
       nixosConfigurations =
         let
           system = "x86_64-linux";
@@ -42,11 +51,19 @@
             inputs.musnix.nixosModules.musnix
             inputs.spicetify-nix.nixosModules.default
             inputs.mikuboot.nixosModules.default
+            inputs.home-manager.nixosModules.home-manager
+            {
+              home-manager.extraSpecialArgs = { inherit self; };
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.burrs = ./home.nix;
+            }
           ];
 
           # Shared specialArgs
           sharedArgs = {
             inherit inputs;
+            inherit nixpkgs-unstable;
             pkgs-unstable = import nixpkgs-unstable {
               inherit system;
               config.allowUnfree = true;
@@ -57,20 +74,24 @@
         {
           burrs = nixpkgs.lib.nixosSystem {
             inherit system;
-            modules = sharedModules ++ [ ./burrs.nix ];
+            modules = sharedModules ++ [
+              ./burrs.nix
+            ];
             specialArgs = sharedArgs;
           };
 
           laptop = nixpkgs.lib.nixosSystem {
             inherit system;
-            modules = sharedModules ++ [ ./laptop.nix ];
+            modules = sharedModules ++ [
+              ./laptop.nix
+            ];
             specialArgs = sharedArgs;
           };
         };
       # # nh doesnt build without this idk why
-		# easter egg of a simpler time in my life
-		# no you dont need it for a rebuild idk why i wrote this down
-		# haha its kinda silly funny icl
+      # easter egg of a simpler time in my life
+      # no you dont need it for a rebuild idk why i wrote this down
+      # haha its kinda silly funny icl
       # packages.x86_64-linux = {
       #   burrs = self.nixosConfigurations.burrs;
       #   laptop = self.nixosConfigurations.laptop;
