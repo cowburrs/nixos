@@ -22,10 +22,6 @@
       inputs.nixpkgs.follows = ""; # only useful for the package output
     };
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
-    catppuccin-bat = {
-      url = "github:catppuccin/bat";
-      flake = false;
-    };
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -134,8 +134,6 @@
       ast-grep
       stylua
       prettier
-      isort
-      black
       zprint
       jsonfmt
       biome
@@ -199,14 +197,14 @@
       appimage-run
       arduino
       timer
-      pyright
       hunspell
       hunspellDicts.en-au
-      viddy
+      # viddy
       xrandr
-      gum
+      # gum
       clang-tools
       taplo
+		fixjson
     ]
     ++ (with pkgs-unstable; [
       yazi
