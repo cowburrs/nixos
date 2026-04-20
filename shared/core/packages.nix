@@ -185,9 +185,7 @@
       sox
       gitsnip
       rpl
-      haskell-language-server
-      ormolu
-      ghc
+
       chromium
       cryfs
       xournalpp
@@ -200,7 +198,6 @@
       hunspell
       hunspellDicts.en-au
       # viddy
-      xrandr
       # gum
       clang-tools
       taplo
