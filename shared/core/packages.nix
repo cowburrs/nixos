@@ -201,7 +201,6 @@
       # gum
       clang-tools
       taplo
-		fixjson
     ]
     ++ (with pkgs-unstable; [
       yazi
