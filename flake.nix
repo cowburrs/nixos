@@ -26,6 +26,7 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
   outputs =
@@ -48,6 +49,7 @@
             inputs.spicetify-nix.nixosModules.default
             inputs.mikuboot.nixosModules.default
             inputs.home-manager.nixosModules.home-manager
+            inputs.nix-flatpak.nixosModules.nix-flatpak
             {
               home-manager.extraSpecialArgs = { inherit self; };
               home-manager.useGlobalPkgs = true;
