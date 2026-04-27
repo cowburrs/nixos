@@ -118,7 +118,11 @@
       nixfmt
       fastfetch
       krita
-      (logseq.override { electron = electron_39; })
+      (
+        let
+        in
+        logseq.override { electron = electron_39-bin; }
+      )
 
       p7zip
       wlogout
