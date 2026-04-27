@@ -69,6 +69,7 @@
     enable = true;
     enableSSHSupport = true;
   };
+  programs.gdk-pixbuf.modulePackages = [ pkgs.librsvg ]; # You need this for wlogout
 
   # Packages
   environment.systemPackages =
