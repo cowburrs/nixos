@@ -6,7 +6,10 @@ lockPref("browser.profiles.enabled", false); // Does nothing basically
 lockPref("general.autoScroll", true);
 lockPref("browser.tabs.closeWindowWithLastTab", false);
 lockPref("media.hardwaremediakeys.enabled", false);
-
+lockPref("font.name.sans-serif.x-western", "Exo 2");
+lockPref("font.name.serif.x-western", "Aporetic Serif");
+lockPref("font.name.monospace.x-western", "Aporetic Sans Mono");
+lockPref("browser.display.use_document_fonts", 0);
 
 // AI......
 lockPref("browser.ml.enable", false); // general switch for machine learning features in Firefox (https://www.reddit.com/r/firefox/comments/1obbrvz/how_to_completely_get_rid_of_the_ai_stuff/nki10g9/), though it might not completely disable all features (https://bugzilla.mozilla.org/show_bug.cgi?id=1971973#c11)

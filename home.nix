@@ -51,6 +51,8 @@
     userEmail = "dwadwa@dwa.com";
   };
 
+  home.file.".local/share/Anki2/addons21".source = ./resources/addons21;
+
   # home.activation =
   #   let
   #     filelocation = builtins.getEnv "PWD";
