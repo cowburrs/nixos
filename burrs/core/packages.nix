@@ -98,7 +98,6 @@
       x42-gmsynth
       gparted
       # handbrake
-      anki
       drumgizmo
       reaper-sws-extension
       reaper-reapack-extension

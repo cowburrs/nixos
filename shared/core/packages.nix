@@ -206,6 +206,7 @@
       # gum
       clang-tools
       taplo
+      anki
     ]
     ++ (with pkgs-unstable; [
       yazi
