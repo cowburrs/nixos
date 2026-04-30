@@ -207,9 +207,11 @@
       clang-tools
       taplo
       anki
+		texlive.combined.scheme-medium
+		pandoc
     ]
     ++ (with pkgs-unstable; [
       yazi
-      tetrio-desktop
+      # tetrio-desktop
     ]);
 }
