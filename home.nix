@@ -51,7 +51,20 @@
     userEmail = "dwadwa@dwa.com";
   };
 
-  home.file.".local/share/Anki2/addons21".source = ./resources/addons21;
+  home.file.".local/share/Anki2/addons21" = {
+    source = ./resources/addons21;
+  };
+
+  # warnings = [ (builtins.getEnv "FLAKE_DIR") ]; # yeah its not possible let me kill myself
+  # home.file."test".source =
+  #   let
+  #     flakeDir =
+  #       let
+  #         env = builtins.getEnv "FLAKE_DIR";
+  #       in
+  #       if env != "" then env else self.outPath;
+  #   in
+  #   config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/addons21";
 
   # home.activation =
   #   let
