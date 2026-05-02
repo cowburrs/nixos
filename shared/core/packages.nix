@@ -89,6 +89,13 @@
       usbutils
       kdePackages.okular
       neovim
+      (lib.hiPrio (
+        pkgs.runCommand "nvim.desktop-hide" { } ''
+          mkdir -p "$out/share/applications"
+          cat "${pkgs.neovim}/share/applications/nvim.desktop" > "$out/share/applications/nvim.desktop"
+          echo "Hidden=1" >> "$out/share/applications/nvim.desktop"
+        ''
+      )) # so that neovim doesnt have the stupid desktop
       git
       wget
       wl-clipboard
@@ -207,11 +214,13 @@
       clang-tools
       taplo
       anki
-		texlive.combined.scheme-medium
-		pandoc
+      texlive.combined.scheme-medium
+      pandoc
+      # freecad # blender better
     ]
     ++ (with pkgs-unstable; [
       yazi
       # tetrio-desktop
+      hyprshutdown
     ]);
 }
