@@ -31,9 +31,11 @@ return {
 	yt("Wash Backpack"),
 	-- m.multiWeekTask("exercise", { 0, 1, 3, 5, 6, 7 }),
 	m.multiWeekTask("exercise", { 0, 1, 3, 5, 6}),
-	m.nthWeekTask("clean Pillow/Sheets", 3),
 	m.nthWeekTask("clean dakimura...", 6),
+	m.nthWeekTask("clean Pillow/Sheets", 3),
+	m.nthWeekTask("clean phone", 3),
 	m.nthWeekTask("clean blanket", 12),
+	m.nthWeekTask("clean laptop/computer", 30),
 	m.seasonalTask("trackmania", 2),
 	st({
 		"Test works",
