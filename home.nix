@@ -45,23 +45,54 @@ in
     let
       configDir = "${flakeDir}/resources/.config";
       apps = builtins.attrNames (builtins.readDir configDir);
+      localDir = "${flakeDir}/resources/.local/share";
+      localApps = builtins.attrNames (builtins.readDir localDir);
     in
     builtins.listToAttrs (
       map (app: {
         name = ".config/${app}";
         value.source = config.lib.file.mkOutOfStoreSymlink "${configDir}/${app}";
-		  value.force = true;
+        value.force = true;
       }) apps
     )
+    // builtins.listToAttrs (
+      map (app: {
+        name = ".local/share/${app}";
+        value.source = config.lib.file.mkOutOfStoreSymlink "${localDir}/${app}";
+        value.force = true;
+      }) localApps
+    )
     // {
-      ".local/share/Anki2/addons21".source =
-        config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/addons21";
+      ".local/share/Anki2/addons21" = {
+        source = config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/misc/Anki2/addons21";
+        force = true;
+      };
+
+      ".local/share/Steam/steamapps/compatdata/2225070/pfx/drive_c/users/steamuser/OpenplanetNext" = {
+        source = config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/misc/OpenplanetNext";
+        force = true;
+      };
+
+      ".local/share/Steam/steamapps/common/Counter-Strike Global Offensive/game/csgo/cfg/autoexec.cfg" = {
+        source = config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/misc/autoexec.cfg";
+        force = true;
+      };
+
+      ".logseq" = {
+        force = true;
+        source = config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/.logseq";
+      };
+
+      ".bash_profile" = {
+        force = true;
+        source = config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/.bash_profile";
+      };
+
+      ".bashrc" = {
+        force = true;
+        source = config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/.bashrc";
+      };
     };
-  # home.file.".config" = {
-  #   force = true;
-  # recursive = true;
-  #   source = config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/.config/";
-  # };
 
   # builtins.trace "filelocation: ${flakeDir}" ( # NOTE: useful function
   # );
