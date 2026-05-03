@@ -34,7 +34,7 @@ return {
 	m.nthWeekTask("clean Pillow/Sheets", 3),
 	m.nthWeekTask("clean dakimura...", 6),
 	m.nthWeekTask("clean blanket", 12),
-	m.seasonalTask("clean blanket"),
+	m.seasonalTask("trackmania"),
 	st({
 		"Test works",
 		"bin scripts instead of hypr nixos",
