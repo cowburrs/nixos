@@ -1,0 +1,235 @@
+/* =============================================================================
+ *
+ * Waybar configuration
+ *
+ * Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+ *
+ * =========================================================================== */
+
+
+/* -----------------------------------------------------------------------------
+ * Variables
+ * -------------------------------------------------------------------------- */
+
+@define-color rosewater #f4dbd6;
+@define-color flamingo #f0c6c6;
+@define-color pink #f5bde6;
+@define-color mauve #c6a0f6;
+/* accent */
+@define-color red #ed8796;
+@define-color maroon #ee99a0;
+@define-color peach #f5a97f;
+@define-color yellow #eed49f;
+@define-color green #a6da95;
+@define-color teal #8bd5ca;
+@define-color sky #91d7e3;
+@define-color sapphire #7dc4e4;
+@define-color blue #8aadf4;
+@define-color lavender #b7bdf8;
+
+@define-color text #cad3f5;
+@define-color subtext1 #b8c0e0;
+@define-color subtext0 #a5adcb;
+
+@define-color overlay2 #939ab7;
+@define-color overlay1 #8087a2;
+@define-color overlay0 #6e738d;
+
+@define-color surface2 #5b6078;
+@define-color surface1 #494d64;
+@define-color surface0 #363a4f;
+
+@define-color base #24273a;
+@define-color mantle #1e2030;
+@define-color crust #181926;
+
+
+/* -----------------------------------------------------------------------------
+ * Keyframes
+ * -------------------------------------------------------------------------- */
+
+@keyframes blink-warning {
+	70% {
+		color: white;
+	}
+
+	to {
+		color: white;
+		background-color: orange;
+	}
+}
+
+@keyframes blink-critical {
+	70% {
+		color: white;
+	}
+
+	to {
+		color: white;
+		background-color: red;
+	}
+}
+
+
+/* -----------------------------------------------------------------------------
+ * Base styles
+ * -------------------------------------------------------------------------- */
+
+/* Reset all styles */
+* {
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* The whole bar */
+#waybar {
+	background: @mantle;
+	color: @text;
+	font-family: Aporetic Sans, JetBrainsMono Nerd Font;  /* Aporetic font normal, and I need a nerd font*/
+	font-size: 12px;
+}
+
+/* Each module */
+#battery,
+#clock,
+#cpu,
+#custom-keyboard-layout,
+#memory,
+#mode,
+#network,
+#pulseaudio,
+#temperature,
+#tray {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+/* -----------------------------------------------------------------------------
+ * Module styles
+ * -------------------------------------------------------------------------- */
+
+#battery {
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#battery.warning {
+	color: orange;
+}
+
+#battery.critical {
+	color: red;
+}
+
+#battery.warning.discharging {
+	animation-name: blink-warning;
+	animation-duration: 3s;
+}
+
+#battery.critical.discharging {
+	animation-name: blink-critical;
+	animation-duration: 2s;
+}
+
+#clock {
+	font-weight: bold;
+}
+
+#cpu {
+	/* No styles */
+}
+
+#cpu.warning {
+	color: orange;
+}
+
+#cpu.critical {
+	color: red;
+}
+
+#memory {
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#memory.warning {
+	color: orange;
+}
+
+#memory.critical {
+	color: red;
+	animation-name: blink-critical;
+	animation-duration: 2s;
+}
+
+#mode {
+	background: #64727D;
+	border-top: 2px solid white;
+	/* To compensate for the top border and still have vertical centering */
+	padding-bottom: 2px;
+}
+
+#network {
+	/* No styles */
+}
+
+#network.disconnected {
+	color: orange;
+}
+
+#pulseaudio {
+	/* No styles */
+}
+
+#pulseaudio.muted {
+	/* No styles */
+}
+
+#custom-spotify {
+	color: rgb(102, 220, 105);
+}
+
+#temperature {
+	/* No styles */
+}
+
+#temperature.critical {
+	color: red;
+}
+
+#tray {
+	/* No styles */
+}
+
+#window {
+	font-weight: bold;
+}
+
+#workspaces button {
+	padding: 3px;
+	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+	color: @text;
+}
+
+#workspaces button.active {
+	border-bottom: 3px solid white;
+}
+
+#workspaces button.focused {}
+
+/* #workspaces button.urgent { */
+/* 	background: rgba(255, 200, 0, 0.35); */
+/* 	border-bottom: 3px dashed @warning_color; */
+/* 	color: @warning_color; */
+/* } */
+
+#workspaces button:hover {
+	background: #6e6e6e;
+	color: white;
+}

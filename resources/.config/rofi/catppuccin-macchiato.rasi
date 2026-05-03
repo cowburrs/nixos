@@ -1,0 +1,41 @@
+/* ========================= */
+/* Catppuccin Macchiato RGBA */
+/* ========================= */
+
+* {
+  /* Base surfaces */
+  rosewater: rgba(244, 219, 214, 1.0);
+  flamingo:  rgba(240, 198, 198, 1.0);
+  pink:      rgba(245, 189, 230, 1.0);
+  mauve:     rgba(198, 160, 246, 1.0);
+  red:       rgba(237, 135, 150, 1.0);
+  maroon:    rgba(238, 153, 160, 1.0);
+  peach:     rgba(245, 169, 127, 1.0);
+  yellow:    rgba(238, 212, 159, 1.0);
+  green:     rgba(166, 218, 149, 1.0);
+  teal:      rgba(139, 213, 202, 1.0);
+  sky:       rgba(145, 215, 227, 1.0);
+  sapphire:  rgba(125, 196, 228, 1.0);
+  blue:      rgba(138, 173, 244, 1.0);
+  lavender:  rgba(183, 189, 248, 1.0);
+
+  /* Text */
+  text:      rgba(202, 211, 245, 1.0);
+  subtext1:  rgba(184, 192, 224, 1.0);
+  subtext0:  rgba(165, 173, 203, 1.0);
+
+  /* Overlay */
+  overlay2:  rgba(147, 154, 183, 0.9);
+  overlay1:  rgba(128, 135, 162, 0.9);
+  overlay0:  rgba(110, 115, 141, 0.9);
+
+  /* Surfaces (transparent for blur) */
+  surface2:  rgba(91, 96, 120, 0.85);
+  surface1:  rgba(73, 77, 100, 0.85);
+  surface0:  rgba(54, 58, 79, 0.85);
+
+  /* Backgrounds (glassy) */
+  base:      rgba(36, 39, 58, 0.80);
+  mantle:   rgba(30, 32, 48, 0.6);
+  crust:    rgba(24, 25, 38, 0.2);
+}

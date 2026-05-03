@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "wezterm-types": {
+      "rev": "67bfad8e15e23b3832880689b2187feb80804d43",
+      "src": "https://github.com/DrKJeff16/wezterm-types"
+    }
+  }
+}

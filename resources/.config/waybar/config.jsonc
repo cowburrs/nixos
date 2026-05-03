@@ -1,0 +1,198 @@
+// =============================================================================
+//
+// Waybar configuration
+//
+// Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+//
+// =============================================================================
+
+{
+	// -------------------------------------------------------------------------
+	// Global configuration
+	// -------------------------------------------------------------------------
+
+	"layer": "top",
+
+	"position": "bottom",
+
+	// If height property would be not present, it'd be calculated dynamically
+	"height": 28,
+
+	"modules-left": ["hyprland/workspaces", "hyprland/submap"],
+	"modules-center": ["tray"],
+	"modules-right": [
+		"custom/waybar-mpris",
+		"backlight",
+		"pulseaudio#input",
+		"pulseaudio#output",
+		"network",
+		// "memory",
+		"temperature",
+		"custom/keyboard-layout",
+		"battery",
+		"clock#date",
+		"custom/weather",
+		"clock#time"
+	],
+
+	// -------------------------------------------------------------------------
+	// Modules
+	// -------------------------------------------------------------------------
+
+	"backlight": {
+		"format": "{icon}  {percent}%",
+		"format-icons": ["", ""],
+		"tooltip": true
+	},
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 20
+		},
+		"format-alt": "{icon} {capacity}%",
+		"format-charging": " {capacity}%",
+		"format-full": "{icon} Full",
+		"format-plugged": " {capacity}%",
+		"format": "{time} {icon}",
+		"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+		"tooltip": true
+	},
+
+	"clock#time": {
+		"interval": 1,
+		"format": "{:%I:%M:%S}",
+		"tooltip": false
+	},
+	"custom/waybar-mpris": {
+		"return-type": "json",
+		"exec": "waybar-mpris --position --autofocus",
+		"on-click": "waybar-mpris --send toggle",
+		// This option will switch between players on right click.
+		"on-click-right": "waybar-mpris --send player-next",
+		// The options below will switch the selected player on scroll
+		// "on-scroll-up": "waybar-mpris --send player-next",
+		// "on-scroll-down": "waybar-mpris --send player-prev",
+		// The options below will go to next/previous track on scroll
+		// "on-scroll-up": "waybar-mpris --send next",
+		// "on-scroll-down": "waybar-mpris --send prev",
+		"escape": true
+	},
+
+	"hyprland/workspaces": {
+		"format": "{icon} {windows}",
+		"format-window-separator": "",
+		"workspace-taskbar": {
+			"enable": true,
+			"update-active-window": true,
+			"format": "{icon}",
+			"icon-size": 18,
+			"on-click-window": "${SCRIPTS}/focus-window.sh {address} {button}"
+		}
+	},
+
+	"clock#date": {
+		"interval": 10,
+		"format": "  {:%a %e %b }", // Icon: calendar-alt
+		"tooltip-format": "{:%e %B %Y}"
+	},
+
+	"cpu": {
+		"interval": 5,
+		"format": "  {usage}% ({load})", // Icon: microchip
+		"states": {
+			"warning": 70,
+			"critical": 90
+		}
+	},
+
+	"custom/keyboard-layout": {
+		"exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+		// Interval set only as a fallback, as the value is updated by signal
+		"interval": 30,
+		"format": "  {}", // Icon: keyboard
+		// Signal sent by Sway key binding (~/.config/sway/key-bindings)
+		"signal": 1, // SIGHUP
+		"tooltip": false
+	},
+
+	"memory": {
+		"interval": 5,
+		"format": "󰘚  {}%", // Icon: memory
+		"states": {
+			"warning": 70,
+			"critical": 90
+		}
+	},
+
+	"custom/weather": {
+		"format": "{}°",
+		"tooltip": true,
+		"interval": 3600,
+		"exec": "wttrbar",
+		"return-type": "json"
+	},
+
+	"network": {
+		"interval": 5,
+		"format-wifi": "  {bandwidthDownBytes} ({signalStrength}%)", // Icon: wifi
+		"format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
+		"format-disconnected": "!  Disconnected",
+		"tooltip-format": "{essid}: {ipaddr}"
+	},
+
+	"pulseaudio#input": {
+		"format-source": " {volume}%",
+		"format-source-muted": "  off",
+		"format": "{format_source}",
+		"scroll-step": 1,
+		"smooth-scrolling-threshold": 1,
+		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+		"on-click-right": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 100%",
+		"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 50%+",
+		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 50%- --limit 1.0"
+	},
+	"pulseaudio#output": {
+		"format": "{icon}  {volume}%",
+		"format-muted": " off",
+		"format-icons": {
+			"default": ["", "", ""]
+		},
+		"max-volume": 100,
+		"scroll-step": 10,
+		"smooth-scrolling-threshold": 1,
+		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+	},
+	"custom/waybar-mpris": {
+		"return-type": "json",
+		"exec": "waybar-mpris --separator ' - ' --position --order SYMBOL:ARTIST:TITLE:POSITION --autofocus --pause 󰏤  --play 󰐊",
+		"on-click": "waybar-mpris --send toggle",
+		// This option will switch between players on right click.
+		"on-click-right": "waybar-mpris --send player-next",
+		// The options below will switch the selected player on scroll
+		// "on-scroll-up": "waybar-mpris --send player-next",
+		// "on-scroll-down": "waybar-mpris --send player-prev",
+		// The options below will go to next/previous track on scroll
+		// "on-scroll-up": "waybar-mpris --send next",
+		// "on-scroll-down": "waybar-mpris --send prev",
+		"escape": true
+	},
+	"temperature": {
+		"critical-threshold": 80,
+		"interval": 5,
+		"format": "{icon}  {temperatureC}°C",
+		"format-icons": [
+			"", // Icon: temperature-empty
+			"", // Icon: temperature-quarter
+			"", // Icon: temperature-half
+			"", // Icon: temperature-three-quarters
+			"" // Icon: temperature-full
+		],
+		"tooltip": true
+	},
+
+	"tray": {
+		"icon-size": 21,
+		"spacing": 10
+	}
+}

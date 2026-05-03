@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1777641297,
+        "narHash": "sha256-WNGcmeOZ8Tr9dq6ztCspYbzWFswr2mPebM9LpsfGxPk=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "c6d65881c5624c9cae5ea6cedef24699b0c0a4c0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "wezterm-types": "wezterm-types"
+      }
+    },
+    "wezterm-types": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1777555653,
+        "narHash": "sha256-zGwEslK1iUkm0WL4wXokDZtSNpUD7zxl/waWrmVHuKg=",
+        "owner": "DrKJeff16",
+        "repo": "wezterm-types",
+        "rev": "67bfad8e15e23b3832880689b2187feb80804d43",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DrKJeff16",
+        "repo": "wezterm-types",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,23 @@
+{
+  "donationHeading": null,
+  "ankiDisplaySettingsHeading": null,
+  "breadcrumbDisplay": "Show Page name only",
+  "includeParentContent": true,
+  "useNamespaceAsDefaultDeck": true,
+  "defaultDeck": "Default",
+  "logseqSideSettingsHeading": null,
+  "renderClozeMarcosInLogseq": false,
+  "hideClozeMarcosUntilHoverInLogseq": false,
+  "addonsList": [
+    "Preview Cards in Anki Context Menu",
+    "Hide Occlusion Data",
+    "Anki Feature Explorer Context Menu"
+  ],
+  "advancedSettingsHeading": null,
+  "ankiFieldOptions": [],
+  "cacheLogseqAPIv1": true,
+  "debug": [],
+  "disabled": false,
+  "lastWelcomeVersion": "6.5.1",
+  "skipOnDependencyHashMatch": true
+}

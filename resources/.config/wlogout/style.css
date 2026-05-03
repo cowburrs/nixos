@@ -1,0 +1,57 @@
+@import "catppuccin.css";
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: @crust;
+}
+
+button {
+	border-radius: 6;
+	border-color: @overlay0;
+	color: @text;
+	background-color: @base;
+	border-style: solid;
+	border-width: 2px;
+	/* border-bottom: 6px solid @overlay0; */
+	/* border-right: 4px solid @overlay0; */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 10%;
+    margin: 4px;
+}
+
+button:focus, button:active, button:hover {
+	/* 20% Overlay 2, 80% mantle */
+	background-color: rgb(53, 57, 75);
+	/* border-bottom: 3px solid @overlay0; */
+	/* border-right: 2px solid @overlay0; */
+	outline-style: none;
+}
+
+#lock {
+	background-image: url("/home/burrs/.config/wlogout/icons/lock.svg");
+	background-size: 20%;
+}
+#logout {
+    background-image: url("/home/burrs/.config/wlogout/icons/logout.svg");
+	 background-size: 20%;
+}
+#suspend {
+    background-image: url("/home/burrs/.config/wlogout/icons/suspend.svg");
+	 background-size: 20%;
+}
+#hibernate {
+    background-image: url("/home/burrs/.config/wlogout/icons/hibernate.svg");
+	 background-size: 20%;
+}
+#shutdown {
+    background-image: url("/home/burrs/.config/wlogout/icons/shutdown.svg");
+	 background-size: 20%;
+}
+#reboot {
+    background-image: url("/home/burrs/.config/wlogout/icons/reboot.svg");
+	 background-size: 20%;
+}

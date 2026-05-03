@@ -1,0 +1,39 @@
+/* ========================= */
+/* Catppuccin Macchiato RGBA */
+/* ========================= */
+
+/* Base surfaces */
+@define-color rosewater rgba(244, 219, 214, 1.0);
+@define-color flamingo  rgba(240, 198, 198, 1.0);
+@define-color pink      rgba(245, 189, 230, 1.0);
+@define-color mauve     rgba(198, 160, 246, 1.0);
+@define-color red       rgba(237, 135, 150, 1.0);
+@define-color maroon    rgba(238, 153, 160, 1.0);
+@define-color peach     rgba(245, 169, 127, 1.0);
+@define-color yellow    rgba(238, 212, 159, 1.0);
+@define-color green     rgba(166, 218, 149, 1.0);
+@define-color teal      rgba(139, 213, 202, 1.0);
+@define-color sky       rgba(145, 215, 227, 1.0);
+@define-color sapphire  rgba(125, 196, 228, 1.0);
+@define-color blue      rgba(138, 173, 244, 1.0);
+@define-color lavender  rgba(183, 189, 248, 1.0);
+
+/* Text */
+@define-color text      rgba(202, 211, 245, 1.0);
+@define-color subtext1  rgba(184, 192, 224, 1.0);
+@define-color subtext0  rgba(165, 173, 203, 1.0);
+
+/* Overlay */
+@define-color overlay2  rgba(147, 154, 183, 0.9);
+@define-color overlay1  rgba(128, 135, 162, 0.9);
+@define-color overlay0  rgba(110, 115, 141, 0.9);
+
+/* Surfaces (transparent for blur) */
+@define-color surface2  rgba(91, 96, 120, 0.85);
+@define-color surface1  rgba(73, 77, 100, 0.85);
+@define-color surface0  rgba(54, 58, 79, 0.85);
+
+/* Backgrounds (glassy) */
+@define-color base      rgba(36, 39, 58, 0.80);
+@define-color mantle    rgba(30, 32, 48, 0.75);
+@define-color crust     rgba(24, 25, 38, 0.70);

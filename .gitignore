@@ -1,2 +1,5 @@
 hardware-configuration.nix
 result
+resources/.config/OpenTabletDriver/Logs
+resources/.local/share/fonts/**/.uuid
+resources/.logseq/graphs

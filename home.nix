@@ -6,44 +6,19 @@
   ...
 }:
 
+let
+  flakeDir =
+
+    let
+      env = builtins.getEnv "FLAKE_DIR";
+    in
+    if env != "" then env else self.outPath;
+in
 {
   # TODO please change the username & home directory to your own
   home.username = "burrs";
   home.homeDirectory = "/home/burrs";
 
-  # Import files from the current configuration directory into the Nix store,
-  # and create symbolic links pointing to those store files in the Home directory.
-
-  # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
-
-  # Import the scripts directory into the Nix store,
-  # and recursively generate symbolic links in the Home directory pointing to the files in the store.
-  # home.file."./." = {
-  #   source = ./home/burrs;
-  #   recursive = true; # link recursively
-  # };
-
-  # the home manager dream is dead.
-  # home.file.".config/nvim".source =
-  #   let
-  #     filelocation = builtins.getEnv "PWD";
-  #   in
-  #   config.lib.file.mkOutOfStoreSymlink "${filelocation}/home/burrs/.config/nvim";
-
-  # home.file.".config/nvim".source =
-  #   let
-  #     filelocation = builtins.getEnv "PWD";
-  #   in
-  #   builtins.trace "filelocation: ${filelocation}" (
-  #     config.lib.file.mkOutOfStoreSymlink "${filelocation}/home/burrs/.config/nvim"
-  #   );
-
-  # encode the file content in nix configuration file directly
-  # home.file.".xxx".text = ''
-  #     xxx
-  # '';
-
-  # basic configuration of git, please change to your own
   programs.git = {
     enable = true;
     package = pkgs.emptyDirectory;
@@ -51,30 +26,45 @@
     userEmail = "dwadwa@dwa.com";
   };
 
-  home.file.".local/share/Anki2/addons21" = {
-    source = ./resources/addons21;
-  };
+  # home.file.".local/share/Anki2/addons21" = {
+  #   source = ./resources/addons21;
+  # };
 
-  # warnings = [ (builtins.getEnv "FLAKE_DIR") ]; # yeah its not possible let me kill myself
-  # home.file."test".source =
-  #   let
-  #     flakeDir =
-  #       let
-  #         env = builtins.getEnv "FLAKE_DIR";
-  #       in
-  #       if env != "" then env else self.outPath;
-  #   in
+  warnings = [ (builtins.getEnv "FLAKE_DIR") ]; # yeah its not possible let me kill myself
+  # home.file.".local/share/Anki2/addons21".source =
   #   config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/addons21";
+  # home.file.".config/btop" =
+  # let
+  #   rndm = builtins.trace "filelocation: ${lib.filesystem.listFilesRecursive "${flakeDir}/resources/.config/btop"}" true;
+  # in
+  # {
+  #   force = rndm;
+  #   source = config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/.config/btop";
+  # };
+  home.file =
+    let
+      configDir = "${flakeDir}/resources/.config";
+      apps = builtins.attrNames (builtins.readDir configDir);
+    in
+    builtins.listToAttrs (
+      map (app: {
+        name = ".config/${app}";
+        value.source = config.lib.file.mkOutOfStoreSymlink "${configDir}/${app}";
+		  value.force = true;
+      }) apps
+    )
+    // {
+      ".local/share/Anki2/addons21".source =
+        config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/addons21";
+    };
+  # home.file.".config" = {
+  #   force = true;
+  # recursive = true;
+  #   source = config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/.config/";
+  # };
 
-  # home.activation =
-  #   let
-  #     filelocation = builtins.getEnv "PWD";
-  #   in
-  #   {
-  #     linkNvim = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-  #       ln -sf ${filelocation}/nvim ${HOME_DIR}/.config/nvim
-  #     '';
-  #   };
+  # builtins.trace "filelocation: ${flakeDir}" ( # NOTE: useful function
+  # );
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
