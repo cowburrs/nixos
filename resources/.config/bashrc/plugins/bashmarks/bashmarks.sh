@@ -36,7 +36,7 @@
 if [ ! -n "$SDIRS" ]; then
     SDIRS=~/.config/.sdirs
 fi
-[[ -n "$SDIRS" ]] && touch "$SDIRS"
+[[ -z "$SDIRS" ]] && touch "$SDIRS"
 
 RED="0;31m"
 GREEN="0;33m"
