@@ -36,6 +36,7 @@ return {
 	m.nthWeekTask("clean phone", 3),
 	m.nthWeekTask("clean blanket", 12),
 	m.nthWeekTask("clean laptop/computer", 30),
+	m.nthWeekTask("clean keyboard/mouse", 30),
 	m.seasonalTask("trackmania", 2),
 	st({
 		"Test works",
