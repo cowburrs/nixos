@@ -1,4 +1,6 @@
 [
+  ["get logseq todo in this", 200001010000, 1777889242, "shouldnt be here"],
+  ["android text writing app instead of firefox", 200001010000, 1777888518, "if it aint broke dont fix it"],
   ["Lambda Calculus Chapter 8", 202604282300, 1777852137, "Not possible."],
   ["wlrwhichkey and submaps for opening apps", 200001010000, 1777800943, "bloatware lol"],
   ["neovim config (vim pack) treesit (ctrl backspace)", 200001010000, 1777797241, "vim pack is dogshit"],
