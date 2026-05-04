@@ -115,6 +115,7 @@ local returntable = {
 		"anki comp",
 		"google natural frequency of a pendulum",
 		"challenge questions haskell lab",
+		"Go to cssa building room",
 	}),
 }
 
