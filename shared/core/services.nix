@@ -15,19 +15,20 @@
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
-  services.libinput.enable = true;
+  # not even desktop manager, its literally a buildinput in hyprland...
+  # services.libinput.enable = true;
 
-	# I don't use ssh?
+  # I don't use ssh?
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
+  # services.openssh.enable = true;
 
-	# No need anymore
+  # No need anymore
   # services.syncthing = {
   #   enable = true;
   #   openDefaultPorts = true; # Open ports in the firewall for Syncthing. (NOTE: this will not open syncthing gui port)
   # };
 
-  services.xserver.enable = true;
+  # services.xserver.enable = true; # app not necessary?
   services.displayManager.ly.enable = true;
   services.displayManager.ly.settings = {
     asterisk = "";
