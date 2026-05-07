@@ -52,3 +52,7 @@ START OF FILE
 2026-05-05 09:37:41 10:02:27 10:07:27 | subject: anki | work: 25m | rest: 5m
 2026-05-05 10:09:33 10:44:10 10:54:11 | subject: mathstest | work: 50m | rest: 10m
 2026-05-05 10:54:17 11:39:13 11:39:14 | subject: phyiscs | work: 50m | rest: 10m
+2026-05-07 11:06:06 11:07:50 11:17:51 | subject: break | work: 50m | rest: 10m
+2026-05-07 11:22:33 12:12:35 12:22:35 | subject: comp | work: 50m | rest: 10m
+2026-05-07 12:22:46 13:12:48 13:12:51 | subject: comp | work: 50m | rest: 10m
+2026-05-07 13:12:55 14:02:56 14:12:57 | subject: fuckcomp | work: 50m | rest: 10m
