@@ -56,3 +56,7 @@ START OF FILE
 2026-05-07 11:22:33 12:12:35 12:22:35 | subject: comp | work: 50m | rest: 10m
 2026-05-07 12:22:46 13:12:48 13:12:51 | subject: comp | work: 50m | rest: 10m
 2026-05-07 13:12:55 14:02:56 14:12:57 | subject: fuckcomp | work: 50m | rest: 10m
+2026-05-09 20:20:14 21:10:15 21:10:19 | subject: comp | work: 50m | rest: 10m
+2026-05-09 21:10:20 21:29:57 21:33:20 | subject: comp | work: 50m | rest: 10m
+2026-05-09 21:33:21 22:23:22 22:23:28 | subject: comp | work: 50m | rest: 10m
+2026-05-09 22:23:29 23:08:15 23:08:15 | subject: comp | work: 50m | rest: 10m
