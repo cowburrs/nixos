@@ -15,6 +15,7 @@ return {
 	wt5("clear tabs"),
 	wt5("clean toothbrush"),
 	wt5("laundry"),
+	wt5("change towel"),
 	{
 		name = m.just("Humble Bundle"),
 		conditions = { m.isDayOfWeek(2), m.isWeekOfMonth(1, m.timedelta(0, -17)) },
