@@ -52,7 +52,6 @@ end
 check("/nixos/", "nixos")
 check("/Repositories/Taskmanger/", "taskmanger")
 check("/Repositories/School/", "school")
-check("/stow/", "stow")
 check("/logseq/", "logseq")
 check("/Repositories/resources", "resources")
 os.execute("notify-send 'Burrsgs Done'")
