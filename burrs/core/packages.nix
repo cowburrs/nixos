@@ -14,7 +14,9 @@
     extraCompatPackages = with pkgs; [
       proton-ge-bin
     ];
-    package = pkgs.millennium-steam.override {
+    # package = pkgs.millennium-steam.override {
+    package = pkgs.steam.override {
+    # package = inputs.millennium.packages.${pkgs.system}.default {
       extraEnv = {
         MANGOHUD = true;
         OBS_VKCAPTURE = true;

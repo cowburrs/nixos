@@ -207,7 +207,7 @@
       appimage-run
       arduino
       timer
-      hunspell
+      # hunspell
       hunspellDicts.en-au
       # viddy
       # gum
