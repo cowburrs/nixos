@@ -2,10 +2,10 @@
   config,
   lib,
   pkgs,
-	inputs,
+  inputs,
   ...
 }:
 {
-# This is necessary for millenium
-	nixpkgs.overlays = [ inputs.millennium.overlays.default ];
+  # This is necessary for millenium
+  # nixpkgs.overlays = [ inputs.millennium.overlays.default ];
 }

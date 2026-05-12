@@ -16,7 +16,7 @@
     ];
     # package = pkgs.millennium-steam.override {
     package = pkgs.steam.override {
-    # package = inputs.millennium.packages.${pkgs.system}.default {
+      # package = inputs.millennium.packages.${pkgs.system}.default {
       extraEnv = {
         MANGOHUD = true;
         OBS_VKCAPTURE = true;

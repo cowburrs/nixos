@@ -22,7 +22,7 @@ return {
 		vim.lsp.enable("nil_ls")
 		vim.lsp.enable("nixd")
 		vim.lsp.enable("ast_grep")
-		vim.lsp.enable("rust_analyzer")
+		-- vim.lsp.enable("rust_analyzer")
 		vim.lsp.enable("gdscript")
 		vim.lsp.enable("hls")
 		vim.lsp.enable("pyright")

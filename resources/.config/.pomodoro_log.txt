@@ -63,3 +63,10 @@ START OF FILE
 2026-05-11 09:13:41 09:58:55 10:08:55 | subject: maths | work: 50m | rest: 10m
 2026-05-11 10:18:40 10:33:04 10:33:05 | subject: engn | work: 50m | rest: 10m
 2026-05-11 10:33:07 11:23:08 11:33:09 | subject: comp | work: 50m | rest: 10m
+2026-05-12 12:42:43 13:32:44 13:33:21 | subject: comp | work: 50m | rest: 10m
+2026-05-12 13:33:24 14:13:28 14:13:28 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-12 14:13:29 14:39:34 14:49:34 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-12 14:49:39 15:39:40 15:49:41 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-12 16:15:00 17:05:02 17:15:02 | subject: maths | work: 50m | rest: 10m
+2026-05-12 17:15:10 18:05:11 18:05:29 | subject: maths | work: 50m | rest: 10m
+2026-05-12 18:05:32 18:55:33 18:55:43 | subject: physics | work: 50m | rest: 10m

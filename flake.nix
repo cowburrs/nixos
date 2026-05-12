@@ -21,7 +21,7 @@
       url = "github:cowburrs/mikuboot";
       inputs.nixpkgs.follows = ""; # only useful for the package output
     };
-    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    # millennium.url = "github:SteamClientHomebrew/Millennium/01a7f1f9?dir=packages/nix";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";

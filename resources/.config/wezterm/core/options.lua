@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 
 return {
+	swallow_mouse_click_on_window_focus = true,
 	color_scheme = "Catppuccin Macchiato",
 	-- color_scheme = "tokyonight",
 	font_size = 13,
