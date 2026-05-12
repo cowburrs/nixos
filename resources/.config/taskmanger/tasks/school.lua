@@ -60,7 +60,7 @@ local returntable = {
 	},
 	quizTask("Math", "MatLab", dt(2026, 3, 30), timedelta(3), 6, 6),
 	quizTask("Phys", "Workshop Quiz", dt(2026, 3, 30), timedelta(7), 6, 6),
-	quizTask("Phys", "Pre-Reading Quiz", dt(2026, 3, 30), timedelta(24, 12), 6, 6),
+	quizTask("Phys", "Pre-Reading Quiz", dt(2026, 3, 30), timedelta(7), 6, 6),
 	quizTask("Phys", "Lectures", dt(2026, 3, 30), timedelta(5), 6, 6),
 	{
 		name = function(date, n)
