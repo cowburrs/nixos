@@ -59,7 +59,7 @@ local returntable = {
 		checkrepeats = justRepeats(6),
 	},
 	quizTask("Math", "MatLab", dt(2026, 3, 30), timedelta(3), 6, 6),
-	quizTask("Phys", "Workshop Quiz", dt(2026, 3, 30), timedelta(24, 12), 6, 6),
+	quizTask("Phys", "Workshop Quiz", dt(2026, 3, 30), timedelta(14, 12), 6, 6),
 	quizTask("Phys", "Pre-Reading Quiz", dt(2026, 3, 30), timedelta(24, 12), 6, 6),
 	quizTask("Phys", "Lectures", dt(2026, 3, 30), timedelta(5), 6, 6),
 	{
