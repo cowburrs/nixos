@@ -17,7 +17,9 @@ local singleTasks = m.singleTasks
 local quizTask = m.quizTask
 local worksheetTasks = m.worksheetTasks
 local dailyTask = m.dailyTask
+local wt = m.weeklyTask
 local returntable = {
+	wt("check school email"),
 	oneTimeTask("Engn Team (TMC1)", dt(2026, 3, 30), dt(2026, 4, 19)),
 	oneTimeTask("Engn Milestone 3", dt(2026, 3, 30), dt(2026, 4, 21)),
 	oneTimeTask("Engn Self-Assessment Milestone 3", dt(2026, 4, 21), dt(2026, 4, 28)),
@@ -116,6 +118,9 @@ local returntable = {
 		"google natural frequency of a pendulum",
 		"challenge questions haskell lab",
 		"Go to cssa building room",
+		"Comb combabit karambit and butterfly/balisong",
+		"Replace python with lua",
+		"Use latex (thank logseq)",
 	}),
 }
 
