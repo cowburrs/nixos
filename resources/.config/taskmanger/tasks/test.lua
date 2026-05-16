@@ -127,5 +127,12 @@ return {
 		"Check all nix community repos",
 		"Top up bus card task",
 		"Sleep at school once",
+		"submit to the nix user repos",
+		"make programmatic slideshows",
+		"check camera roll",
+		"home manager nvimdiff",
+		"impermanence.nix",
+		"Remove 'enable unfree' from nix",
+		"Hyprland which key"
 	}),
 }

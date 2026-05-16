@@ -37,6 +37,7 @@ return {
 				haskell = { "ormolu" },
 				toml = { "taplo" },
 				cs = { "csharpier" },
+				matlab = { "mh_style" },
 			},
 		})
 	end,

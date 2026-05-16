@@ -217,6 +217,7 @@
       texlive.combined.scheme-medium
       pandoc
       # freecad # blender better
+		zotero
     ]
     ++ (with pkgs-unstable; [
       yazi
