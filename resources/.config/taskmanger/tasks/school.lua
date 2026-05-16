@@ -83,7 +83,7 @@ local returntable = {
 		checkrepeats = justRepeats(6),
 		checkstep = just(HOUR),
 	},
-	dailyTask("Anki"),
+	m.weekDayTask("Anki"),
 	lectureTasks("math", 6, {
 		{ 1, dt(2026, 4, 14, 9) },
 		{ 2, dt(2026, 4, 14, 9) },
@@ -119,8 +119,10 @@ local returntable = {
 		"challenge questions haskell lab",
 		"Go to cssa building room",
 		"Comb combabit karambit and butterfly/balisong",
-		"Replace python with lua",
+		"Replace python with lua (cn)",
 		"Use latex (thank logseq)",
+		"Make sigma difference function.",
+		"tmadas + textbooks",
 	}),
 }
 

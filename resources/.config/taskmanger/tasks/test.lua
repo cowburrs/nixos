@@ -3,6 +3,7 @@ local funcs = require("src.funcs")
 local st = m.singleTasks
 local wt = m.weeklyTask
 local yt = m.yearlyTask
+local td = m.timedelta
 local wt5 = function(name)
 	return wt(name, 5)
 end
@@ -31,13 +32,18 @@ return {
 	yt("Firmware Update (fwupd)"),
 	yt("Wash Backpack"),
 	-- m.multiWeekTask("exercise", { 0, 1, 3, 5, 6, 7 }),
-	m.multiWeekTask("exercise", { 0, 1, 3, 5, 6 }),
+	(function()
+		local x = m.multiWeekTask("exercise", { 0, 1, 3, 5, 6 })
+		x.duetime = m.dueTime(td(2))
+		return x
+	end)(),
 	m.nthWeekTask("clean dakimura...", 6, 5),
 	m.nthWeekTask("clean Pillow/Sheets", 3, 5),
 	m.nthWeekTask("clean phone", 3, 5),
 	m.nthWeekTask("clean blanket", 12, 5),
 	m.nthWeekTask("clean laptop/computer", 30, 5),
 	m.nthWeekTask("clean keyboard/mouse", 30, 5),
+	m.nthWeekTask("top up bus card", 2),
 	m.seasonalTask("trackmania", 2),
 	st({
 		"Test works",
@@ -133,6 +139,14 @@ return {
 		"home manager nvimdiff",
 		"impermanence.nix",
 		"Remove 'enable unfree' from nix",
-		"Hyprland which key"
+		"Hyprland which key",
+		"Attempt offline only again",
+		"Check community.nix",
+		"shorthand",
+		"latex ocr",
+		"nvim local config (cn)",
+		"clean fuckass dirty bin",
+		"nvim macros but in the whole computer",
+		"New phone",
 	}),
 }
