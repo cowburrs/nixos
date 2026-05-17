@@ -1,0 +1,21 @@
+hl.bind("SUPER + R", hl.dsp.submap("resize"))
+hl.define_submap("resize", function()
+	hl.bind("l", hl.dsp.window.resize({ x = 50, y = 0, relative = true }), { repeating = true })
+	hl.bind("h", hl.dsp.window.resize({ x = -50, y = 0, relative = true }), { repeating = true })
+	hl.bind("j", hl.dsp.window.resize({ x = 0, y = 50, relative = true }), { repeating = true })
+	hl.bind("k", hl.dsp.window.resize({ x = 0, y = -50, relative = true }), { repeating = true })
+
+	hl.bind("ALT + l", hl.dsp.window.move({ direction = "right" }))
+	hl.bind("ALT + h", hl.dsp.window.move({ direction = "left" }))
+	hl.bind("ALT + j", hl.dsp.window.move({ direction = "down" }))
+	hl.bind("ALT + k", hl.dsp.window.move({ direction = "up" }))
+
+	hl.bind("SUPER + h", hl.dsp.focus({ direction = "left" }))
+	hl.bind("SUPER + l", hl.dsp.focus({ direction = "right" }))
+	hl.bind("SUPER + k", hl.dsp.focus({ direction = "up" }))
+	hl.bind("SUPER + j", hl.dsp.focus({ direction = "down" }))
+
+	hl.bind("escape", hl.dsp.submap("reset"))
+	hl.bind("q", hl.dsp.submap("reset"))
+	hl.bind("catchall", hl.dsp.no_op())
+end)

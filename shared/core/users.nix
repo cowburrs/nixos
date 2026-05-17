@@ -13,17 +13,17 @@
       "wheel"
       "i2c"
       "video"
-			"audio" # musnix
-			"networkmanager"
-			"plugdev"
-			"dialout"
+      "audio" # musnix
+      "networkmanager"
+      "plugdev"
+      "dialout"
     ]; # Enable ‘sudo’ for the user.
   };
 
   users.users.guest = {
     isNormalUser = true;
     password = null;
-		extraGroups = [];
+    extraGroups = [ ];
   };
 
 }

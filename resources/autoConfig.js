@@ -4,6 +4,8 @@ lockPref("browser.quitShortcut.disabled", true);
 lockPref("sidebar.verticalTabs", true);
 lockPref("browser.profiles.enabled", false); // Does nothing basically
 lockPref("general.autoScroll", true);
+lockPref("general.smoothScroll.mouseWheel.durationMaxMS", 150);
+lockPref("general.smoothScroll.mouseWheel.durationMinMS", 0);
 lockPref("browser.tabs.closeWindowWithLastTab", false);
 lockPref("media.hardwaremediakeys.enabled", false);
 lockPref("font.name.sans-serif.x-western", "Exo 2");

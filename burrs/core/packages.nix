@@ -57,7 +57,7 @@
       heroic
       lutris
       ddcutil
-      brave
+      # brave
       blender
       reaper
       vital

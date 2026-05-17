@@ -1,4 +1,11 @@
 [
+  ["Hyprland which key", 200001010000, 1779016909, "Unnecessary"],
+  ["Package all anki addons. (cn)", 200001010000, 1778933086, "No need, cause I have home manager symlinking"],
+  ["packages anki addons (cn)", 200001010000, 1778933086],
+  ["nvim per project exrc", 200001010000, 1778932937, "I wrote this twice"],
+  ["package luarocks", 200001010000, 1778932283, "what did i even want"],
+  ["bitwarden/shitwarden or proton", 200001010000, 1778931934, "Not necessary, like at all"],
+  ["latex ocr", 200001010000, 1778931910, "Unfeasible"],
   ["Phys Week 8 Workshop Quiz", 202604270000, 1778560676, "I'm so fucking dumb"],
   ["get logseq todo in this", 200001010000, 1777889242, "shouldnt be here"],
   ["android text writing app instead of firefox", 200001010000, 1777888518, "if it aint broke dont fix it"],

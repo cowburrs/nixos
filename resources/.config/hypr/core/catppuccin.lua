@@ -1,0 +1,32 @@
+-- CATPPUCCIN MACCHIATO
+rosewater = "rgba(F4DBD6FF)"
+flamingo  = "rgba(F0C6C6FF)"
+pink      = "rgba(F5BDE6FF)"
+mauve     = "rgba(C6A0F6FF)"
+red       = "rgba(ED8796FF)"
+maroon    = "rgba(EE99A0FF)"
+peach     = "rgba(F5A97FFF)"
+yellow    = "rgba(EED49FFF)"
+green     = "rgba(A6DA95FF)"
+teal      = "rgba(8BD5CAFF)"
+sky       = "rgba(91D7E3FF)"
+sapphire  = "rgba(7DC4E4FF)"
+blue      = "rgba(8AADF4FF)"
+lavender  = "rgba(B7BDF8FF)"
+-- Text
+text      = "rgba(CAD3F5FF)"
+subtext1  = "rgba(B8C0E0FF)"
+subtext0  = "rgba(A5ADCBFF)"
+-- Overlays
+overlay2  = "rgba(939AB7FF)"
+overlay1  = "rgba(8087A2FF)"
+overlay0  = "rgba(6E738DFF)"
+-- Surfaces
+surface2  = "rgba(5B6078FF)"
+surface1  = "rgba(494D64FF)"
+surface0  = "rgba(363A4FFF)"
+-- Background layers
+base             = "rgba(24273AFF)"
+baseTransparent  = "rgba(36,39,58,0.5)"
+mantle           = "rgba(1E2030FF)"
+crust            = "rgba(181926FF)"

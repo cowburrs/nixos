@@ -28,7 +28,6 @@
 		"network",
 		// "memory",
 		"temperature",
-		"custom/keyboard-layout",
 		"battery",
 		"clock#date",
 		"custom/weather",
@@ -87,7 +86,10 @@
 			"update-active-window": true,
 			"format": "{icon}",
 			"icon-size": 18,
-			"on-click-window": "${SCRIPTS}/focus-window.sh {address} {button}"
+			// "on-click-window": "hyprctl dispatch 'burrs.moveTo({button})'"
+			// "on-click-window": "notify-send {button}"
+			"on-click-window": "bash -c 'WORKSPACE=$(hyprctl clients -j | jq -r \".[] | select(.address == \\\"{address}\\\") | .workspace.id\"); hyprctl dispatch \"helpers.moveTo($WORKSPACE)\"'"
+			// yes i vibe coded this how can you tell xDDD is it the jq super piping or the fact that the line is 1000 letters long?
 		}
 	},
 
@@ -104,16 +106,6 @@
 			"warning": 70,
 			"critical": 90
 		}
-	},
-
-	"custom/keyboard-layout": {
-		"exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
-		// Interval set only as a fallback, as the value is updated by signal
-		"interval": 30,
-		"format": "  {}", // Icon: keyboard
-		// Signal sent by Sway key binding (~/.config/sway/key-bindings)
-		"signal": 1, // SIGHUP
-		"tooltip": false
 	},
 
 	"memory": {

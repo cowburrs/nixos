@@ -18,13 +18,9 @@ trap "cleanup '$SCR_IMG'" EXIT
 
 pgrep -f ".hyprshot-wrapped" && die "currently running ocr"
 
-hyprctl keyword 'windowrule[discord]:enable false'
-hyprctl keyword 'windowrule[notifications]:enable false'
 play ~/.config/hypr/extra/sfx/SCREENSHOT-START.wav vol 0.05 &
 hyprshot --freeze -m region -f scr.png --silent -o $SCR_IMG
 play ~/.config/hypr/extra/sfx/SCREENSHOT-FINISH.wav vol 0.05
-hyprctl keyword 'windowrule[discord]:enable true'
-hyprctl keyword 'windowrule[notifications]:enable true'
 
 # sleep 0.1
 mogrify -modulate 100,0 -resize 400% "$SCR_IMG/scr.png" || die "failed to convert image"

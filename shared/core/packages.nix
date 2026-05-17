@@ -15,6 +15,7 @@
     package = pkgs-unstable.hyprland;
     portalPackage = pkgs-unstable.xdg-desktop-portal-hyprland;
   };
+  environment.pathsToLink = [ "/share/hypr" ];
 
   # programs.nix-ld.enable = true; # Not the nix way ig, its ok i don't need it atm
 
@@ -217,7 +218,7 @@
       texlive.combined.scheme-medium
       pandoc
       # freecad # blender better
-		zotero
+      zotero
     ]
     ++ (with pkgs-unstable; [
       yazi

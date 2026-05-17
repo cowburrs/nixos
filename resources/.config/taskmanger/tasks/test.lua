@@ -148,5 +148,6 @@ return {
 		"clean fuckass dirty bin",
 		"nvim macros but in the whole computer",
 		"New phone",
+		"make a fetch",
 	}),
 }

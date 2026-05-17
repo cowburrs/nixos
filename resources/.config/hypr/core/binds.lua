@@ -1,0 +1,4 @@
+-- # sourcing all the binds
+-- source = /home/burrs/.config/hypr/extra/binds/variables.conf
+-- source = /home/burrs/.config/hypr/extra/binds/*
+recursiveRequire("extra/binds")

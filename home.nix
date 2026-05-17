@@ -22,8 +22,11 @@ in
   programs.git = {
     enable = true;
     package = pkgs.emptyDirectory;
-    userName = "burrs";
-    userEmail = "dwadwa@dwa.com";
+    settings = {
+      user.name = "burrs";
+      user.email = "dwadwa@dwa.com";
+      merge.tool = "nvimdiff";
+    };
   };
 
   # home.file.".local/share/Anki2/addons21" = {

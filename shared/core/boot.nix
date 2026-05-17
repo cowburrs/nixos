@@ -26,6 +26,6 @@
       in
       repo + "/themes/navi";
     # src = "${repo}/themes/navi"; # This also works, you just need to concatenate a string.
-    timeout = 10;
   };
+  boot.loader.timeout = 10;
 }
