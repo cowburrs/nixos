@@ -99,6 +99,10 @@ local returntable = {
 		{ 1, dt(2026, 4, 14, 16) },
 	}, 7),
 	worksheetTasks("Lambda Calculus", dt(2026, 4, 4), timedelta(5), 8, { 4, 6, 10 }),
+	worksheetTasks("Phys Openstax", dt(2026, 4, 4), timedelta(0), 16, {}),
+	worksheetTasks("Math Essential Calculus", dt(2026, 4, 4), timedelta(0), 13, {}),
+	worksheetTasks("Math Linear Algebra", dt(2026, 4, 4), timedelta(0), 8, {}),
+	worksheetTasks("Comp Exercises", dt(2026, 4, 4), timedelta(0), 14, {}),
 	-- textBookTasks("Jstweart", dt(2026, 4, 4), dt(2026, 5, 4), { 6, 8, 7, 5, 8, 6, 7, 8, 5, 9, 8, 8, 9 }),
 	singleTasks({
 		"Understand Nullspaces",
