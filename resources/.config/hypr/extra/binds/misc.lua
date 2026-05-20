@@ -9,7 +9,7 @@ hl.bind("SUPER + SHIFT + s", function()
 	hl.timer(function()
 		rules.discord:set_enabled(true)
 		rules.notifications:set_enabled(true)
-	end, { timeout = 1000, type = "oneshot" })
+	end, { timeout = 10000, type = "oneshot" }) --TODO: This shit it so stupid fix right now
 end, { locked = true })
 
 hl.bind("SUPER + SHIFT + o", function()
