@@ -3,7 +3,14 @@ local function openOrMove(cmd, search)
 		if #hl.get_windows(search) == 0 then
 			hl.dispatch(hl.dsp.exec_cmd(cmd))
 		else
-			hl.dispatch(hl.dsp.focus({ window = hl.get_windows(search)[1] }))
+			if hl.get_active_window() ~= hl.get_windows(search)[1] then
+				hl.dispatch(
+					hl.dsp.exec_cmd(
+						"play ~/.config/hypr/extra/sfx/WORKSPACE-MOVE.wav trim 0.025 vol 0.025 pitch $((RANDOM % 150 - 100)) # Play slightly depitched noise"
+					)
+				)
+				hl.dispatch(hl.dsp.focus({ window = hl.get_windows(search)[1] }))
+			end
 		end
 	end
 end
@@ -18,7 +25,7 @@ appBind("m", "thunderbird", { class = "thunderbird" })
 appBind("g", "steam", { class = "steam" })
 appBind("p", "spotify", { class = "Spotify" })
 appBind("n", "logseq", { class = "Logseq" })
-hl.bind(AppBind .. "+" .."w", hl.dsp.exec_cmd("pkill waybar && waybar"))
+hl.bind(AppBind .. "+" .. "w", hl.dsp.exec_cmd("pkill waybar && waybar"))
 
 local function mbind(keys, dispatch, opts)
 	hl.bind(mainMod .. "+" .. keys, dispatch, opts)
