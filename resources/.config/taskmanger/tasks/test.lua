@@ -149,5 +149,6 @@ return {
 		"nvim macros but in the whole computer",
 		"New phone",
 		"make a fetch",
+		"Buy some books"
 	}),
 }

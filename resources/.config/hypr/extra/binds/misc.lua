@@ -5,11 +5,15 @@ hl.bind("ALT + Tab", hl.dsp.focus({ workspace = "previous" }))
 hl.bind("SUPER + SHIFT + s", function()
 	rules.discord:set_enabled(false)
 	rules.notifications:set_enabled(false)
-	hl.dispatch(hl.dsp.exec_cmd("~/.config/hypr/extra/scripts/screenshot.sh"))
-	hl.timer(function()
-		rules.discord:set_enabled(true)
-		rules.notifications:set_enabled(true)
-	end, { timeout = 10000, type = "oneshot" }) --TODO: This shit it so stupid fix right now
+	hl.dispatch(
+		hl.dsp.exec_cmd(
+			"~/.config/hypr/extra/scripts/screenshot.sh && hyprctl eval 'rules.discord:set_enabled(true)' && hyprctl eval 'rules.notifications:set_enabled(true)'"
+		)
+	)
+	-- hl.timer(function()
+	-- 	rules.discord:set_enabled(true)
+	-- 	rules.notifications:set_enabled(true)
+	-- end, { timeout = 10000, type = "oneshot" }) --TODO: This shit it so stupid fix right now
 end, { locked = true })
 
 hl.bind("SUPER + SHIFT + o", function()
@@ -29,5 +33,5 @@ hl.bind(
 hl.bind(
 	"CTRL + ALT + delete",
 	hl.dsp.exec_cmd("~/.config/hypr/extra/scripts/wlogout.sh"),
-	{ locked = true, submap_universal = true, ignore_mods = true }
+	{ locked = true, submap_universal = true, ignore_mods = false, bypass = true }
 )
