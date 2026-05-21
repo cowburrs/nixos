@@ -1,29 +1,29 @@
--- hl.config({
--- 	decoration = {
--- 		--  rounding = 7
--- 		rounding_power = 1.5,
---
--- 		-- Change transparency of focused and unfocused windows
--- 		active_opacity = 1,
--- 		inactive_opacity = 1,
--- 		fullscreen_opacity = 1,
--- 		-- dim_inactive = true
--- 		-- dim_strength = 0.5
---
--- 		shadow = {
--- 			enabled = false,
--- 			range = 10,
--- 			render_power = 1,
--- 			color = 0xee1a1a1a,
--- 		},
---
--- 		-- https://wiki.hyprland.org/Configuring/Variables/#blur
--- 		blur = {
--- 			enabled = true,
--- 			size = 2,
--- 			passes = 2,
---
--- 			vibrancy = 0.1696,
--- 		},
--- 	},
--- })
+hl.config({
+	decoration = {
+		--  rounding = 7
+		rounding_power = 1.5,
+
+		-- Change transparency of focused and unfocused windows
+		active_opacity = 1,
+		inactive_opacity = 1,
+		fullscreen_opacity = 1,
+		-- dim_inactive = true
+		-- dim_strength = 0.5
+
+		shadow = {
+			enabled = false,
+			range = 10,
+			render_power = 1,
+			color = 0xee1a1a1a,
+		},
+
+		-- https://wiki.hyprland.org/Configuring/Variables/#blur
+		blur = {
+			enabled = true,
+			size = 2,
+			passes = 2,
+
+			vibrancy = 0.1696,
+		},
+	},
+})
