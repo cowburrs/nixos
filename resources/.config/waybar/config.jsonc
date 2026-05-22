@@ -27,7 +27,7 @@
 		"pulseaudio#output",
 		"network",
 		// "memory",
-		"temperature",
+		// "temperature",
 		"battery",
 		"clock#date",
 		"custom/weather",
