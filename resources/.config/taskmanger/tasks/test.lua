@@ -134,7 +134,7 @@ return {
 		"Top up bus card task",
 		"Sleep at school once",
 		"submit to the nix user repos",
-		"make programmatic slideshows",
+		"make programmatic slideshows (cn)",
 		"check camera roll",
 		"home manager nvimdiff",
 		"impermanence.nix",
@@ -149,6 +149,14 @@ return {
 		"nvim macros but in the whole computer",
 		"New phone",
 		"make a fetch",
-		"Buy some books"
+		"Buy some books",
+		"Practice/learn git fully",
+		"Get git signing",
+		"clean fuckass shoe",
+		"Add birthdays to calnedar",
+		"Switch to nyxt or qute, or luakit",
+		"neomutt",
+		"Cli soundboard",
+		"latex multiperson (cn)"
 	}),
 }
