@@ -70,3 +70,5 @@ START OF FILE
 2026-05-12 16:15:00 17:05:02 17:15:02 | subject: maths | work: 50m | rest: 10m
 2026-05-12 17:15:10 18:05:11 18:05:29 | subject: maths | work: 50m | rest: 10m
 2026-05-12 18:05:32 18:55:33 18:55:43 | subject: physics | work: 50m | rest: 10m
+2026-05-24 13:01:10 13:51:12 14:01:12 | subject: maths | work: 50m | rest: 10m
+2026-05-24 18:21:31 19:11:33 19:21:33 | subject: maths | work: 50m | rest: 10m

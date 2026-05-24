@@ -167,6 +167,10 @@ keymap = [
   ], run = "copy path", desc = "Copy the file path" },
   { on = [
     "c",
+    "i",
+  ], run = "shell 'wl-copy < \"$1\"'", desc = "Copy the image" },
+  { on = [
+    "c",
     "d",
   ], run = "copy dirname", desc = "Copy the directory path" },
   { on = [

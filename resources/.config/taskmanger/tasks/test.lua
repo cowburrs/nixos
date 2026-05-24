@@ -157,6 +157,8 @@ return {
 		"Switch to nyxt or qute, or luakit",
 		"neomutt",
 		"Cli soundboard",
-		"latex multiperson (cn)"
+		"latex multiperson (cn)",
+		"Bitwarden",
+		"Spotify/music keeb only",
 	}),
 }
