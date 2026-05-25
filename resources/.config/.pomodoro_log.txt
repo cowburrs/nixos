@@ -72,3 +72,7 @@ START OF FILE
 2026-05-12 18:05:32 18:55:33 18:55:43 | subject: physics | work: 50m | rest: 10m
 2026-05-24 13:01:10 13:51:12 14:01:12 | subject: maths | work: 50m | rest: 10m
 2026-05-24 18:21:31 19:11:33 19:21:33 | subject: maths | work: 50m | rest: 10m
+2026-05-25 12:02:35 12:07:59 12:18:00 | subject: computer | work: 50m | rest: 10m
+2026-05-25 12:18:06 12:18:07 12:18:07 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-25 12:18:10 12:18:11 12:18:11 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-25 12:18:36 13:14:49 13:22:31 | subject: comp | work: 50m | rest: 10m
