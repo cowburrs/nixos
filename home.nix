@@ -33,7 +33,7 @@ in
   #   source = ./resources/addons21;
   # };
 
-  warnings = [ (builtins.getEnv "FLAKE_DIR") ]; # yeah its not possible let me kill myself
+  # warnings = [ (builtins.getEnv "FLAKE_DIR") ]; # yeah its not possible let me kill myself
   # home.file.".local/share/Anki2/addons21".source =
   #   config.lib.file.mkOutOfStoreSymlink "${flakeDir}/resources/addons21";
   # home.file.".config/btop" =

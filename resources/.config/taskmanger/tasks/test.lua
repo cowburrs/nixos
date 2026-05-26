@@ -160,5 +160,6 @@ return {
 		"latex multiperson (cn)",
 		"Bitwarden",
 		"Spotify/music keeb only",
+		"Git Signing"
 	}),
 }

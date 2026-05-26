@@ -76,3 +76,12 @@ START OF FILE
 2026-05-25 12:18:06 12:18:07 12:18:07 | subject: Placeholder | work: 50m | rest: 10m
 2026-05-25 12:18:10 12:18:11 12:18:11 | subject: Placeholder | work: 50m | rest: 10m
 2026-05-25 12:18:36 13:14:49 13:22:31 | subject: comp | work: 50m | rest: 10m
+2026-05-26 10:45:48 11:35:50 11:42:09 | subject: comp | work: 50m | rest: 10m
+2026-05-26 11:42:15 12:32:16 12:42:16 | subject: physics | work: 50m | rest: 10m
+2026-05-26 12:45:17 13:35:19 13:45:19 | subject: calculus | work: 50m | rest: 10m
+2026-05-26 13:58:49 13:58:49 13:58:51 | subject: break | work: 0 | rest: 5m
+2026-05-26 13:58:56 13:58:57 14:48:58 | subject: break | work: 1s | rest: 50m
+2026-05-26 14:55:12 15:45:13 15:55:13 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-26 16:03:02 16:47:38 16:47:39 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-26 16:54:44 17:09:23 17:19:23 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-26 17:19:45 17:19:51 17:19:52 | subject: 1s | work: 30m | rest: 10m
