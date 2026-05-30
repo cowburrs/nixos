@@ -160,7 +160,6 @@ return {
 		"latex multiperson (cn)",
 		"Bitwarden",
 		"Spotify/music keeb only",
-		"Git Signing",
 		"Images Spotify",
 		"Room decoration, choose budcget",
 		"Buylist",
