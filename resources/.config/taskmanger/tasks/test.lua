@@ -166,5 +166,6 @@ return {
 		"Album",
 		"Cook",
 		"Clean fuckass lunchbag",
+		"Firefox file manager to yazi",
 	}),
 }
