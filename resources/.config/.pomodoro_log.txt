@@ -100,3 +100,17 @@ START OF FILE
 2026-05-29 15:50:49 15:50:50 15:55:50 | subject: engn | work: 25m | rest: 5m
 2026-05-29 15:55:56 16:20:57 16:25:57 | subject: engn | work: 25m | rest: 5m
 2026-05-29 16:27:32 16:27:32 22:58:08 | subject: break | work: 50m | rest: 10m
+2026-05-30 21:52:20 21:56:37 21:56:37 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-31 20:21:56 21:11:58 21:17:48 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-31 21:17:48 21:17:49 21:27:49 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-31 21:30:15 22:20:17 22:30:17 | subject: Placeholder | work: 50m | rest: 10m
+2026-05-31 22:34:23 23:22:15 23:32:16 | subject: Placeholder | work: 50m | rest: 10m
+2026-06-01 10:31:07 10:47:54 10:57:55 | subject: phys | work: 50m | rest: 10m
+2026-06-01 11:03:07 11:53:08 12:03:09 | subject: phys | work: 50m | rest: 10m
+2026-06-01 15:16:01 16:06:02 16:16:03 | subject: physics | work: 50m | rest: 10m
+2026-06-01 19:53:26 19:53:27 19:53:28 | subject: run | work: 50m | rest: 10m
+2026-06-01 20:10:37 20:10:38 20:10:38 | subject: run | work: 50m | rest: 10m
+2026-06-01 20:12:09 20:12:10 20:12:11 | subject: run | work: 50m | rest: 10m
+2026-06-01 22:08:25 22:08:28 22:08:28 | subject: Placeholder | work: 50m | rest: 10m
+2026-06-01 22:08:35 22:08:37 22:08:38 | subject: 1m | work: 50m | rest: 10m
+2026-06-01 22:08:40 22:09:40 22:10:01 | subject: 1m | work: 1m | rest: 10m

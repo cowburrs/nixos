@@ -66,7 +66,7 @@
       terminaltexteffects
       cava
       mangohud
-      wine
+      wine64
       pipes
       cmatrix
 

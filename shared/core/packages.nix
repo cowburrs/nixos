@@ -119,7 +119,7 @@
       #     odfpy
       #   ]
       # ))
-      cargo
+      # cargo
       unzip
       zoxide
       ripgrep
@@ -154,7 +154,6 @@
       lua-language-server
       nil
       nixd
-      hyprls
 
       nethogs
       music-discord-rpc
@@ -189,9 +188,6 @@
       nh
       mpv
       gh
-      rustc
-      rust-analyzer
-      rustfmt
       protonvpn-gui
       icu
       sox

@@ -1,6 +1,6 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
-  environment.systemPackages =
+  environment.systemPackages = # TODO: In the future I want this to work for taskmanger
     let
       nvim-xdg = pkgs.writeShellScriptBin "nvim-xdg" ''
         file="$1"
