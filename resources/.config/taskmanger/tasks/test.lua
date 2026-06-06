@@ -168,5 +168,6 @@ return {
 		"Clean fuckass lunchbag",
 		"Firefox file manager to yazi",
 		"I hate centrelink",
+		"Switch to yarara",
 	}),
 }
