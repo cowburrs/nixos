@@ -169,5 +169,8 @@ return {
 		"Firefox file manager to yazi",
 		"I hate centrelink",
 		"Switch to yarara",
+		"Package fonts",
+		"Fix yazi relative motions",
+		"Create fastfetch for meself",
 	}),
 }
