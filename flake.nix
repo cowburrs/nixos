@@ -1,12 +1,12 @@
 {
   description = "Burrs flake";
 
-  inputs = {
+  inputs = rec {
     # NixOS official package source, using the nixos-25.05 branch here
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     catppuccin = {
       # TODO: Change this as well when changing nixurl
-      url = "github:catppuccin/nix/release-25.11";
+      url = "github:catppuccin/nix/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -23,7 +23,7 @@
     };
     # millennium.url = "github:SteamClientHomebrew/Millennium/01a7f1f9?dir=packages/nix";
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.11";
+      url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-flatpak.url = "github:gmodena/nix-flatpak";

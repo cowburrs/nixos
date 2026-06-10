@@ -172,5 +172,13 @@ return {
 		"Package fonts",
 		"Fix yazi relative motions",
 		"Create fastfetch for meself",
+		"qr code tool like ocr",
+		"Bashmarks rust",
+		"Switch from spotify (cn)",
+		"find a way to find music",
+		"replace logseq with nvim",
+		"Vimtex",
+		"leechblock minutes per hour",
+		"Blender to 3dprint.",
 	}),
 }

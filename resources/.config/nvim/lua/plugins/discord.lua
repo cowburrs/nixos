@@ -1,4 +1,5 @@
 return {
+	-- enabled = false,
 	"vyfor/cord.nvim",
 	build = ":Cord update",
 	config = function()

@@ -127,10 +127,6 @@
       nixfmt
       fastfetch
       krita
-      # (
-      #   logseq.override { electron = electron_39-bin; }
-      # )
-		logseq
 
       p7zip
       wlogout
@@ -219,5 +215,8 @@
       yazi
       tetrio-desktop
       hyprshutdown
+
+      # (logseq.override { electron = electron_39-bin; })
+      logseq
     ]);
 }

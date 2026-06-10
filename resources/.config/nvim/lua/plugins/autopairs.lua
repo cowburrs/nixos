@@ -1,7 +1,7 @@
 return {
 	"windwp/nvim-autopairs",
 	event = "InsertEnter",
-	config = true,
+
 	opts = {
 		enabled = function(bufnr)
 			return true
@@ -23,5 +23,13 @@ return {
 		map_c_h = false, -- Map the <C-h> key to delete a pair
 		map_c_w = false, -- map <c-w> to delete a pair if possible
 	},
+	config = function(_, opts)
+		local npairs = require("nvim-autopairs")
+		npairs.setup(opts)
+		local Rule = require("nvim-autopairs.rule")
+		npairs.add_rules({
+			Rule("<", ">", "rust"),
+		})
+	end,
 }
 -- you succ

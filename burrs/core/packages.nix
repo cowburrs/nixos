@@ -29,10 +29,6 @@
     };
   };
   programs.gamemode.enable = true;
-  programs.gamescope = {
-    enable = true;
-    capSysNice = true;
-  };
   programs.obs-studio = {
     enable = true;
     # enableVirtualCamera = true;
@@ -105,6 +101,7 @@
       reaper-reapack-extension
       r2modman
       sqlite
+      librsvg
     ]
     ++ (with pkgs-unstable; [
       lunar-client
