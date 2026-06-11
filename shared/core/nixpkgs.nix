@@ -1,8 +1,6 @@
 {
-  config,
   lib,
-  pkgs,
-  inputs,
+  pkgs-unstable,
   ...
 }:
 {
@@ -20,9 +18,5 @@
       "spotify"
       "nvidia-x11"
       "nvidia-settings"
-
     ];
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-39.8.10"
-  ];
 }

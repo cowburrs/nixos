@@ -1,7 +1,7 @@
 {
   description = "Burrs flake";
 
-  inputs = rec {
+  inputs = {
     # NixOS official package source, using the nixos-25.05 branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     catppuccin = {
@@ -66,6 +66,7 @@
               inherit system;
               config.allowUnfree = true;
               # config.allowBroken = true;
+              config.permittedInsecurePackages = [ "electron-39.8.10" ];
             };
           };
         in

@@ -180,5 +180,7 @@ return {
 		"Vimtex",
 		"leechblock minutes per hour",
 		"Blender to 3dprint.",
+		"List of things in holiday(cn)",
+		"Air fried potatoes",
 	}),
 }

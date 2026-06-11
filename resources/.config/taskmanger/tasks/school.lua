@@ -127,8 +127,9 @@ local returntable = {
 		"Use latex (thank logseq)",
 		"Make sigma difference function.",
 		"tmadas + textbooks",
-		"Phone lik ea slides clicker",
+		"Phone like a slides clicker",
 		"Learn geogebra",
+		"Choose document creator (cn)",
 	}),
 }
 
