@@ -210,6 +210,7 @@
       pandoc
       # freecad # blender better
       zotero
+		zbar
     ]
     ++ (with pkgs-unstable; [
       yazi
