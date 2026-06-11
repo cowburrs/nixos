@@ -5,6 +5,17 @@
 vim.keymap.set("n", "<A-j>", "<cmd>m .+1<CR>==")
 vim.keymap.set("n", "<A-k>", "<cmd>m .-2<CR>==")
 
+vim.keymap.set("n", "gj", function()
+	local year = os.date("*t", os.time()).year
+	local month = os.date("*t", os.time()).month
+	local day = os.date("*t", os.time()).day
+	year = string.format("%04d", year)
+	month = string.format("%02d", month)
+	month = string.format("%02d", month)
+	local file = "~/logseq/journals/" .. year .. "_" .. month .. "_" .. day .. ".md"
+	vim.cmd.tabedit(file)
+end, { desc = "Go to daily logseq note" })
+
 -- make ctrl backspace work
 vim.keymap.set("i", "<C-BS>", "<C-W>", { noremap = true })
 
