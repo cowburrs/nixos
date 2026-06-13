@@ -153,7 +153,6 @@ return {
 		"Practice/learn git fully",
 		"Get git signing",
 		"clean fuckass shoe",
-		"Add birthdays to calnedar",
 		"Switch to nyxt or qute, or luakit",
 		"neomutt",
 		"Cli soundboard",
@@ -182,5 +181,7 @@ return {
 		"Blender to 3dprint.",
 		"List of things in holiday(cn)",
 		"Air fried potatoes",
+		"Check reddit saved",
+		"birthday task taskmanger",
 	}),
 }
