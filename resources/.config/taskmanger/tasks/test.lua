@@ -183,5 +183,7 @@ return {
 		"Air fried potatoes",
 		"Check reddit saved",
 		"birthday task taskmanger",
+		"weekly find book/manga task (more also)",
+		"clean bathroom ceiling mould",
 	}),
 }
