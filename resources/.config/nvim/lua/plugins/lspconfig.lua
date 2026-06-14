@@ -34,5 +34,6 @@ return {
 				"arduino:avr:uno",
 			},
 		})
+		vim.lsp.enable("ts_ls")
 	end,
 }

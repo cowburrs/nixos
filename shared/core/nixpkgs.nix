@@ -9,6 +9,7 @@
   nixpkgs.config.allowUnfreePredicate =
     pkg:
     builtins.elem (lib.getName pkg) [
+      "geogebra"
       "steam"
       "steam-unwrapped"
       "reaper"
@@ -19,4 +20,7 @@
       "nvidia-x11"
       "nvidia-settings"
     ];
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-39.8.10"
+  ];
 }

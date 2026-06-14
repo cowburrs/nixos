@@ -9,7 +9,7 @@
 PS1='┌──[\w]$(if [ "$SHLVL" -gt 1 ]; then echo "(shell)"; fi)\n╰─\[\e[38;5;141m\]\$\[\e[0m\] '
 PS2='  >'
 if [[ $(tty) == *"pts"* ]]; then
-  fastfetch --config examples/13
+    fastfetch --config ~/.config/fastfetch/burrsfetch.jsonc
 fi
 
 # -----------------------------------------------------

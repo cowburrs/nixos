@@ -211,6 +211,9 @@
       # freecad # blender better
       zotero
       zbar
+      bitwarden-cli
+      bitwarden-desktop
+		geogebra6
     ]
     ++ (with pkgs-unstable; [
       yazi
