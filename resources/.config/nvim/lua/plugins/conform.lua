@@ -27,6 +27,7 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				javascript = { "prettier", stop_after_first = true },
+				javascriptreact = { "prettier", stop_after_first = true },
 				clojure = { "zprint" },
 				nix = { "nixfmt" },
 				json = { "prettier" },
