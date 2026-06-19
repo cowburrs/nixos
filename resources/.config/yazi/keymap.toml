@@ -43,6 +43,7 @@ keymap = [
 
   # Better enter functionality
   { on = "<Enter>", run = "plugin smart-enter", desc = "Open selected files" },
+  { on = "<C-Enter>", run = "open", desc = "Confirm selection" },
 
   # Why does enter open in nvim anyway? semes stupid to me
   { on = "f", run = "plugin jump-to-char", desc = "Jump to char" },
