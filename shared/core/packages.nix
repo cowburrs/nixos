@@ -184,7 +184,7 @@
       nh
       mpv
       gh
-      protonvpn-gui
+		proton-vpn
       icu
       sox
       gitsnip
