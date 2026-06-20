@@ -204,7 +204,8 @@
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "rose-pine-hyprcursor": "rose-pine-hyprcursor",
-        "spicetify-nix": "spicetify-nix"
+        "spicetify-nix": "spicetify-nix",
+        "syne": "syne"
       }
     },
     "rose-pine-hyprcursor": {
@@ -246,6 +247,22 @@
         "owner": "Gerg-L",
         "repo": "spicetify-nix",
         "type": "github"
+      }
+    },
+    "syne": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646308908,
+        "narHash": "sha256-JFR0UN2eX1UJT+AlSphR2tnRB78Z47pPZcDTCutwbk8=",
+        "ref": "refs/heads/master",
+        "rev": "e536e8f1a8724bf282da74bbae410f91231ce94c",
+        "revCount": 361,
+        "type": "git",
+        "url": "https://gitlab.com/bonjour-monde/fonderie/syne-typeface.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://gitlab.com/bonjour-monde/fonderie/syne-typeface.git"
       }
     },
     "systems": {

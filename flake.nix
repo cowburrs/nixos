@@ -31,6 +31,10 @@
       url = "github:googlefonts/Exo-2.0";
       flake = false;
     };
+    syne = {
+      url = "git+https://gitlab.com/bonjour-monde/fonderie/syne-typeface.git";
+      flake = false;
+    };
   };
 
   outputs =
@@ -42,8 +46,13 @@
     }@inputs:
     {
 
-      packages."x86_64-linux".exo2 = nixpkgs.legacyPackages.x86_64-linux.callPackage ./packages/exo2.nix {
-        src = inputs.exo2;
+      packages."x86_64-linux" = {
+        exo2 = nixpkgs.legacyPackages.x86_64-linux.callPackage ./packages/exo2.nix {
+          src = inputs.exo2;
+        };
+        syne = nixpkgs.legacyPackages.x86_64-linux.callPackage ./packages/exo2.nix {
+          src = inputs.syne;
+        };
       };
       nixosConfigurations =
         let

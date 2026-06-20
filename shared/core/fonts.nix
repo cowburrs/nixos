@@ -14,5 +14,6 @@
     ]
     ++ [
       inputs.self.packages.${pkgs.system}.exo2
+      inputs.self.packages.${pkgs.system}.syne
     ];
 }
