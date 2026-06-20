@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "archivo": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1612220724,
+        "narHash": "sha256-kMyHDyslAJW8pAw8SIdbKjQrTbPtmKOCDAtr48LrdNI=",
+        "owner": "Omnibus-Type",
+        "repo": "Archivo",
+        "rev": "b5d63988ce19d044d3e10362de730af00526b672",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Omnibus-Type",
+        "repo": "Archivo",
+        "type": "github"
+      }
+    },
     "catppuccin": {
       "inputs": {
         "nixpkgs": [
@@ -195,6 +211,7 @@
     },
     "root": {
       "inputs": {
+        "archivo": "archivo",
         "catppuccin": "catppuccin",
         "exo2": "exo2",
         "home-manager": "home-manager",

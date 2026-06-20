@@ -35,6 +35,10 @@
       url = "git+https://gitlab.com/bonjour-monde/fonderie/syne-typeface.git";
       flake = false;
     };
+    archivo = {
+      url = "github:Omnibus-Type/Archivo";
+      flake = false;
+    };
   };
 
   outputs =
@@ -50,7 +54,7 @@
         exo2 = nixpkgs.legacyPackages.x86_64-linux.callPackage ./packages/exo2.nix {
           src = inputs.exo2;
         };
-        syne = nixpkgs.legacyPackages.x86_64-linux.callPackage ./packages/exo2.nix {
+        syne = nixpkgs.legacyPackages.x86_64-linux.callPackage ./packages/syne.nix {
           src = inputs.syne;
         };
       };
