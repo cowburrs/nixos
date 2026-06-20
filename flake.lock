@@ -21,6 +21,22 @@
         "type": "github"
       }
     },
+    "exo2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1728045879,
+        "narHash": "sha256-zQ9hb2NH4tPf/G/EQPqpY1oH5QrUyNkzMkEKB/QbOfE=",
+        "owner": "googlefonts",
+        "repo": "Exo-2.0",
+        "rev": "f83ea8a02d3e1d6963ab6e910038521f27e283a2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "googlefonts",
+        "repo": "Exo-2.0",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -180,6 +196,7 @@
     "root": {
       "inputs": {
         "catppuccin": "catppuccin",
+        "exo2": "exo2",
         "home-manager": "home-manager",
         "mikuboot": "mikuboot",
         "musnix": "musnix",

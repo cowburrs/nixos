@@ -27,6 +27,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-flatpak.url = "github:gmodena/nix-flatpak";
+    exo2 = {
+      url = "github:googlefonts/Exo-2.0";
+      flake = false;
+    };
   };
 
   outputs =
@@ -38,6 +42,9 @@
     }@inputs:
     {
 
+      packages."x86_64-linux".exo2 = nixpkgs.legacyPackages.x86_64-linux.callPackage ./packages/exo2.nix {
+        src = inputs.exo2;
+      };
       nixosConfigurations =
         let
           system = "x86_64-linux";
