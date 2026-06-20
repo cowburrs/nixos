@@ -1,5 +1,5 @@
 {
-  "Revision": "0.6.6.2",
+  "Revision": "0.6.7",
   "Profiles": [
     {
       "Tablet": "XP-Pen Artist 15.6 Pro",
@@ -12,9 +12,9 @@
       "AbsoluteModeSettings": {
         "Display": {
           "Width": 1920.0,
-          "Height": 540.0,
+          "Height": 1080.0,
           "X": 960.0,
-          "Y": 810.0,
+          "Y": 1620.0,
           "Rotation": 0.0
         },
         "Tablet": {
@@ -110,8 +110,19 @@
         "MouseButtons": [],
         "MouseScrollUp": null,
         "MouseScrollDown": null,
+        "WheelBindings": [
+          {
+            "WheelButtons": [],
+            "ClockwiseRotation": null,
+            "ClockwiseActivationThreshold": 1.0,
+            "CounterClockwiseRotation": null,
+            "CounterClockwiseActivationThreshold": 1.0,
+            "StepSize": 15.0
+          }
+        ],
         "DisablePressure": false,
-        "DisableTilt": false
+        "DisableTilt": false,
+        "EnableDragBindings": false
       }
     },
     {
@@ -192,8 +203,10 @@
         "MouseButtons": [],
         "MouseScrollUp": null,
         "MouseScrollDown": null,
+        "WheelBindings": [],
         "DisablePressure": false,
-        "DisableTilt": false
+        "DisableTilt": false,
+        "EnableDragBindings": false
       }
     }
   ],
