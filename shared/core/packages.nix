@@ -213,7 +213,7 @@
       zbar
       bitwarden-cli
       bitwarden-desktop
-		geogebra6
+      geogebra6
     ]
     ++ (with pkgs-unstable; [
       yazi
