@@ -1,4 +1,5 @@
 [
+  ["submit to the nix user repos", 200001010000, 1781934804, "Stupid and legacy, flakes half solve this."],
   ["Vimtex", 200001010000, 1781928579, "Stupid, use latexmk + some pdf reader with auto refresh like okular"],
   ["latex multiperson (cn)", 200001010000, 1781927839, "Too niehce"],
   ["Cli soundboard", 200001010000, 1781923405, "Discord cuts has some weird suppression that ruins this"],

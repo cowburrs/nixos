@@ -35,9 +35,8 @@
       url = "git+https://gitlab.com/bonjour-monde/fonderie/syne-typeface.git";
       flake = false;
     };
-    archivo = {
-      url = "github:Omnibus-Type/Archivo";
-      flake = false;
+    bookmarks = {
+      url = "github:cowburrs/bookmarks";
     };
   };
 

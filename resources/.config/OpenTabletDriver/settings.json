@@ -128,7 +128,7 @@
     {
       "Tablet": "Wacom CTL-4100",
       "OutputMode": {
-        "Path": "OpenTabletDriver.Desktop.Output.LinuxArtistMode",
+        "Path": "OpenTabletDriver.Desktop.Output.AbsoluteMode",
         "Settings": [],
         "Enable": true
       },

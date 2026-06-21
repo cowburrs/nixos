@@ -1,1 +1,1 @@
-source ~/.config/bashrc/plugins/bashmarks/bashmarks.sh
+# source ~/.config/bashrc/plugins/bashmarks/bashmarks.sh

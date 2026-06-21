@@ -77,6 +77,7 @@
     with pkgs;
     [
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+      inputs.bookmarks.packages.${pkgs.system}.default
       playerctl
       mako
       waybar
@@ -121,7 +122,6 @@
       # ))
       # cargo
       unzip
-      zoxide
       ripgrep
       btop
       nixfmt
@@ -184,7 +184,7 @@
       nh
       mpv
       gh
-		proton-vpn
+      proton-vpn
       icu
       sox
       gitsnip
