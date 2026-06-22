@@ -23,6 +23,11 @@ use = "cowburrs/relative-motions"
 rev = "d4f2003"
 hash = "e0017cae4c0772dd41b7e7c259a6e683"
 
+[[plugin.deps]]
+use = "cowburrs/bookmarks:bookmarks"
+rev = "9e98cca"
+hash = "aa57d2c92ac531a0d99696a06ecad93d"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
 rev = "36c49ac"
