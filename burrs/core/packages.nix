@@ -102,6 +102,7 @@
       r2modman
       sqlite
       librsvg
+      yamlfmt
     ]
     ++ (with pkgs-unstable; [
       lunar-client
