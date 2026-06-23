@@ -1,8 +1,6 @@
 {
-  config,
   pkgs,
   inputs,
-  nixpkgs,
   pkgs-unstable,
   lib,
   ...
@@ -72,6 +70,7 @@
   };
   programs.gdk-pixbuf.modulePackages = [ pkgs.librsvg ]; # You need this for wlogout
 
+  programs.kdeconnect.enable = true;
   # Packages
   environment.systemPackages =
     with pkgs;
@@ -85,7 +84,6 @@
       hyprshot
       hyprpicker
       hyprlock
-      vlc
       hyprpolkitagent
       kdePackages.dolphin
       usbutils
@@ -99,29 +97,10 @@
         ''
       )) # so that neovim doesnt have the stupid desktop
       git
-      wget
       wl-clipboard
       fzf
       eza
       networkmanagerapplet
-      gcc
-      nodejs_24
-      # python
-      # (pkgs.python3.withPackages (
-      #   python-pkgs: with python-pkgs; [
-      #     pyserial
-      #     holidays
-      #     pyqt6
-      #     uncertainties
-      #     pint
-      #     pandas
-      #     matplotlib
-      #     numpy
-      #     odfpy
-      #   ]
-      # ))
-      # cargo
-      unzip
       ripgrep
       btop
       nixfmt
@@ -135,7 +114,6 @@
       ffmpeg
       libreoffice-qt
       wev
-      screenfetch
       hyprcursor
 
       # Formatters
@@ -168,8 +146,6 @@
 
       trash-cli
       thunderbird
-      tldr
-      v4l-utils
       easyeffects
       neomutt
       jq # for muting specific active windows in hyrpalnd
@@ -185,7 +161,6 @@
       mpv
       gh
       proton-vpn
-      icu
       sox
       gitsnip
       rpl
@@ -199,29 +174,25 @@
       appimage-run
       arduino
       timer
-      # hunspell
       hunspellDicts.en-au
-      # viddy
-      # gum
-      clang-tools
+
       taplo
       anki
       texlive.combined.scheme-medium
       pandoc
-      # freecad # blender better
       zotero
       zbar
       bitwarden-cli
       bitwarden-desktop
       geogebra6
-		git-lfs
+      git-lfs
+      zoxide
+      wlrctl
     ]
     ++ (with pkgs-unstable; [
       yazi
       tetrio-desktop
       hyprshutdown
-
-      # (logseq.override { electron = electron_39-bin; })
       logseq
     ]);
 }

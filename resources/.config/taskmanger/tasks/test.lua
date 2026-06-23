@@ -4,6 +4,7 @@ local st = m.singleTasks
 local wt = m.weeklyTask
 local yt = m.yearlyTask
 local td = m.timedelta
+local bd = m.birthdayTask
 local wt5 = function(name)
 	return wt(name, 5)
 end
@@ -45,6 +46,27 @@ return {
 	m.nthWeekTask("clean keyboard/mouse", 30, 5),
 	m.nthWeekTask("top up bus card", 2),
 	m.seasonalTask("trackmania", 2),
+	bd("Phoenix Gosper", 2, 16),
+	bd("Sam", 2, 27),
+	bd("Liam", 3, 4),
+	bd("Luka", 3, 4),
+	bd("Bernaburger", 3, 9),
+	bd("George", 3, 11),
+	bd("Stefchan", 3, 21),
+	bd("Kevin", 3, 22),
+	bd("Akira", 5, 19),
+	bd("Luke", 7, 19),
+	bd("Emaan", 8, 10),
+	bd("Holly", 8, 19),
+	bd("Audrey", 8, 24),
+	bd("Sean", 9, 10),
+	bd("Chris", 9, 14),
+	bd("Warnaburger", 10, 4),
+	bd("Benji", 10, 8),
+	bd("Taj", 10, 28),
+	bd("Shane", 10, 31),
+	bd("Char", 12, 17),
+	bd("Dung", 12, 29),
 	st({
 		"Test works",
 		"bin scripts instead of hypr nixos",

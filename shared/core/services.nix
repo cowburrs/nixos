@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   # Enable CUPS to print documents.
@@ -13,10 +13,6 @@
     # If you want to use JACK applications, uncomment the following
     jack.enable = true;
   };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # not even desktop manager, its literally a buildinput in hyprland...
-  # services.libinput.enable = true;
 
   # I don't use ssh?
   # Enable the OpenSSH daemon.
@@ -38,8 +34,4 @@
 
   # Bluetooth
   services.blueman.enable = true;
-
-  # Configure keymap in X11
-  # services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
 }

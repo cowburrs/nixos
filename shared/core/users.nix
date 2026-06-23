@@ -17,6 +17,7 @@
       "networkmanager"
       "plugdev"
       "dialout"
+      "jackaudio"
     ]; # Enable ‘sudo’ for the user.
   };
 
