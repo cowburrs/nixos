@@ -214,6 +214,7 @@
       bitwarden-cli
       bitwarden-desktop
       geogebra6
+		git-lfs
     ]
     ++ (with pkgs-unstable; [
       yazi

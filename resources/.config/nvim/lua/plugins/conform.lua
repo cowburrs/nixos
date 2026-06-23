@@ -25,6 +25,7 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				yaml = { "yamlfmt" },
+				markdown = { "mdformat" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				javascript = { "prettier", stop_after_first = true },
