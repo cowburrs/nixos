@@ -19,7 +19,6 @@ return {
 		vim.lsp.enable("hyprls") -- TODO: I could attach these to an autocmd for lazy loading.
 		-- honestly its very hgard to switch from lazy nvim
 		vim.lsp.enable("lua_ls")
-		vim.lsp.enable("nil_ls")
 		vim.lsp.enable("nixd")
 		vim.lsp.enable("ast_grep")
 		vim.lsp.enable("rust_analyzer")

@@ -1,4 +1,3 @@
 burrshelp() {
 	man -Hfirefox "$@"
-	tldr "$@"
 }

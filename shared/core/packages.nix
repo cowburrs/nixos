@@ -70,6 +70,11 @@
   };
   programs.gdk-pixbuf.modulePackages = [ pkgs.librsvg ]; # You need this for wlogout
 
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
+  };
+
   programs.kdeconnect.enable = true;
   # Packages
   environment.systemPackages =
@@ -126,7 +131,6 @@
 
       # LSP Servers
       lua-language-server
-      nil
       nixd
 
       nethogs
@@ -186,7 +190,6 @@
       bitwarden-desktop
       geogebra6
       git-lfs
-      zoxide
       wlrctl
     ]
     ++ (with pkgs-unstable; [
