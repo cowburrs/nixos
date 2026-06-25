@@ -2,7 +2,7 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
--- TODO: Actually do that. look through the option-list. you got it 
+-- TODO: Actually do that. look through the option-list. you got it
 -- Also you need to make local opts, and remove the redundant vim.o its literally bloat. DRY after all
 
 vim.o.number = true -- Make line numbers default
@@ -84,6 +84,7 @@ vim.o.confirm = true
 vim.opt.tabstop = 3
 vim.opt.shiftwidth = 3
 vim.opt.softtabstop = 3
+vim.opt_local.expandtab = true
 -- vim.opt_local.expandtab = true
 -- vim.o.autochdir = true
 -- vim: ts=2 sts=2 sw=2 et
