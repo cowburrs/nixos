@@ -14,6 +14,7 @@
     portalPackage = pkgs-unstable.xdg-desktop-portal-hyprland;
   };
   environment.pathsToLink = [ "/share/hypr" ];
+  programs.bookmarks.enable = true;
 
   # programs.nix-ld.enable = true; # Not the nix way ig, its ok i don't need it atm
 
@@ -100,7 +101,7 @@
     with pkgs;
     [
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
-      inputs.bookmarks.packages.${pkgs.system}.default
+      # inputs.bookmarks.packages.${pkgs.system}.default
       playerctl
       mako
       waybar

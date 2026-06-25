@@ -69,6 +69,7 @@
             inputs.mikuboot.nixosModules.default
             inputs.home-manager.nixosModules.home-manager
             inputs.nix-flatpak.nixosModules.nix-flatpak
+            inputs.bookmarks.nixosModules.default
             {
               home-manager.extraSpecialArgs = { inherit self; };
               home-manager.useGlobalPkgs = true;
