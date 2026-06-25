@@ -8,6 +8,7 @@ local bd = m.birthdayTask
 local wt5 = function(name)
 	return wt(name, 5)
 end
+local et = m.eventTask
 return {
 	wt("shave"),
 	wt("check emails"),
@@ -67,6 +68,7 @@ return {
 	bd("Shane", 10, 31),
 	bd("Char", 12, 17),
 	bd("Dung", 12, 29),
+	et("Bsides canberra", 24, 9, 2026),
 	st({
 		"Test works",
 		"bin scripts instead of hypr nixos",
