@@ -74,6 +74,25 @@
     enable = true;
     enableBashIntegration = true;
   };
+  programs.yazi = {
+    enable = true;
+    plugins = {
+      git = (with pkgs.yaziPlugins; git);
+      relative-motions = (with pkgs.yaziPlugins; relative-motions);
+      full-border = (with pkgs.yaziPlugins; full-border);
+      smart-enter = (with pkgs.yaziPlugins; smart-enter);
+      bookmarks = "${inputs.bookmarks}/bookmarks.yazi";
+      jump-to-char = (with pkgs.yaziPlugins; jump-to-char);
+    };
+    initLua = ../../resources/misc/yazi/init.lua;
+    settings = {
+      theme = (lib.importTOML ../../resources/misc/yazi/theme.toml) // {
+        mgr.syntect_theme = ../../resources/misc/yazi/flavors/catppuccin-macchiato.yazi/tmtheme.xml;
+      };
+      yazi = (lib.importTOML ../../resources/misc/yazi/yazi.toml);
+      keymap = (lib.importTOML ../../resources/misc/yazi/keymap.toml);
+    };
+  };
 
   programs.kdeconnect.enable = true;
   # Packages
@@ -193,7 +212,6 @@
       wlrctl
     ]
     ++ (with pkgs-unstable; [
-      yazi
       tetrio-desktop
       hyprshutdown
       logseq

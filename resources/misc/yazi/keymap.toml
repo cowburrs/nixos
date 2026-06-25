@@ -185,7 +185,7 @@ keymap = [
   ], run = "copy name_without_ext", desc = "Copy the filename without extension" },
 
   # Filter
-  { on = "f", run = "filter --smart", desc = "Filter files" },
+  { on = "<S-f>", run = "filter --smart", desc = "Filter files" },
 
   # Find
   { on = "/", run = "find --smart", desc = "Find next file" },
@@ -559,5 +559,5 @@ keymap = [
   { on = "<Down>", run = "arrow next", desc = "Next line" },
 
   # Filtering
-  { on = "f", run = "filter", desc = "Filter help items" },
+  { on = "<S-f>", run = "filter", desc = "Filter help items" },
 ]
