@@ -207,5 +207,6 @@ return {
 		"birthday task taskmanger",
 		"weekly find book/manga task (more also)",
 		"clean bathroom ceiling mould",
+		"Portfolio website",
 	}),
 }
