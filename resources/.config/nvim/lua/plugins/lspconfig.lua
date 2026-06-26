@@ -25,6 +25,7 @@ return {
 		vim.lsp.enable("gdscript")
 		vim.lsp.enable("hls")
 		vim.lsp.enable("pyright")
+		vim.lsp.enable("texlab")
 		vim.lsp.enable("arduino_language_server")
 		vim.lsp.config("arduino_language_server", {
 			cmd = {

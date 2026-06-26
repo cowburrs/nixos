@@ -202,7 +202,6 @@
 
       taplo
       anki
-      texlive.combined.scheme-medium
       pandoc
       zotero
       zbar
