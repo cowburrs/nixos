@@ -42,3 +42,4 @@ c.auto_save.session = True
 c.colors.webpage.darkmode.enabled = True
 catppuccin.setup(c, 'macchiato', True)
 c.qt.args = ['disable-features=HardwareMediaKeyHandling']
+config.bind('gt', 'tab-focus')

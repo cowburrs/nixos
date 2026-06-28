@@ -210,7 +210,9 @@
       geogebra6
       git-lfs
       wlrctl
-      qutebrowser
+      (qutebrowser.overridePythonAttrs (old: {
+        dependencies = old.dependencies ++ [ python3.pkgs.requests ];
+      }))
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop

@@ -6,18 +6,7 @@
 
 config_version: 2
 settings:
-  bindings.commands:
-    global:
-      command:
-        <Ctrl+n>: completion-item-focus next
-        <Ctrl+p>: completion-item-focus prev
-        <Ctrl+y>: completion-item-focus next ;; command-accept
-      normal:
-        Q: macro-record
-        j: 'jseval -q window.location.host.includes(''google.com'') || window.location.host.includes(''duckduckgo.com'')
-          ? qute.run(''scroll down ;; scroll down ;; scroll down'') : qute.run(''scroll
-          down'')'
-        k: 'jseval -q window.location.host.includes(''google.com'') || window.location.host.includes(''duckduckgo.com'')
-          ? qute.run(''scroll up ;; scroll up ;; scroll up'') : qute.run(''scroll
-          up'')'
-        q: null
+  content.javascript.clipboard:
+    https://github.com: access-paste
+  content.notifications.enabled:
+    https://www.youtube.com: false
