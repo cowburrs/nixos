@@ -210,6 +210,7 @@
       geogebra6
       git-lfs
       wlrctl
+      qutebrowser
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop

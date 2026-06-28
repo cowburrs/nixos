@@ -4,8 +4,8 @@ return {
 	opts = {
 		-- startVisible = true,
 		-- debounceMs = 0,
-		-- showBlankVirtLine = true,
-		-- highlightFullVirtLine = false,
+		showBlankVirtLine = false,
+		highlightFullVirtLine = true,
 		-- highlightColor = { link = "Comment" },
 		-- targetedMotionHighlightColor = { link = "PrecognitionTargetedMotionDefault" },
 		-- textObjectHighlightColors = {
