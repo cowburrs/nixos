@@ -1,5 +1,5 @@
 hl.window_rule({
-	name = "firefox",
+	name = "browser",
 	workspace = 1,
-	match = { class = "firefox" },
+	match = { class = "firefox|org.qutebrowser.qutebrowser" },
 })
