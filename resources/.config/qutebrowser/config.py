@@ -41,7 +41,8 @@ c.tabs.position = 'left'
 c.auto_save.session = True
 c.colors.webpage.darkmode.enabled = True
 catppuccin.setup(c, 'macchiato', True)
-c.qt.args = ['disable-features=HardwareMediaKeyHandling']
+# c.qt.args = ['disable-features=HardwareMediaKeyHandling']
+c.input.media_keys = False
 config.bind('gt', 'tab-focus')
 c.aliases = {
     'zotero': 'spawn --userscript qute-zotero',

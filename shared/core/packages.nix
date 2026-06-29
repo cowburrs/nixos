@@ -102,6 +102,7 @@
     [
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
       # inputs.bookmarks.packages.${pkgs.system}.default
+      inputs.self.packages.${pkgs.system}.logseq
       playerctl
       mako
       waybar
@@ -206,7 +207,6 @@
       zotero
       zbar
       bitwarden-cli
-      bitwarden-desktop
       geogebra6
       git-lfs
       wlrctl
@@ -218,6 +218,5 @@
     ++ (with pkgs-unstable; [
       tetrio-desktop
       hyprshutdown
-      logseq
     ]);
 }
