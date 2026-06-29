@@ -19,7 +19,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("music-discord-rpc --only-when-playing")
 	hl.exec_cmd("easyeffects -w")
 	hl.exec_cmd("spotify")
-	hl.exec_cmd("firefox")
+	hl.exec_cmd("qutebrowser")
 end)
 
 function recursiveRequire(folder) -- NOTE: AI Generated
