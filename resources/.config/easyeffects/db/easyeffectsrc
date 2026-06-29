@@ -20,7 +20,7 @@ outputDevice=alsa_output.usb-R__DE_R__DE_NT-USB__151081CE-00.analog-stereo
 visiblePage=pluginsPage
 
 [Window]
-height=526
+height=1048
 visiblePage=inputPage
 visiblePipeWirePage=testSignalsPage
-width=960
+width=1916
