@@ -102,7 +102,7 @@
     [
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
       # inputs.bookmarks.packages.${pkgs.system}.default
-      inputs.self.packages.${pkgs.system}.logseq
+      # inputs.self.packages.${pkgs.system}.logseq
       playerctl
       mako
       waybar
@@ -214,6 +214,7 @@
         dependencies = old.dependencies ++ [ python3.pkgs.requests ];
       }))
       (python3.withPackages (ps: [ ps.requests ]))
+      logseq
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop

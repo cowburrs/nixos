@@ -38,10 +38,6 @@
     bookmarks = {
       url = "github:cowburrs/bookmarks";
     };
-    logseq = {
-      url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-linux-x64-0.10.15.AppImage";
-      flake = false;
-    };
   };
   outputs =
     {
@@ -58,9 +54,6 @@
         };
         syne = nixpkgs.legacyPackages.x86_64-linux.callPackage ./packages/syne.nix {
           src = inputs.syne;
-        };
-        logseq = nixpkgs.legacyPackages.x86_64-linux.callPackage ./packages/logseq.nix {
-          src = inputs.logseq;
         };
       };
       nixosConfigurations =
