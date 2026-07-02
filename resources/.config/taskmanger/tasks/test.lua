@@ -210,5 +210,6 @@ return {
 		"weekly find book/manga task (more also)",
 		"clean bathroom ceiling mould",
 		"Portfolio website",
+		"art task and line up clothes task",
 	}),
 }
