@@ -1,388 +1,166 @@
-[        Platform] [  LOG] [10:39:15.613]  Openplanet for Trackmania Next x64
-[        Platform] [ TRAC] [10:39:15.613]  (c) Melissa Geels 2016 - 2026
-[        Platform] [ TRAC] [10:39:15.613]  https://openplanet.dev/
-[        Platform] [  LOG] [10:39:15.613]  Openplanet starting on 2026-06-13
-[        Platform] [  LOG] [10:39:15.615]  Engine: 2026-02-02 16:51:19
-[        Platform] [  LOG] [10:39:15.615]  Openplanet: 1.29.5 (next, Public, 1234ad9e)
-[        Platform] [ TRAC] [10:39:15.615]  Identifier: 0x000000006980D607
-[        Platform] [ TRAC] [10:39:15.615]  Process ID: 2140
-[        Platform] [  LOG] [10:39:15.619]  Setting up hook callbacks...
-[        Platform] [  LOG] [10:39:16.484]  Semi entry initialization...
-[        Platform] [  LOG] [10:39:16.484]  Loading settings
-[        Platform] [  LOG] [10:39:16.485]  Update branch: default
-[        Platform] [  LOG] [10:39:16.496]  Requesting app config with timeout 5000...
-[        Platform] [  LOG] [10:39:18.548]  Did not find update to install.
-[        Platform] [  LOG] [10:39:18.548]  Finding game window..
-[        Platform] [ TRAC] [10:39:18.548]  Window handle: 00020130 ("Trackmania")
-[        Platform] [  LOG] [10:39:18.549]  Initializing meta...
-[     WebServices] [  LOG] [10:39:36.089]  NadeoServices account ID: a694d39f-86c2-4429-87bb-f8d505efa3b6
-[        Platform] [  LOG] [10:39:39.233]  Loop entry initialization...
-[        Platform] [  LOG] [10:39:39.233]  Hooking WndProc...
-[        Platform] [  LOG] [10:39:39.233]  Initializing core commands...
-[        Platform] [  LOG] [10:39:39.233]  Initializing sockets...
-[        Platform] [  LOG] [10:39:39.233]  Adding user library path...
-[        Platform] [  LOG] [10:39:39.233]  Initializing audio...
-[           Audio] [  LOG] [10:39:39.234]  Setting playback device to "Speakers (PulseAudio Output)"
-[        Platform] [  LOG] [10:39:39.244]  Initializing scripting...
-[    ScriptEngine] [  LOG] [10:39:39.461]  Registered 2659 classes
-[        Platform] [ TRAC] [10:39:40.165]  Writing type definitions to file: "C:/users/steamuser/OpenplanetNext/Openplanet.h"
-[        Platform] [  LOG] [10:39:40.205]  Writing json to file: "C:/users/steamuser/OpenplanetNext/OpenplanetNext.json"
-[        Platform] [  LOG] [10:39:40.230]  Dumping Openplanet documentation to C:/users/steamuser/OpenplanetNext/OpenplanetCore.json
-[        Platform] [  LOG] [10:39:40.241]  Initializing overlay...
-[         Overlay] [  LOG] [10:39:40.259]  Loading user style: S:/common/Trackmania/Openplanet/DefaultStyle.toml
-[        Platform] [  LOG] [10:39:40.266]  Beginning script engine...
-[    ScriptEngine] [  LOG] [10:39:40.269]  Adding plugins...
-[    ScriptEngine] [ TRAC] [10:39:40.294]  Loaded plugin 'NadeoServices' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:40.323]  MLHook.op/:/Logging.as (29, 1) : INFO : Compiling void RenderLogsWindow()
-[    ScriptEngine] [ WARN] [10:39:40.323]  MLHook.op/:/Logging.as (38, 40) : WARN : Signed/Unsigned mismatch
-[    ScriptEngine] [ TRAC] [10:39:40.329]  Loaded zipped plugin 'MLHook' (version 0.5.4)
-[    ScriptEngine] [ TRAC] [10:39:40.378]  MLFeedRaceData.op/:/MLFeed_ExportShared.as (279, 9) : INFO : Compiling int PlayerCpInfo::get_RoyalTA_SegmentFinishedAt(int) const
-[    ScriptEngine] [ WARN] [10:39:40.378]  MLFeedRaceData.op/:/MLFeed_ExportShared.as (280, 44) : WARN : Signed/Unsigned mismatch
-[    ScriptEngine] [ TRAC] [10:39:40.382]  MLFeedRaceData.op/:/Main.as (363, 9) : INFO : Compiling int _PlayerCpInfo::get_RoyalTA_SegmentFinishedAt(int) const
-[    ScriptEngine] [ WARN] [10:39:40.382]  MLFeedRaceData.op/:/Main.as (364, 44) : WARN : Signed/Unsigned mismatch
-[    ScriptEngine] [ TRAC] [10:39:40.399]  Loaded zipped plugin 'MLFeedRaceData' (version 0.6.4)
-[    ScriptEngine] [ TRAC] [10:39:40.436]  Loaded zipped plugin 'UltimateMedalsExtended' (version 1.8)
-[    ScriptEngine] [ TRAC] [10:39:40.441]  Loaded plugin 'Camera' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:40.447]  Loaded plugin 'EditorDeveloper' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:40.470]  Loaded plugin 'VehicleState' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:40.502]  Loaded zipped plugin 'Dashboard' (version 1.9.8)
-[    ScriptEngine] [ TRAC] [10:39:40.510]  Loaded plugin 'Finetuner' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:40.532]  Loaded zipped plugin 'SplitSpeeds' (version 2.2.3)
-[    ScriptEngine] [ TRAC] [10:39:40.546]  Loaded plugin 'InfiniteEmbedSize' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:40.557]  Loaded zipped plugin 'ak-hints' (version 0.1.9)
-[    ScriptEngine] [ TRAC] [10:39:40.564]  anyghost.op/:/render.as (26, 1) : INFO : Compiling void RenderInterface()
-[    ScriptEngine] [ WARN] [10:39:40.564]  anyghost.op/:/render.as (123, 51) : WARN : The operand is implicitly converted to handle in order to compare them
-[    ScriptEngine] [ TRAC] [10:39:40.568]  Loaded zipped plugin 'anyghost' (version 1.4)
-[    ScriptEngine] [ TRAC] [10:39:40.573]  Loaded plugin 'UsefulInformation' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:40.578]  Loaded plugin 'Stats' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:40.582]  Loaded plugin 'ClassicMenu' (version 1.1)
-[    ScriptEngine] [ WARN] [10:39:40.583]  Couldn't find optional plugin dependency "ticker" while loading plugin "ChampionMedals"
-[    ScriptEngine] [ TRAC] [10:39:40.615]  Loaded zipped plugin 'ChampionMedals' (version 1.22)
-[   ScriptRuntime] [ TRAC] [10:39:40.764] [ghosts-pp]  Found: 89 91 04 0D 00 00 8B 05 ?? ?? ?? ?? 48 89 7C 24 28 4C 89 7C 24 20 85 C0 74 2D 8B FD 8B F0 at 0x00000001406A216A
-[   ScriptRuntime] [ TRAC] [10:39:40.779] [ghosts-pp]  Found: 03 00 00 F3 0F 11 91 ?? 03 00 00 76 at 0x0000000141076A8D
-[   ScriptRuntime] [ TRAC] [10:39:40.793] [ghosts-pp]  Found: CD CC 4C 3E F3 0F 11 89 ?? 03 00 00 C3 at 0x0000000141075C3D
-[    ScriptEngine] [ TRAC] [10:39:40.794]  Loaded zipped plugin 'ghosts-pp' (version 0.4.8)
-[    ScriptEngine] [ TRAC] [10:39:40.803]  Loaded zipped plugin 'UnintrusiveCheckpointTimer' (version 0.2.7)
-[    ScriptEngine] [ TRAC] [10:39:40.892]  Loaded zipped plugin 'WarriorMedals' (version 1.12.2)
-[    ScriptEngine] [ TRAC] [10:39:40.900]  Loaded plugin 'Controls' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:40.938]  Loaded plugin 'PluginManager' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:40.948]  Loaded zipped plugin 'Gear-Change-Indicator' (version 1.3)
-[    ScriptEngine] [ WARN] [10:39:40.949]  Couldn't find optional plugin dependency "DuckMedals" while loading plugin "GrindingStats"
-[    ScriptEngine] [ TRAC] [10:39:40.992]  Loaded zipped plugin 'GrindingStats' (version 2.1.12)
-[    ScriptEngine] [ TRAC] [10:39:41.008]  Loaded plugin 'Discord' (version 1.0)
-[    ScriptEngine] [ TRAC] [10:39:41.089]  Loaded zipped plugin 'DiscordRivalryPing' (version 1.2.2)
-[    ScriptEngine] [ TRAC] [10:39:41.128]  Loaded zipped plugin 'Copium' (version 1.4.1)
-[    ScriptEngine] [ TRAC] [10:39:41.140]  Loaded plugin 'BigDecor' (version 1.0)
-[    ScriptEngine] [  LOG] [10:39:41.141]  Adding legacy plugins...
-[    ScriptEngine] [ TRAC] [10:39:41.144]  Loaded legacy plugin 'Plugin_MapAudioFix' (version 1.0)
-[    ScriptEngine] [  LOG] [10:39:41.144]  Plugins added!
-[        Platform] [  LOG] [10:39:41.147]  Initialized!
-[   ScriptRuntime] [ERROR] [10:39:41.147] [MLFeedRaceData]  DEPRECATED: awaitable.WithRunContext() is no longer valid. Use Meta::StartWithRunContext instead.
-[   ScriptRuntime] [ERROR] [10:39:41.147] [MLFeedRaceData]  DEPRECATED: awaitable.WithRunContext() is no longer valid. Use Meta::StartWithRunContext instead.
-[   ScriptRuntime] [  LOG] [10:39:41.172] [InfiniteEmbedSize]  Patched! Backup: "76"
-[   ScriptRuntime] [ TRAC] [10:39:41.213] [ghosts-pp]  ghosts++ checking permissions
-[   ScriptRuntime] [ TRAC] [10:39:41.213] [ghosts-pp]  checked permissions
-[   ScriptRuntime] [ TRAC] [10:39:41.213] [ghosts-pp]  Version Compat URL: https://openplanet.dev/plugin/ghosts-pp/config/version-compat
-[   ScriptRuntime] [ TRAC] [10:39:41.213] [WarriorMedals]  reading C:/users/steamuser/OpenplanetNext/PluginStorage/WarriorMedals/hidden.json
-[   ScriptRuntime] [ WARN] [10:39:41.214] [WarriorMedals]  Unable to open json file 'C:/users/steamuser/OpenplanetNext/PluginStorage/WarriorMedals/hidden.json': No such file or directory
-[   ScriptRuntime] [ TRAC] [10:39:41.214] [WarriorMedals]  reading C:/users/steamuser/OpenplanetNext/PluginStorage/WarriorMedals/read.json
-[   ScriptRuntime] [ TRAC] [10:39:41.224] [PluginManager]  Checking for plugin updates..
-[   ScriptRuntime] [  LOG] [10:39:41.224] [Discord]  Initializing Discord...
-[   ScriptRuntime] [ TRAC] [10:39:41.224] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
-[   ScriptRuntime] [ TRAC] [10:39:41.225] [Copium]  registering UME medals
-[   ScriptRuntime] [ TRAC] [10:39:41.244] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_Pair
-[   ScriptRuntime] [ TRAC] [10:39:41.244] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_Clear
-[   ScriptRuntime] [ TRAC] [10:39:41.244] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_IsReqActive
-[   ScriptRuntime] [ TRAC] [10:39:41.244] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_SliceInfo
-[   ScriptRuntime] [ TRAC] [10:39:41.244] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_OrigMapIx
-[   ScriptRuntime] [ TRAC] [10:39:41.244] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_UidsResp
-[   ScriptRuntime] [ERROR] [10:39:41.249] [UnintrusiveCheckpointTimer]  DEPRECATED: Do not use the Draw namespace anymore! GetWidth and GetHeight have moved to the Display namespace.
-[   ScriptRuntime] [ERROR] [10:39:41.249] [UnintrusiveCheckpointTimer]      #0  void Internal::ReportDrawSizeDeprecation() (S:/common/Trackmania/Openplanet/Scripts/Compatibility.as line 63)
-[   ScriptRuntime] [ERROR] [10:39:41.249] [UnintrusiveCheckpointTimer]      #1  int Draw::GetHeight() (S:/common/Trackmania/Openplanet/Scripts/Compatibility.as line 149)
-[   ScriptRuntime] [ERROR] [10:39:41.249] [UnintrusiveCheckpointTimer]      #2  vec2 GetScreen() (UnintrusiveCheckpointTimer.op/:/CustomPos.as line 82)
-[   ScriptRuntime] [ERROR] [10:39:41.249] [UnintrusiveCheckpointTimer]      #3  void RenderEarly() (UnintrusiveCheckpointTimer.op/:/CustomPos.as line 69)
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [NadeoServices]  Waiting for existing token request to finish
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_PlayerCP
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_PlayerLeft
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_PlayerRaceTimes
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_PlayerInfo
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_MatchKeyPair
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_COTDQualiInfo
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_LapsNb
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_Warmup
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_PlayerRaceProgression
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_MLFeedKOs_PlayerStatus
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_MLFeedKOs_MatchKeyPair
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_TeamsFeed_MatchKeyPair
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: TMGame_Record_NewRecord
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_GhostData
-[   ScriptRuntime] [ TRAC] [10:39:41.250] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_GhostData_Removed
-[   ScriptRuntime] [ TRAC] [10:39:41.251] [WarriorMedals]  getting token 1...
-[   ScriptRuntime] [ TRAC] [10:39:41.727] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
-[   ScriptRuntime] [ TRAC] [10:39:42.236] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
-[   ScriptRuntime] [ TRAC] [10:39:42.746] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
-[   ScriptRuntime] [ TRAC] [10:39:43.247] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
-[   ScriptRuntime] [ TRAC] [10:39:43.759] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
-[   ScriptRuntime] [ TRAC] [10:39:44.182] [ghosts-pp]  Got GameVersionSafe status: false
-[   ScriptRuntime] [ WARN] [10:39:44.182] [ghosts-pp]  Game version (2026-02-02_17_51) not marked as compatible with this version of the plugin -- will be inactive!
-[   ScriptRuntime] [ WARN] [10:39:44.182] [ghosts-pp]  
-[   ScriptRuntime] [ WARN] [10:39:44.182] [ghosts-pp]  Checking new versions is a manual process and avoids crashing your game after an update.
-[   ScriptRuntime] [ WARN] [10:39:44.182] [PluginManager]  New plugin update available for Ultimate Medals Extended: 1.8 -> 1.9
-[   ScriptRuntime] [ TRAC] [10:39:44.261] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
-[   ScriptRuntime] [ TRAC] [10:39:44.765] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
-[   ScriptRuntime] [ TRAC] [10:39:45.277] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
-[   ScriptRuntime] [ TRAC] [10:39:45.782] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
-[   ScriptRuntime] [ TRAC] [10:39:46.264] [NadeoServices]  Requesting token for audience "NadeoLiveServices"
-[   ScriptRuntime] [ TRAC] [10:39:46.781] [NadeoServices]  Got token for audience "NadeoLiveServices"
-[   ScriptRuntime] [ TRAC] [10:39:53.582] [WarriorMedals]  got token 1, getting token 2...
-[   ScriptRuntime] [ TRAC] [10:39:55.575] [WarriorMedals]  configs: 4
-[   ScriptRuntime] [ TRAC] [10:39:55.575] [WarriorMedals]  got token 2
-[   ScriptRuntime] [ TRAC] [10:39:55.583] [WarriorMedals]  registering UME medal
-[   ScriptRuntime] [ TRAC] [10:39:55.583] [WarriorMedals]  getting all map infos
-[   ScriptRuntime] [ TRAC] [10:40:07.597] [WarriorMedals]  next request: 2026-06-13 20:00:00
-[   ScriptRuntime] [ TRAC] [10:40:07.729] [WarriorMedals]  got all map infos after 12145ms
-[   ScriptRuntime] [ TRAC] [10:40:07.729] [WarriorMedals]  reading PBs from file
-[   ScriptRuntime] [ TRAC] [10:40:07.733] [WarriorMedals]  read all PBs (247) after 4ms
-[   ScriptRuntime] [ TRAC] [10:40:07.733] [WarriorMedals]  getting all PBs...
-[   ScriptRuntime] [ TRAC] [10:40:07.733] [WarriorMedals]  getting PBs with offset 0
-[   ScriptRuntime] [ TRAC] [10:40:13.258] [WarriorMedals]  getting PBs with offset 1000
-[   ScriptRuntime] [ TRAC] [10:40:15.071] [WarriorMedals]  saving PBs to file
-[   ScriptRuntime] [ TRAC] [10:40:15.072] [WarriorMedals]  saved all PBs (247) after 1ms
-[   ScriptRuntime] [ TRAC] [10:40:15.072] [WarriorMedals]  got all PBs (247) after 7338ms
-[   ScriptRuntime] [ TRAC] [10:40:15.072] [WarriorMedals]  building campaigns
-[   ScriptRuntime] [ TRAC] [10:40:15.100] [WarriorMedals]  building campaigns done after 27ms
-[   ScriptRuntime] [ TRAC] [10:40:15.100] [WarriorMedals]  sorting campaigns and maps
-[   ScriptRuntime] [ TRAC] [10:40:15.138] [WarriorMedals]  sorting campaigns and maps done after 37ms
-[   ScriptRuntime] [ TRAC] [10:40:15.138] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [10:40:15.146] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [10:40:24.476] [MLFeedRaceData]  MLFeedKOs: GM change from:  to TM_Campaign_Local
-[   ScriptRuntime] [  LOG] [10:40:29.366] [GrindingStats]  Loading data & starting coroutines for map "p1eEqNonyftdneHUE1XpskyOdC4"
-[   ScriptRuntime] [  LOG] [10:40:29.366] [GrindingStats]  Read finishes 0 resets 0 time 0 respawns 0
-[   ScriptRuntime] [  LOG] [10:40:29.366] [GrindingStats]  medals [{"medal":0,"achieved":false,"achieved_time":"          0"},{"medal":1,"achieved":false,"achieved_time":"          0"},{"medal":2,"achieved":false,"achieved_time":"          0"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"},{"medal":6,"achieved":false,"achieved_time":"          0"},{"medal":7,"achieved":false,"achieved_time":"          0"},{"medal":8,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [10:40:29.366] [GrindingStats]  from C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/p1eEqNonyftdneHUE1XpskyOdC4.json
-[   ScriptRuntime] [ERROR] [10:40:30.907] [Gear-Change-Indicator]  DEPRECATED: Do not use the Draw namespace anymore! GetWidth and GetHeight have moved to the Display namespace.
-[   ScriptRuntime] [ERROR] [10:40:30.907] [Gear-Change-Indicator]      #0  void Internal::ReportDrawSizeDeprecation() (S:/common/Trackmania/Openplanet/Scripts/Compatibility.as line 63)
-[   ScriptRuntime] [ERROR] [10:40:30.907] [Gear-Change-Indicator]      #1  int Draw::GetHeight() (S:/common/Trackmania/Openplanet/Scripts/Compatibility.as line 149)
-[   ScriptRuntime] [ERROR] [10:40:30.907] [Gear-Change-Indicator]      #2  void Render() (Gear-Change-Indicator.op/:/Main.as line 30)
-[   ScriptRuntime] [ TRAC] [10:40:31.023] [MLHook]  MLHook preparing 8 outbound messages to ML
-[   ScriptRuntime] [ TRAC] [10:40:31.649] [DiscordRivalryPing]  {"score":4294967295,"clubId":117364,"mapUid":"p1eEqNonyftdneHUE1XpskyOdC4","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [  LOG] [10:40:33.030] [SplitSpeeds]  Map switched to p1eEqNonyftdneHUE1XpskyOdC4, pb = 0
-[   ScriptRuntime] [ERROR] [10:40:36.209] [ak-hints]  DEPRECATED: Do not use the Draw namespace anymore! GetWidth and GetHeight have moved to the Display namespace.
-[   ScriptRuntime] [ERROR] [10:40:36.209] [ak-hints]      #0  void Internal::ReportDrawSizeDeprecation() (S:/common/Trackmania/Openplanet/Scripts/Compatibility.as line 63)
-[   ScriptRuntime] [ERROR] [10:40:36.210] [ak-hints]      #1  int Draw::GetHeight() (S:/common/Trackmania/Openplanet/Scripts/Compatibility.as line 149)
-[   ScriptRuntime] [ERROR] [10:40:36.210] [ak-hints]      #2  void Render() (ak-hints.op/:/Main.as line 140)
-[   ScriptRuntime] [  LOG] [10:41:17.192] [SplitSpeeds]  ToFile! time: 41610, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/p1eEqNonyftdneHUE1XpskyOdC4.json
-[   ScriptRuntime] [ TRAC] [10:41:17.743] [DiscordRivalryPing]  New PB: 4294967295 -> 41610
-[   ScriptRuntime] [ TRAC] [10:41:18.376] [WarriorMedals]  new pb: 0:41.610
-[   ScriptRuntime] [ TRAC] [10:41:18.376] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [10:41:18.386] [WarriorMedals]  setting totals done after 10ms
-[   ScriptRuntime] [ TRAC] [10:41:20.007] [DiscordRivalryPing]  {"score":41610,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":74934,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":3241,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":2587,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":103,"length":0}}],"mapUid":"p1eEqNonyftdneHUE1XpskyOdC4","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:41:29.658] [DiscordRivalryPing]  {"score":41610,"clubId":117364,"mapUid":"p1eEqNonyftdneHUE1XpskyOdC4","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:41:29.658] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [10:41:34.123] [DiscordRivalryPing]  official campaign data is null or has ended, fetching new campaign data for 
-[   ScriptRuntime] [ TRAC] [10:41:36.384] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [ TRAC] [10:42:10.184] [Copium]  new best time: 0:36.099
-[   ScriptRuntime] [  LOG] [10:43:14.807] [SplitSpeeds]  ToFile! time: 35338, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/p1eEqNonyftdneHUE1XpskyOdC4.json
-[   ScriptRuntime] [ TRAC] [10:43:15.295] [WarriorMedals]  new pb: 0:35.338
-[   ScriptRuntime] [ TRAC] [10:43:15.295] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [10:43:15.305] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [10:43:15.743] [DiscordRivalryPing]  New PB: 41610 -> 35338
-[   ScriptRuntime] [ TRAC] [10:43:17.144] [DiscordRivalryPing]  {"score":35338,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":56418,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":2433,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":1926,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":74,"length":0}}],"mapUid":"p1eEqNonyftdneHUE1XpskyOdC4","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:43:18.409] [DiscordRivalryPing]  {"score":41610,"clubId":117364,"mapUid":"p1eEqNonyftdneHUE1XpskyOdC4","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:43:20.396] [DiscordRivalryPing]  {"score":35338,"clubId":117364,"mapUid":"p1eEqNonyftdneHUE1XpskyOdC4","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:43:20.396] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [10:43:22.164] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [  LOG] [10:44:31.741] [SplitSpeeds]  ToFile! time: 34961, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/p1eEqNonyftdneHUE1XpskyOdC4.json
-[   ScriptRuntime] [ TRAC] [10:44:32.378] [DiscordRivalryPing]  New PB: 35338 -> 34961
-[   ScriptRuntime] [ TRAC] [10:44:32.862] [WarriorMedals]  new pb: 0:34.961
-[   ScriptRuntime] [ TRAC] [10:44:32.862] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [10:44:32.871] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [10:44:33.584] [DiscordRivalryPing]  {"score":34961,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":50963,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":2177,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":1728,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":71,"length":0}}],"mapUid":"p1eEqNonyftdneHUE1XpskyOdC4","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:44:33.585] [DiscordRivalryPing]  weekly-shorts campaign data is null or has ended, fetching new campaign data for 
-[   ScriptRuntime] [ TRAC] [10:44:38.528] [MLFeedRaceData]  MLFeedKOs: GM change from: TM_Campaign_Local to 
-[   ScriptRuntime] [  LOG] [10:44:38.529] [GrindingStats]  Saving data & stopping coroutines for map "p1eEqNonyftdneHUE1XpskyOdC4"
-[   ScriptRuntime] [  LOG] [10:44:38.530] [GrindingStats]  Wrote finishes 4 resets 7 time 226937 respawns 5
-[   ScriptRuntime] [  LOG] [10:44:38.530] [GrindingStats]  medals [{"medal":0,"achieved":true,"achieved_time":"      41740"},{"medal":1,"achieved":true,"achieved_time":"      41740"},{"medal":2,"achieved":true,"achieved_time":"     151079"},{"medal":3,"achieved":true,"achieved_time":"     224034"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [10:44:38.530] [GrindingStats]  to C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/p1eEqNonyftdneHUE1XpskyOdC4.json
-[   ScriptRuntime] [ TRAC] [10:44:38.530] [DiscordRivalryPing]  {"score":35338,"clubId":117364,"mapUid":"p1eEqNonyftdneHUE1XpskyOdC4","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:44:39.734] [DiscordRivalryPing]  {"score":34961,"clubId":117364,"mapUid":"p1eEqNonyftdneHUE1XpskyOdC4","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:44:39.734] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [10:44:42.411] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [ TRAC] [10:45:16.294] [MLFeedRaceData]  MLFeedKOs: GM change from:  to TM_Campaign_Local
-[   ScriptRuntime] [  LOG] [10:45:19.919] [GrindingStats]  Loading data & starting coroutines for map "VvBc6cBetVvxtzZyrA1ZeZNR665"
-[   ScriptRuntime] [  LOG] [10:45:19.920] [GrindingStats]  Read finishes 0 resets 0 time 0 respawns 0
-[   ScriptRuntime] [  LOG] [10:45:19.920] [GrindingStats]  medals [{"medal":0,"achieved":false,"achieved_time":"          0"},{"medal":1,"achieved":false,"achieved_time":"          0"},{"medal":2,"achieved":false,"achieved_time":"          0"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"},{"medal":6,"achieved":false,"achieved_time":"          0"},{"medal":7,"achieved":false,"achieved_time":"          0"},{"medal":8,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [10:45:19.920] [GrindingStats]  from C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/VvBc6cBetVvxtzZyrA1ZeZNR665.json
-[   ScriptRuntime] [ TRAC] [10:45:20.215] [DiscordRivalryPing]  {"score":4294967295,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:45:22.408] [MLHook]  MLHook preparing 8 outbound messages to ML
-[   ScriptRuntime] [  LOG] [10:45:26.691] [SplitSpeeds]  Map switched to VvBc6cBetVvxtzZyrA1ZeZNR665, pb = 0
-[   ScriptRuntime] [ TRAC] [10:47:04.030] [Copium]  new best time: 0:44.094
-[   ScriptRuntime] [  LOG] [10:47:04.078] [SplitSpeeds]  ToFile! time: 80528, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/VvBc6cBetVvxtzZyrA1ZeZNR665.json
-[   ScriptRuntime] [ TRAC] [10:47:04.654] [DiscordRivalryPing]  New PB: 4294967295 -> 80528
-[   ScriptRuntime] [ TRAC] [10:47:05.144] [WarriorMedals]  new pb: 1:20.528
-[   ScriptRuntime] [ TRAC] [10:47:05.144] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [10:47:05.153] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [10:47:06.637] [DiscordRivalryPing]  {"score":80528,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":66950,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":2919,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":2329,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":86,"length":0}}],"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:47:07.861] [DiscordRivalryPing]  {"score":4294967295,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:47:10.329] [DiscordRivalryPing]  {"score":80528,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:47:10.329] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [10:47:12.038] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [  LOG] [10:48:02.569] [SplitSpeeds]  ToFile! time: 56347, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/VvBc6cBetVvxtzZyrA1ZeZNR665.json
-[   ScriptRuntime] [ TRAC] [10:48:03.250] [DiscordRivalryPing]  New PB: 80528 -> 56347
-[   ScriptRuntime] [ TRAC] [10:48:03.643] [WarriorMedals]  new pb: 0:56.347
-[   ScriptRuntime] [ TRAC] [10:48:03.643] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [10:48:03.652] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [10:48:04.449] [DiscordRivalryPing]  {"score":56347,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":64910,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":2824,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":2258,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":84,"length":0}}],"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:48:05.690] [DiscordRivalryPing]  {"score":80528,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:48:06.898] [DiscordRivalryPing]  {"score":56347,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:48:06.898] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [10:48:09.087] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [ TRAC] [10:49:17.928] [Copium]  new best time: 0:43.709
-[   ScriptRuntime] [  LOG] [10:50:20.493] [GrindingStats]  Wrote finishes 3 resets 9 time 268911 respawns 17
-[   ScriptRuntime] [  LOG] [10:50:20.493] [GrindingStats]  medals [{"medal":0,"achieved":true,"achieved_time":"     149532"},{"medal":1,"achieved":false,"achieved_time":"          0"},{"medal":2,"achieved":false,"achieved_time":"          0"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [10:50:20.493] [GrindingStats]  to C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/VvBc6cBetVvxtzZyrA1ZeZNR665.json
-[   ScriptRuntime] [ TRAC] [10:53:04.389] [Copium]  new best time: 0:42.645
-[   ScriptRuntime] [  LOG] [10:53:04.427] [SplitSpeeds]  ToFile! time: 56099, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/VvBc6cBetVvxtzZyrA1ZeZNR665.json
-[   ScriptRuntime] [ TRAC] [10:53:05.299] [WarriorMedals]  new pb: 0:56.099
-[   ScriptRuntime] [ TRAC] [10:53:05.299] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [10:53:05.309] [WarriorMedals]  setting totals done after 10ms
-[   ScriptRuntime] [ TRAC] [10:53:05.356] [DiscordRivalryPing]  New PB: 56347 -> 56099
-[   ScriptRuntime] [ TRAC] [10:53:06.595] [DiscordRivalryPing]  {"score":56099,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":64832,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":2817,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":2251,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":84,"length":0}}],"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:53:08.141] [DiscordRivalryPing]  {"score":56347,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:53:11.632] [DiscordRivalryPing]  {"score":56099,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:53:11.632] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [10:53:13.453] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [  LOG] [10:55:20.811] [GrindingStats]  Wrote finishes 4 resets 24 time 546096 respawns 28
-[   ScriptRuntime] [  LOG] [10:55:20.811] [GrindingStats]  medals [{"medal":0,"achieved":true,"achieved_time":"     149532"},{"medal":1,"achieved":false,"achieved_time":"          0"},{"medal":2,"achieved":false,"achieved_time":"          0"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [10:55:20.811] [GrindingStats]  to C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/VvBc6cBetVvxtzZyrA1ZeZNR665.json
-[   ScriptRuntime] [ TRAC] [10:56:00.077] [Copium]  new best time: 0:42.249
-[   ScriptRuntime] [  LOG] [10:56:00.118] [SplitSpeeds]  ToFile! time: 47966, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/VvBc6cBetVvxtzZyrA1ZeZNR665.json
-[   ScriptRuntime] [ TRAC] [10:56:00.257] [DiscordRivalryPing]  New PB: 56099 -> 47966
-[   ScriptRuntime] [ TRAC] [10:56:00.921] [WarriorMedals]  new pb: 0:47.966
-[   ScriptRuntime] [ TRAC] [10:56:00.921] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [10:56:00.929] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [10:56:01.891] [DiscordRivalryPing]  {"score":47966,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":58284,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":2508,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":1998,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":74,"length":0}}],"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:56:03.117] [DiscordRivalryPing]  {"score":56099,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:56:04.496] [DiscordRivalryPing]  {"score":47966,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:56:04.496] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [10:56:06.048] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [ TRAC] [10:57:30.420] [DiscordRivalryPing]  New PB: 47966 -> 41291
-[   ScriptRuntime] [  LOG] [10:57:30.446] [SplitSpeeds]  ToFile! time: 41291, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/VvBc6cBetVvxtzZyrA1ZeZNR665.json
-[   ScriptRuntime] [ TRAC] [10:57:31.606] [DiscordRivalryPing]  {"score":41291,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":25286,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":1043,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":820,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":31,"length":0}}],"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:57:31.797] [WarriorMedals]  new pb: 0:41.291
-[   ScriptRuntime] [ TRAC] [10:57:31.797] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [10:57:31.806] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [10:57:32.818] [DiscordRivalryPing]  {"score":47966,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:57:34.508] [DiscordRivalryPing]  {"score":41291,"clubId":117364,"mapUid":"VvBc6cBetVvxtzZyrA1ZeZNR665","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [10:57:34.508] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [10:57:36.418] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [  LOG] [10:57:39.027] [GrindingStats]  Saving data & stopping coroutines for map "VvBc6cBetVvxtzZyrA1ZeZNR665"
-[   ScriptRuntime] [  LOG] [10:57:39.028] [GrindingStats]  Wrote finishes 6 resets 29 time 667766 respawns 30
-[   ScriptRuntime] [  LOG] [10:57:39.028] [GrindingStats]  medals [{"medal":0,"achieved":true,"achieved_time":"     149532"},{"medal":1,"achieved":true,"achieved_time":"     585467"},{"medal":2,"achieved":true,"achieved_time":"     664869"},{"medal":3,"achieved":true,"achieved_time":"     664869"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [10:57:39.028] [GrindingStats]  to C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/VvBc6cBetVvxtzZyrA1ZeZNR665.json
-[   ScriptRuntime] [ TRAC] [10:57:39.041] [MLHook]  MLHook preparing 2 outbound messages to ML
-[   ScriptRuntime] [ TRAC] [10:57:39.378] [MLFeedRaceData]  MLFeedKOs: GM change from: TM_Campaign_Local to 
-[   ScriptRuntime] [ TRAC] [10:57:41.498] [MLFeedRaceData]  MLFeedKOs: GM change from:  to TM_Campaign_Local
-[   ScriptRuntime] [  LOG] [10:57:44.681] [GrindingStats]  Loading data & starting coroutines for map "6JdbJRDbozTpwcMP__My77cOqOh"
-[   ScriptRuntime] [  LOG] [10:57:44.681] [GrindingStats]  Read finishes 0 resets 0 time 0 respawns 0
-[   ScriptRuntime] [  LOG] [10:57:44.681] [GrindingStats]  medals [{"medal":0,"achieved":false,"achieved_time":"          0"},{"medal":1,"achieved":false,"achieved_time":"          0"},{"medal":2,"achieved":false,"achieved_time":"          0"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"},{"medal":6,"achieved":false,"achieved_time":"          0"},{"medal":7,"achieved":false,"achieved_time":"          0"},{"medal":8,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [10:57:44.681] [GrindingStats]  from C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/6JdbJRDbozTpwcMP__My77cOqOh.json
-[   ScriptRuntime] [ TRAC] [10:57:45.710] [MLHook]  MLHook preparing 6 outbound messages to ML
-[   ScriptRuntime] [ TRAC] [10:57:46.995] [DiscordRivalryPing]  {"score":4294967295,"clubId":117364,"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [  LOG] [10:57:51.202] [SplitSpeeds]  Map switched to 6JdbJRDbozTpwcMP__My77cOqOh, pb = 0
-[   ScriptRuntime] [ TRAC] [11:00:35.563] [Copium]  new best time: 0:48.953
-[   ScriptRuntime] [  LOG] [11:00:35.599] [SplitSpeeds]  ToFile! time: 58345, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/6JdbJRDbozTpwcMP__My77cOqOh.json
-[   ScriptRuntime] [ TRAC] [11:00:35.761] [DiscordRivalryPing]  New PB: 4294967295 -> 58345
-[   ScriptRuntime] [ TRAC] [11:00:36.757] [WarriorMedals]  new pb: 0:58.345
-[   ScriptRuntime] [ TRAC] [11:00:36.757] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [11:00:36.765] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [11:00:37.720] [DiscordRivalryPing]  {"score":58345,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":62968,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":2774,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":2212,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":88,"length":0}}],"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:00:38.917] [DiscordRivalryPing]  {"score":4294967295,"clubId":117364,"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:00:40.181] [DiscordRivalryPing]  {"score":58345,"clubId":117364,"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:00:40.181] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [11:00:42.096] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [  LOG] [11:02:45.355] [GrindingStats]  Wrote finishes 1 resets 15 time 267879 respawns 9
-[   ScriptRuntime] [  LOG] [11:02:45.355] [GrindingStats]  medals [{"medal":0,"achieved":true,"achieved_time":"     147213"},{"medal":1,"achieved":false,"achieved_time":"          0"},{"medal":2,"achieved":false,"achieved_time":"          0"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [11:02:45.355] [GrindingStats]  to C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/6JdbJRDbozTpwcMP__My77cOqOh.json
-[   ScriptRuntime] [ TRAC] [11:05:09.149] [Copium]  new best time: 0:47.313
-[   ScriptRuntime] [  LOG] [11:07:45.878] [GrindingStats]  Wrote finishes 2 resets 27 time 549720 respawns 24
-[   ScriptRuntime] [  LOG] [11:07:45.878] [GrindingStats]  medals [{"medal":0,"achieved":true,"achieved_time":"     147213"},{"medal":1,"achieved":false,"achieved_time":"          0"},{"medal":2,"achieved":false,"achieved_time":"          0"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [11:07:45.878] [GrindingStats]  to C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/6JdbJRDbozTpwcMP__My77cOqOh.json
-[     WebServices] [  LOG] [11:09:36.503]  NadeoServices account ID: a694d39f-86c2-4429-87bb-f8d505efa3b6
-[   ScriptRuntime] [  LOG] [11:09:42.160] [SplitSpeeds]  ToFile! time: 51378, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/6JdbJRDbozTpwcMP__My77cOqOh.json
-[   ScriptRuntime] [ TRAC] [11:09:42.730] [DiscordRivalryPing]  New PB: 58345 -> 51378
-[   ScriptRuntime] [ TRAC] [11:09:42.851] [WarriorMedals]  new pb: 0:51.378
-[   ScriptRuntime] [ TRAC] [11:09:42.852] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [11:09:42.860] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [11:09:43.915] [DiscordRivalryPing]  {"score":51378,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":57758,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":2515,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":2012,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":75,"length":0}}],"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:09:44.299] [PluginManager]  Checking for plugin updates..
-[   ScriptRuntime] [ TRAC] [11:09:45.136] [DiscordRivalryPing]  {"score":58345,"clubId":117364,"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ WARN] [11:09:46.330] [PluginManager]  New plugin update available for Ultimate Medals Extended: 1.8 -> 1.9
-[   ScriptRuntime] [ TRAC] [11:09:46.357] [DiscordRivalryPing]  {"score":51378,"clubId":117364,"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:09:46.357] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [11:09:48.030] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [  LOG] [11:10:34.144] [SplitSpeeds]  ToFile! time: 47641, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/6JdbJRDbozTpwcMP__My77cOqOh.json
-[   ScriptRuntime] [ TRAC] [11:10:34.261] [DiscordRivalryPing]  New PB: 51378 -> 47641
-[   ScriptRuntime] [ TRAC] [11:10:35.285] [WarriorMedals]  new pb: 0:47.641
-[   ScriptRuntime] [ TRAC] [11:10:35.285] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [11:10:35.294] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [11:10:36.335] [DiscordRivalryPing]  {"score":47641,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":43973,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":1890,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":1502,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":58,"length":0}}],"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:10:37.601] [DiscordRivalryPing]  {"score":51378,"clubId":117364,"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:10:38.998] [DiscordRivalryPing]  {"score":47641,"clubId":117364,"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:10:38.998] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [11:10:40.877] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [  LOG] [11:12:46.342] [GrindingStats]  Wrote finishes 5 resets 39 time 827486 respawns 35
-[   ScriptRuntime] [  LOG] [11:12:46.342] [GrindingStats]  medals [{"medal":0,"achieved":true,"achieved_time":"     147213"},{"medal":1,"achieved":true,"achieved_time":"     658235"},{"medal":2,"achieved":false,"achieved_time":"          0"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [11:12:46.342] [GrindingStats]  to C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/6JdbJRDbozTpwcMP__My77cOqOh.json
-[   ScriptRuntime] [  LOG] [11:14:42.714] [SplitSpeeds]  ToFile! time: 46585, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/6JdbJRDbozTpwcMP__My77cOqOh.json
-[   ScriptRuntime] [ TRAC] [11:14:42.993] [DiscordRivalryPing]  New PB: 47641 -> 46585
-[   ScriptRuntime] [ TRAC] [11:14:43.521] [WarriorMedals]  new pb: 0:46.585
-[   ScriptRuntime] [ TRAC] [11:14:43.521] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [11:14:43.530] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [11:14:44.180] [DiscordRivalryPing]  {"score":46585,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":33766,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":1432,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":1129,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":46,"length":0}}],"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:14:45.601] [DiscordRivalryPing]  {"score":47641,"clubId":117364,"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:14:46.882] [DiscordRivalryPing]  {"score":46585,"clubId":117364,"mapUid":"6JdbJRDbozTpwcMP__My77cOqOh","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:14:46.882] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [11:14:48.494] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [  LOG] [11:14:50.032] [GrindingStats]  Saving data & stopping coroutines for map "6JdbJRDbozTpwcMP__My77cOqOh"
-[   ScriptRuntime] [  LOG] [11:14:50.033] [GrindingStats]  Wrote finishes 6 resets 41 time 923447 respawns 42
-[   ScriptRuntime] [  LOG] [11:14:50.033] [GrindingStats]  medals [{"medal":0,"achieved":true,"achieved_time":"     147213"},{"medal":1,"achieved":true,"achieved_time":"     658235"},{"medal":2,"achieved":true,"achieved_time":"     920546"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [11:14:50.033] [GrindingStats]  to C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/6JdbJRDbozTpwcMP__My77cOqOh.json
-[   ScriptRuntime] [ TRAC] [11:14:50.047] [MLHook]  MLHook preparing 2 outbound messages to ML
-[   ScriptRuntime] [ TRAC] [11:14:50.383] [MLFeedRaceData]  MLFeedKOs: GM change from: TM_Campaign_Local to 
-[        Platform] [ WARN] [11:14:50.499] [DiscordRivalryPing]  Invalid address for member ID 03043001. This is likely a Nadeo bug! Setting it to null!
-[   ScriptRuntime] [ TRAC] [11:15:33.469] [MLFeedRaceData]  MLFeedKOs: GM change from:  to TM_Campaign_Local
-[   ScriptRuntime] [  LOG] [11:15:36.590] [GrindingStats]  Loading data & starting coroutines for map "h0UyCAQRe0FV_Iq5n2svoD421Pa"
-[   ScriptRuntime] [  LOG] [11:15:36.590] [GrindingStats]  Read finishes 0 resets 0 time 0 respawns 0
-[   ScriptRuntime] [  LOG] [11:15:36.590] [GrindingStats]  medals [{"medal":0,"achieved":false,"achieved_time":"          0"},{"medal":1,"achieved":false,"achieved_time":"          0"},{"medal":2,"achieved":false,"achieved_time":"          0"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"},{"medal":6,"achieved":false,"achieved_time":"          0"},{"medal":7,"achieved":false,"achieved_time":"          0"},{"medal":8,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [11:15:36.590] [GrindingStats]  from C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/h0UyCAQRe0FV_Iq5n2svoD421Pa.json
-[   ScriptRuntime] [ TRAC] [11:15:37.558] [MLHook]  MLHook preparing 6 outbound messages to ML
-[   ScriptRuntime] [ TRAC] [11:15:38.613] [DiscordRivalryPing]  {"score":4294967295,"clubId":117364,"mapUid":"h0UyCAQRe0FV_Iq5n2svoD421Pa","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [  LOG] [11:15:45.008] [SplitSpeeds]  Map switched to h0UyCAQRe0FV_Iq5n2svoD421Pa, pb = 0
-[   ScriptRuntime] [ TRAC] [11:18:02.528] [Copium]  new best time: 1:07.045
-[   ScriptRuntime] [  LOG] [11:18:02.570] [SplitSpeeds]  ToFile! time: 129862, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/h0UyCAQRe0FV_Iq5n2svoD421Pa.json
-[   ScriptRuntime] [ TRAC] [11:18:03.224] [DiscordRivalryPing]  New PB: 4294967295 -> 129862
-[   ScriptRuntime] [ TRAC] [11:18:03.655] [WarriorMedals]  new pb: 2:09.862
-[   ScriptRuntime] [ TRAC] [11:18:03.655] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [11:18:03.664] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [11:18:04.660] [DiscordRivalryPing]  {"score":129862,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":58628,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":2533,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":2024,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":78,"length":0}}],"mapUid":"h0UyCAQRe0FV_Iq5n2svoD421Pa","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:18:05.911] [DiscordRivalryPing]  {"score":4294967295,"clubId":117364,"mapUid":"h0UyCAQRe0FV_Iq5n2svoD421Pa","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:18:07.119] [DiscordRivalryPing]  {"score":129862,"clubId":117364,"mapUid":"h0UyCAQRe0FV_Iq5n2svoD421Pa","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:18:07.119] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [11:18:08.861] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [  LOG] [11:19:38.589] [SplitSpeeds]  ToFile! time: 91005, C:/users/steamuser/OpenplanetNext/PluginStorage/SplitSpeeds/h0UyCAQRe0FV_Iq5n2svoD421Pa.json
-[   ScriptRuntime] [ TRAC] [11:19:39.215] [DiscordRivalryPing]  New PB: 129862 -> 91005
-[   ScriptRuntime] [ TRAC] [11:19:39.526] [WarriorMedals]  new pb: 1:31.005
-[   ScriptRuntime] [ TRAC] [11:19:39.526] [WarriorMedals]  setting totals
-[   ScriptRuntime] [ TRAC] [11:19:39.534] [WarriorMedals]  setting totals done after 9ms
-[   ScriptRuntime] [ TRAC] [11:19:40.458] [DiscordRivalryPing]  {"score":91005,"zones":[{"zoneId":"301e1b69-7e13-11e8-8060-e284abfd2bc4","zoneName":"World","ranking":{"position":57796,"length":0}},{"zoneId":"301e237a-7e13-11e8-8060-e284abfd2bc4","zoneName":"Oceania","ranking":{"position":2493,"length":0}},{"zoneId":"301e2dc2-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australia","ranking":{"position":1994,"length":0}},{"zoneId":"301e2e52-7e13-11e8-8060-e284abfd2bc4","zoneName":"Australian Capital Territory","ranking":{"position":78,"length":0}}],"mapUid":"h0UyCAQRe0FV_Iq5n2svoD421Pa","groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:19:41.679] [DiscordRivalryPing]  {"score":129862,"clubId":117364,"mapUid":"h0UyCAQRe0FV_Iq5n2svoD421Pa","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:19:42.918] [DiscordRivalryPing]  {"score":91005,"clubId":117364,"mapUid":"h0UyCAQRe0FV_Iq5n2svoD421Pa","position":1,"groupUid":"Personal_Best"}
-[   ScriptRuntime] [ TRAC] [11:19:42.918] [DiscordRivalryPing]  Club Discord Rivalry Position: 1 -> 1
-[   ScriptRuntime] [ TRAC] [11:19:44.920] [DiscordRivalryPing]  Sent webhook Discord Rivalry to Discord
-[   ScriptRuntime] [  LOG] [11:19:45.469] [GrindingStats]  Saving data & stopping coroutines for map "h0UyCAQRe0FV_Iq5n2svoD421Pa"
-[   ScriptRuntime] [  LOG] [11:19:45.469] [GrindingStats]  Wrote finishes 2 resets 4 time 231450 respawns 23
-[   ScriptRuntime] [  LOG] [11:19:45.469] [GrindingStats]  medals [{"medal":0,"achieved":false,"achieved_time":"          0"},{"medal":1,"achieved":false,"achieved_time":"          0"},{"medal":2,"achieved":false,"achieved_time":"          0"},{"medal":3,"achieved":false,"achieved_time":"          0"},{"medal":4,"achieved":false,"achieved_time":"          0"},{"medal":5,"achieved":false,"achieved_time":"          0"}]
-[   ScriptRuntime] [  LOG] [11:19:45.469] [GrindingStats]  to C:/users/steamuser/OpenplanetNext/PluginStorage/GrindingStats/data/h0UyCAQRe0FV_Iq5n2svoD421Pa.json
-[   ScriptRuntime] [ TRAC] [11:19:45.492] [MLHook]  MLHook preparing 2 outbound messages to ML
-[   ScriptRuntime] [ TRAC] [11:19:45.829] [MLFeedRaceData]  MLFeedKOs: GM change from: TM_Campaign_Local to 
+[        Platform] [  LOG] [04:15:46.070]  Openplanet for Trackmania Next x64
+[        Platform] [ TRAC] [04:15:46.070]  (c) Melissa Geels 2016 - 2026
+[        Platform] [ TRAC] [04:15:46.070]  https://openplanet.dev/
+[        Platform] [  LOG] [04:15:46.070]  Openplanet starting on 2026-07-02
+[        Platform] [  LOG] [04:15:46.072]  Engine: 2026-02-02 16:51:19
+[        Platform] [  LOG] [04:15:46.072]  Openplanet: 1.29.5 (next, Public, 1234ad9e)
+[        Platform] [ TRAC] [04:15:46.072]  Identifier: 0x000000006980D607
+[        Platform] [ TRAC] [04:15:46.072]  Process ID: 2256
+[        Platform] [  LOG] [04:15:46.074]  Setting up hook callbacks...
+[        Platform] [  LOG] [04:15:46.991]  Semi entry initialization...
+[        Platform] [  LOG] [04:15:46.991]  Loading settings
+[        Platform] [  LOG] [04:15:46.991]  Update branch: default
+[        Platform] [  LOG] [04:15:47.002]  Requesting app config with timeout 5000...
+[        Platform] [  LOG] [04:15:49.547]  Did not find update to install.
+[        Platform] [  LOG] [04:15:49.547]  Finding game window..
+[        Platform] [ TRAC] [04:15:49.547]  Window handle: 00020130 ("Trackmania")
+[        Platform] [  LOG] [04:15:49.548]  Initializing meta...
+[     WebServices] [  LOG] [04:16:09.501]  NadeoServices account ID: a694d39f-86c2-4429-87bb-f8d505efa3b6
+[        Platform] [  LOG] [04:16:19.092]  Loop entry initialization...
+[        Platform] [  LOG] [04:16:19.092]  Hooking WndProc...
+[        Platform] [  LOG] [04:16:19.092]  Initializing core commands...
+[        Platform] [  LOG] [04:16:19.092]  Initializing sockets...
+[        Platform] [  LOG] [04:16:19.092]  Adding user library path...
+[        Platform] [  LOG] [04:16:19.092]  Initializing audio...
+[           Audio] [  LOG] [04:16:19.094]  Setting playback device to "Speakers (PulseAudio Output)"
+[        Platform] [  LOG] [04:16:19.111]  Initializing scripting...
+[    ScriptEngine] [  LOG] [04:16:19.357]  Registered 2659 classes
+[        Platform] [ TRAC] [04:16:20.100]  Writing type definitions to file: "C:/users/steamuser/OpenplanetNext/Openplanet.h"
+[        Platform] [  LOG] [04:16:20.145]  Writing json to file: "C:/users/steamuser/OpenplanetNext/OpenplanetNext.json"
+[        Platform] [  LOG] [04:16:20.168]  Dumping Openplanet documentation to C:/users/steamuser/OpenplanetNext/OpenplanetCore.json
+[        Platform] [  LOG] [04:16:20.178]  Initializing overlay...
+[         Overlay] [  LOG] [04:16:20.192]  Loading user style: S:/common/Trackmania/Openplanet/DefaultStyle.toml
+[        Platform] [  LOG] [04:16:20.200]  Beginning script engine...
+[    ScriptEngine] [  LOG] [04:16:20.204]  Adding plugins...
+[    ScriptEngine] [ TRAC] [04:16:20.223]  Loaded plugin 'NadeoServices' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:20.255]  MLHook.op/:/Logging.as (29, 1) : INFO : Compiling void RenderLogsWindow()
+[    ScriptEngine] [ WARN] [04:16:20.255]  MLHook.op/:/Logging.as (38, 40) : WARN : Signed/Unsigned mismatch
+[    ScriptEngine] [ TRAC] [04:16:20.262]  Loaded zipped plugin 'MLHook' (version 0.5.4)
+[    ScriptEngine] [ TRAC] [04:16:20.308]  MLFeedRaceData.op/:/MLFeed_ExportShared.as (279, 9) : INFO : Compiling int PlayerCpInfo::get_RoyalTA_SegmentFinishedAt(int) const
+[    ScriptEngine] [ WARN] [04:16:20.308]  MLFeedRaceData.op/:/MLFeed_ExportShared.as (280, 44) : WARN : Signed/Unsigned mismatch
+[    ScriptEngine] [ TRAC] [04:16:20.311]  MLFeedRaceData.op/:/Main.as (363, 9) : INFO : Compiling int _PlayerCpInfo::get_RoyalTA_SegmentFinishedAt(int) const
+[    ScriptEngine] [ WARN] [04:16:20.311]  MLFeedRaceData.op/:/Main.as (364, 44) : WARN : Signed/Unsigned mismatch
+[    ScriptEngine] [ TRAC] [04:16:20.328]  Loaded zipped plugin 'MLFeedRaceData' (version 0.6.4)
+[    ScriptEngine] [ TRAC] [04:16:20.364]  Loaded zipped plugin 'UltimateMedalsExtended' (version 1.8)
+[    ScriptEngine] [ TRAC] [04:16:20.370]  Loaded plugin 'Camera' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:20.376]  Loaded plugin 'EditorDeveloper' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:20.397]  Loaded plugin 'VehicleState' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:20.426]  Loaded zipped plugin 'Dashboard' (version 1.9.8)
+[    ScriptEngine] [ TRAC] [04:16:20.434]  Loaded plugin 'Finetuner' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:20.454]  Loaded zipped plugin 'SplitSpeeds' (version 2.2.3)
+[    ScriptEngine] [ TRAC] [04:16:20.462]  Loaded plugin 'InfiniteEmbedSize' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:20.473]  Loaded zipped plugin 'ak-hints' (version 0.1.9)
+[    ScriptEngine] [ TRAC] [04:16:20.480]  anyghost.op/:/render.as (26, 1) : INFO : Compiling void RenderInterface()
+[    ScriptEngine] [ WARN] [04:16:20.480]  anyghost.op/:/render.as (123, 51) : WARN : The operand is implicitly converted to handle in order to compare them
+[    ScriptEngine] [ TRAC] [04:16:20.484]  Loaded zipped plugin 'anyghost' (version 1.4)
+[    ScriptEngine] [ TRAC] [04:16:20.489]  Loaded plugin 'UsefulInformation' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:20.495]  Loaded plugin 'Stats' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:20.499]  Loaded plugin 'ClassicMenu' (version 1.1)
+[    ScriptEngine] [ WARN] [04:16:20.500]  Couldn't find optional plugin dependency "ticker" while loading plugin "ChampionMedals"
+[    ScriptEngine] [ TRAC] [04:16:20.534]  Loaded zipped plugin 'ChampionMedals' (version 1.22)
+[   ScriptRuntime] [ TRAC] [04:16:20.689] [ghosts-pp]  Found: 89 91 04 0D 00 00 8B 05 ?? ?? ?? ?? 48 89 7C 24 28 4C 89 7C 24 20 85 C0 74 2D 8B FD 8B F0 at 0x00000001406A216A
+[   ScriptRuntime] [ TRAC] [04:16:20.705] [ghosts-pp]  Found: 03 00 00 F3 0F 11 91 ?? 03 00 00 76 at 0x0000000141076A8D
+[   ScriptRuntime] [ TRAC] [04:16:20.724] [ghosts-pp]  Found: CD CC 4C 3E F3 0F 11 89 ?? 03 00 00 C3 at 0x0000000141075C3D
+[    ScriptEngine] [ TRAC] [04:16:20.725]  Loaded zipped plugin 'ghosts-pp' (version 0.4.8)
+[    ScriptEngine] [ TRAC] [04:16:20.734]  Loaded zipped plugin 'UnintrusiveCheckpointTimer' (version 0.2.7)
+[    ScriptEngine] [ TRAC] [04:16:20.826]  Loaded zipped plugin 'WarriorMedals' (version 1.12.2)
+[    ScriptEngine] [ TRAC] [04:16:20.837]  Loaded plugin 'Controls' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:20.883]  Loaded plugin 'PluginManager' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:20.893]  Loaded zipped plugin 'Gear-Change-Indicator' (version 1.3)
+[    ScriptEngine] [ WARN] [04:16:20.894]  Couldn't find optional plugin dependency "DuckMedals" while loading plugin "GrindingStats"
+[    ScriptEngine] [ TRAC] [04:16:20.938]  Loaded zipped plugin 'GrindingStats' (version 2.1.12)
+[    ScriptEngine] [ TRAC] [04:16:20.953]  Loaded plugin 'Discord' (version 1.0)
+[    ScriptEngine] [ TRAC] [04:16:21.041]  Loaded zipped plugin 'DiscordRivalryPing' (version 1.2.2)
+[    ScriptEngine] [ TRAC] [04:16:21.085]  Loaded zipped plugin 'Copium' (version 1.4.1)
+[    ScriptEngine] [ TRAC] [04:16:21.100]  Loaded plugin 'BigDecor' (version 1.0)
+[    ScriptEngine] [  LOG] [04:16:21.100]  Adding legacy plugins...
+[    ScriptEngine] [ TRAC] [04:16:21.103]  Loaded legacy plugin 'Plugin_MapAudioFix' (version 1.0)
+[    ScriptEngine] [  LOG] [04:16:21.103]  Plugins added!
+[        Platform] [  LOG] [04:16:21.107]  Initialized!
+[   ScriptRuntime] [ERROR] [04:16:21.107] [MLFeedRaceData]  DEPRECATED: awaitable.WithRunContext() is no longer valid. Use Meta::StartWithRunContext instead.
+[   ScriptRuntime] [ERROR] [04:16:21.107] [MLFeedRaceData]  DEPRECATED: awaitable.WithRunContext() is no longer valid. Use Meta::StartWithRunContext instead.
+[   ScriptRuntime] [  LOG] [04:16:21.132] [InfiniteEmbedSize]  Patched! Backup: "76"
+[   ScriptRuntime] [ TRAC] [04:16:21.169] [ghosts-pp]  ghosts++ checking permissions
+[   ScriptRuntime] [ TRAC] [04:16:21.169] [ghosts-pp]  checked permissions
+[   ScriptRuntime] [ TRAC] [04:16:21.169] [ghosts-pp]  Version Compat URL: https://openplanet.dev/plugin/ghosts-pp/config/version-compat
+[   ScriptRuntime] [ TRAC] [04:16:21.169] [WarriorMedals]  reading C:/users/steamuser/OpenplanetNext/PluginStorage/WarriorMedals/hidden.json
+[   ScriptRuntime] [ WARN] [04:16:21.169] [WarriorMedals]  Unable to open json file 'C:/users/steamuser/OpenplanetNext/PluginStorage/WarriorMedals/hidden.json': No such file or directory
+[   ScriptRuntime] [ TRAC] [04:16:21.169] [WarriorMedals]  reading C:/users/steamuser/OpenplanetNext/PluginStorage/WarriorMedals/read.json
+[   ScriptRuntime] [ TRAC] [04:16:21.178] [PluginManager]  Checking for plugin updates..
+[   ScriptRuntime] [  LOG] [04:16:21.178] [Discord]  Initializing Discord...
+[   ScriptRuntime] [ TRAC] [04:16:21.178] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
+[   ScriptRuntime] [ TRAC] [04:16:21.179] [Copium]  registering UME medals
+[   ScriptRuntime] [ TRAC] [04:16:21.183] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_Pair
+[   ScriptRuntime] [ TRAC] [04:16:21.183] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_Clear
+[   ScriptRuntime] [ TRAC] [04:16:21.183] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_IsReqActive
+[   ScriptRuntime] [ TRAC] [04:16:21.183] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_SliceInfo
+[   ScriptRuntime] [ TRAC] [04:16:21.183] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_OrigMapIx
+[   ScriptRuntime] [ TRAC] [04:16:21.183] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_ListUids_UidsResp
+[   ScriptRuntime] [ERROR] [04:16:21.188] [UnintrusiveCheckpointTimer]  DEPRECATED: Do not use the Draw namespace anymore! GetWidth and GetHeight have moved to the Display namespace.
+[   ScriptRuntime] [ERROR] [04:16:21.188] [UnintrusiveCheckpointTimer]      #0  void Internal::ReportDrawSizeDeprecation() (S:/common/Trackmania/Openplanet/Scripts/Compatibility.as line 63)
+[   ScriptRuntime] [ERROR] [04:16:21.188] [UnintrusiveCheckpointTimer]      #1  int Draw::GetHeight() (S:/common/Trackmania/Openplanet/Scripts/Compatibility.as line 149)
+[   ScriptRuntime] [ERROR] [04:16:21.188] [UnintrusiveCheckpointTimer]      #2  vec2 GetScreen() (UnintrusiveCheckpointTimer.op/:/CustomPos.as line 82)
+[   ScriptRuntime] [ERROR] [04:16:21.188] [UnintrusiveCheckpointTimer]      #3  void RenderEarly() (UnintrusiveCheckpointTimer.op/:/CustomPos.as line 69)
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [NadeoServices]  Waiting for existing token request to finish
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_PlayerCP
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_PlayerLeft
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_PlayerRaceTimes
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_PlayerInfo
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_MatchKeyPair
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_COTDQualiInfo
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_LapsNb
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_Warmup
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_RaceStats_PlayerRaceProgression
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_MLFeedKOs_PlayerStatus
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_MLFeedKOs_MatchKeyPair
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_TeamsFeed_MatchKeyPair
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: TMGame_Record_NewRecord
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_GhostData
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [MLFeedRaceData]  registered MLHook event for type: MLHook_Event_GhostData_Removed
+[   ScriptRuntime] [ TRAC] [04:16:21.189] [WarriorMedals]  getting token 1...
+[   ScriptRuntime] [ TRAC] [04:16:21.681] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
+[   ScriptRuntime] [ TRAC] [04:16:22.189] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
+[   ScriptRuntime] [ TRAC] [04:16:22.689] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
+[   ScriptRuntime] [ TRAC] [04:16:23.198] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
+[   ScriptRuntime] [ TRAC] [04:16:23.698] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
+[   ScriptRuntime] [ TRAC] [04:16:24.198] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
+[   ScriptRuntime] [ TRAC] [04:16:24.706] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
+[   ScriptRuntime] [ TRAC] [04:16:25.081] [ghosts-pp]  Got GameVersionSafe status: false
+[   ScriptRuntime] [ WARN] [04:16:25.081] [ghosts-pp]  Game version (2026-02-02_17_51) not marked as compatible with this version of the plugin -- will be inactive!
+[   ScriptRuntime] [ WARN] [04:16:25.081] [ghosts-pp]  
+[   ScriptRuntime] [ WARN] [04:16:25.081] [ghosts-pp]  Checking new versions is a manual process and avoids crashing your game after an update.
+[   ScriptRuntime] [ TRAC] [04:16:25.214] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
+[   ScriptRuntime] [ TRAC] [04:16:25.723] [DiscordRivalryPing]  Tried to get Discord User - was not ready!
+[   ScriptRuntime] [ WARN] [04:16:26.265] [PluginManager]  New plugin update available for Ultimate Medals Extended: 1.8 -> 1.9
+[   ScriptRuntime] [ERROR] [04:16:30.087] [WarriorMedals]  error getting token 1: Unable to complete request: Operation timed out after 5002 milliseconds with 0 bytes received
+[   ScriptRuntime] [ TRAC] [04:16:30.095] [WarriorMedals]  registering UME medal
+[   ScriptRuntime] [ TRAC] [04:16:30.095] [WarriorMedals]  getting all map infos
+[   ScriptRuntime] [ TRAC] [04:16:54.153] [WarriorMedals]  next request: 2026-07-02 20:00:00
+[   ScriptRuntime] [ TRAC] [04:16:54.261] [WarriorMedals]  got all map infos after 24165ms
+[   ScriptRuntime] [ TRAC] [04:16:54.261] [WarriorMedals]  reading PBs from file
+[   ScriptRuntime] [ TRAC] [04:16:54.266] [WarriorMedals]  read all PBs (247) after 5ms
+[   ScriptRuntime] [ TRAC] [04:16:54.267] [WarriorMedals]  getting all PBs...
+[   ScriptRuntime] [ TRAC] [04:16:54.267] [WarriorMedals]  getting PBs with offset 0
+[   ScriptRuntime] [ERROR] [04:16:55.537] [WarriorMedals]  error getting messages (InternalServer): <!doctype html>
+[   ScriptRuntime] [ERROR] [04:16:55.537] [WarriorMedals]  <html lang=en>
+[   ScriptRuntime] [ERROR] [04:16:55.537] [WarriorMedals]  <title>500 Internal Server Error</title>
+[   ScriptRuntime] [ERROR] [04:16:55.537] [WarriorMedals]  <h1>Internal Server Error</h1>
+[   ScriptRuntime] [ERROR] [04:16:55.537] [WarriorMedals]  <p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+[   ScriptRuntime] [ERROR] [04:16:55.537] [WarriorMedals]  
+[   ScriptRuntime] [ TRAC] [04:16:57.497] [WarriorMedals]  getting PBs with offset 1000
+[   ScriptRuntime] [ TRAC] [04:16:59.496] [WarriorMedals]  saving PBs to file
+[   ScriptRuntime] [ TRAC] [04:16:59.496] [WarriorMedals]  saved all PBs (250) after 0ms
+[   ScriptRuntime] [ TRAC] [04:16:59.497] [WarriorMedals]  got all PBs (250) after 5229ms
+[   ScriptRuntime] [ TRAC] [04:16:59.497] [WarriorMedals]  getting campaign indices
+[   ScriptRuntime] [ TRAC] [04:17:02.913] [WarriorMedals]  getting campaign indices done after 3416ms
+[   ScriptRuntime] [ TRAC] [04:17:02.914] [WarriorMedals]  building campaigns
+[   ScriptRuntime] [ TRAC] [04:17:02.945] [WarriorMedals]  building campaigns done after 31ms
+[   ScriptRuntime] [ TRAC] [04:17:02.945] [WarriorMedals]  sorting campaigns and maps
+[   ScriptRuntime] [ TRAC] [04:17:02.986] [WarriorMedals]  sorting campaigns and maps done after 40ms
+[   ScriptRuntime] [ TRAC] [04:17:02.986] [WarriorMedals]  setting totals
+[   ScriptRuntime] [ TRAC] [04:17:02.997] [WarriorMedals]  setting totals done after 12ms
+[   ScriptRuntime] [ TRAC] [04:17:15.490] [NadeoServices]  Requesting token for audience "NadeoLiveServices"
+[   ScriptRuntime] [ TRAC] [04:17:15.815] [NadeoServices]  Got token for audience "NadeoLiveServices"
+[     WebServices] [  LOG] [04:46:10.866]  NadeoServices account ID: a694d39f-86c2-4429-87bb-f8d505efa3b6
+[   ScriptRuntime] [ TRAC] [04:46:26.384] [PluginManager]  Checking for plugin updates..
+[   ScriptRuntime] [ WARN] [04:46:28.565] [PluginManager]  New plugin update available for Ultimate Medals Extended: 1.8 -> 1.9

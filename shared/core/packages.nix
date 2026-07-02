@@ -214,10 +214,10 @@
         dependencies = old.dependencies ++ [ python3.pkgs.requests ];
       }))
       (python3.withPackages (ps: [ ps.requests ]))
-      logseq
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
       hyprshutdown
+      logseq
     ]);
 }

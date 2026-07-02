@@ -9,7 +9,7 @@
       url = "github:catppuccin/nix/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     musnix.url = "github:musnix/musnix";
     rose-pine-hyprcursor = {
