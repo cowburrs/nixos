@@ -6,7 +6,7 @@ local yt = m.yearlyTask
 local td = m.timedelta
 local bd = m.birthdayTask
 local wt5 = function(name)
-	return wt(name, 1)
+	return wt(name, 5)
 end
 local et = m.eventTask
 return {
@@ -20,6 +20,8 @@ return {
 	wt5("laundry"),
 	wt5("change towel"),
 	wt5("arttask"),
+	wt5("musictask"),
+	wt5("osutask"),
 	wt5("line up clothes"),
 	{
 		name = m.just("Humble Bundle"),
