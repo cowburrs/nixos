@@ -6,7 +6,7 @@ local yt = m.yearlyTask
 local td = m.timedelta
 local bd = m.birthdayTask
 local wt5 = function(name)
-	return wt(name, 5)
+	return wt(name, 1)
 end
 local et = m.eventTask
 return {
