@@ -20,6 +20,7 @@ return {
 	wt5("laundry"),
 	wt5("change towel"),
 	wt5("arttask"),
+	wt("brttask"),
 	wt5("line up clothes"),
 	{
 		name = m.just("Humble Bundle"),
