@@ -215,5 +215,6 @@ return {
 		"clean bathroom ceiling mould",
 		"Portfolio website",
 		"art task and line up clothes task",
+		"cli pomodoro and taskmanger dl",
 	}),
 }
