@@ -24,6 +24,7 @@ return {
 		})
 		require("conform").setup({
 			formatters_by_ft = {
+				htmldjango = { "djlint" },
 				yaml = { "yamlfmt" },
 				markdown = { "mdformat" },
 				lua = { "stylua" },

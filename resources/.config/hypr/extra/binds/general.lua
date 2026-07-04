@@ -18,7 +18,7 @@ local function appBind(key, cmd, search)
 	hl.bind(AppBind .. "+" .. key, openOrMove(cmd, search))
 end
 -- bind = $appBind, w, exec, pkill waybar && waybar &
-appBind("f", "qutebrowser", { class = "org.qutebrowser.qutebrowser" })
+appBind("f", "QTWEBENGINE_FORCE_USE_GBM=0 qutebrowser", { class = "org.qutebrowser.qutebrowser" })
 appBind("d", "discord", { class = "discord" })
 appBind("a", "anki", { class = "anki" })
 appBind("m", "thunderbird", { class = "thunderbird" })
