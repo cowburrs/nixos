@@ -38,6 +38,7 @@ config.bind('k', 'scroll-px 0 -200', mode='normal')
 config.bind('j', 'scroll-px 0 200', mode='normal')
 
 c.tabs.position = 'left'
+c.tabs.last_close = 'startpage'
 c.auto_save.session = True
 c.session.lazy_restore = True
 c.colors.webpage.darkmode.enabled = True
