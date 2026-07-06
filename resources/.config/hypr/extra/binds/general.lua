@@ -40,6 +40,7 @@ mbind("F", hl.dsp.window.fullscreen({ mode = "maximized" }))
 mbind("O", hl.dsp.exec_cmd("~/.config/hypr/extra/scripts/hyprlock.sh"))
 mbind("V", hl.dsp.window.float({ action = "toggle" }))
 mbind("S", hl.dsp.layout("togglesplit"))
+mbind("P", hl.dsp.window.pin())
 -- bind = $mainMod, D, exec, wpctl set-mute -p $(hyprctl activewindow -j | jq '.pid') toggle
 
 mbind("h", hl.dsp.focus({ direction = "left" }))
