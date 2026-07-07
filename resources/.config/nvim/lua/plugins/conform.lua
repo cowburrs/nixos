@@ -42,6 +42,7 @@ return {
 				toml = { "taplo" },
 				cs = { "csharpier" },
 				matlab = { "mh_style" },
+				tex = { "tex-fmt" },
 			},
 		})
 	end,
