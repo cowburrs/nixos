@@ -218,5 +218,6 @@ return {
 		"cli pomodoro and taskmanger dl",
 		"taskmanger rust rewrite",
 		"advanced todo (movies games and shows)",
+		"The 'i guess bro' gambit (cn)",
 	}),
 }
