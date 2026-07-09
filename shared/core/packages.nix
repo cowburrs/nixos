@@ -101,6 +101,7 @@
     with pkgs;
     [
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+      inputs.pomodoro.packages.${pkgs.system}.default
       # inputs.bookmarks.packages.${pkgs.system}.default
       # inputs.self.packages.${pkgs.system}.logseq
       playerctl

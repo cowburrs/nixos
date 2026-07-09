@@ -38,6 +38,9 @@
     bookmarks = {
       url = "github:cowburrs/bookmarks";
     };
+    pomodoro = {
+      url = "github:cowburrs/pomodoro";
+    };
   };
   outputs =
     {
