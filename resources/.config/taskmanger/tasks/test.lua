@@ -228,5 +228,6 @@ return {
 		"Water sparkler",
 		"smashcon task",
 		"register to vote",
+		"Yangzhou fried rice",
 	}),
 }
