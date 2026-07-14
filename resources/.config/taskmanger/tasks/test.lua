@@ -225,5 +225,6 @@ return {
 		"Stitch up shorts",
 		"Clean headphones and micetask. ig monitor 2",
 		"make an epub (maybe latex? mdbook?)",
+		"Water sparkler",
 	}),
 }
