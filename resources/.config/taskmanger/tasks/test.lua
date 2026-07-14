@@ -227,5 +227,6 @@ return {
 		"make an epub (maybe latex? mdbook?)",
 		"Water sparkler",
 		"smashcon task",
+		"register to vote",
 	}),
 }
