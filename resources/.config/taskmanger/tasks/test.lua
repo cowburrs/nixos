@@ -219,5 +219,9 @@ return {
 		"taskmanger rust rewrite",
 		"advanced todo (movies games and shows)",
 		"The 'i guess bro' gambit (cn)",
+		"message sumire on novelupdates",
+		"images on spotify playlists",
+		"WE ARE FULL CLEANING EVERYTHING, BOMB EVERYTHING MINIMALISM TIME",
+		"Stitch up shorts",
 	}),
 }
