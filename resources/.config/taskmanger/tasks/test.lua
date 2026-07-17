@@ -20,6 +20,7 @@ return {
 	wt5("laundry"),
 	wt5("change towel"),
 	wt5("arttask"),
+	wt5("cooktask"),
 	wt5("musictask"),
 	wt5("osutask"),
 	wt5("line up clothes"),
@@ -235,5 +236,6 @@ return {
 		"vacuum",
 		"public all playlists",
 		"wash water bottle task",
+		"hashed browns",
 	}),
 }
