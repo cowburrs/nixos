@@ -234,5 +234,6 @@ return {
 		"centrelink task",
 		"vacuum",
 		"public all playlists",
+		"wash water bottle task",
 	}),
 }
