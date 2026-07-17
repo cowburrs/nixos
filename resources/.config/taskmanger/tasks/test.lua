@@ -233,5 +233,6 @@ return {
 		"buy a safety razor",
 		"centrelink task",
 		"vacuum",
+		"public all playlists",
 	}),
 }
