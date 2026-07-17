@@ -229,5 +229,9 @@ return {
 		"smashcon task",
 		"register to vote",
 		"Yangzhou fried rice",
+		"buy socks",
+		"buy a safety razor",
+		"centrelink task",
+		"vacuum",
 	}),
 }
