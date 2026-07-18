@@ -132,6 +132,7 @@ local returntable = {
 		"Phone like a slides clicker",
 		"Learn geogebra",
 		"Choose document creator (cn)",
+		"Timetable on here",
 	}),
 }
 
