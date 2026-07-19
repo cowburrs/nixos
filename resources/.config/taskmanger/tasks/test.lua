@@ -237,5 +237,6 @@ return {
 		"public all playlists",
 		"wash water bottle task",
 		"hashed browns",
+		"stream a video of me using bookmarks on youtube/twitch",
 	}),
 }
