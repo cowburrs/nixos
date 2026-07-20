@@ -53,7 +53,7 @@ return {
 	m.nthWeekTask("clean keyboard/mouse/mic/headphones/monitor", 30, 5),
 	m.nthWeekTask("top up bus card", 2),
 	m.nthWeekTask("clean water bottle", 2),
-	m.nthWeekTask("Centrelink", 2),
+	m.nthWeekTask("Centrelink", 2, 1),
 	m.seasonalTask("trackmania", 2),
 	bd("Phoenix Gosper", 2, 16),
 	bd("Sam", 2, 27),
