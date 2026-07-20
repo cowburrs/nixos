@@ -51,6 +51,7 @@ return {
 	m.nthWeekTask("clean laptop/computer", 30, 5),
 	m.nthWeekTask("clean keyboard/mouse", 30, 5),
 	m.nthWeekTask("top up bus card", 2),
+	m.nthWeekTask("clean water bottle", 2),
 	m.seasonalTask("trackmania", 2),
 	bd("Phoenix Gosper", 2, 16),
 	bd("Sam", 2, 27),
@@ -237,6 +238,6 @@ return {
 		"public all playlists",
 		"wash water bottle task",
 		"hashed browns",
-		"stream a video of me using bookmarks on youtube/twitch",
+		"stream a video of me using bookmarks on youtube/twitch"
 	}),
 }
