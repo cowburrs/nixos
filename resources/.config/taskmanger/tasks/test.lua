@@ -13,6 +13,7 @@ return {
 	wt("shave"),
 	wt("check emails"),
 	wt("nix flake update"),
+	wt("refill pocari sweat & ice cubes"),
 	wt5("clean"),
 	wt5("cut nails"),
 	wt5("clear tabs"),
@@ -238,6 +239,6 @@ return {
 		"public all playlists",
 		"wash water bottle task",
 		"hashed browns",
-		"stream a video of me using bookmarks on youtube/twitch"
+		"stream a video of me using bookmarks on youtube/twitch",
 	}),
 }
