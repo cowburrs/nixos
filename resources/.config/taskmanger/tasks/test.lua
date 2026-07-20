@@ -5,6 +5,8 @@ local wt = m.weeklyTask
 local yt = m.yearlyTask
 local td = m.timedelta
 local bd = m.birthdayTask
+local dt = m.dt
+local oneTimeTask = m.oneTimeTask
 local wt5 = function(name)
 	return wt(name, 5)
 end
@@ -77,6 +79,7 @@ return {
 	bd("Char", 12, 17),
 	bd("Dung", 12, 29),
 	et("Bsides canberra", 24, 9, 2026),
+	oneTimeTask("Smash Con", dt(2027, 3, 16), dt(2027, 4, 16)),
 	st({
 		"Test works",
 		"bin scripts instead of hypr nixos",
