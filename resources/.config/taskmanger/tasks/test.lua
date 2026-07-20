@@ -50,7 +50,7 @@ return {
 	m.nthWeekTask("clean phone", 3, 5),
 	m.nthWeekTask("clean blanket", 12, 5),
 	m.nthWeekTask("clean laptop/computer", 30, 5),
-	m.nthWeekTask("clean keyboard/mouse", 30, 5),
+	m.nthWeekTask("clean keyboard/mouse/mic/headphones/monitor", 30, 5),
 	m.nthWeekTask("top up bus card", 2),
 	m.nthWeekTask("clean water bottle", 2),
 	m.seasonalTask("trackmania", 2),
