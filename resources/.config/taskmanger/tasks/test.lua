@@ -240,5 +240,6 @@ return {
 		"wash water bottle task",
 		"hashed browns",
 		"stream a video of me using bookmarks on youtube/twitch",
+		"Dryer",
 	}),
 }
