@@ -1,3 +1,3 @@
 burrshelp() {
-	man -Hfirefox "$@"
+	man -Hqutebrowser "$@"
 }

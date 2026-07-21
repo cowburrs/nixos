@@ -11,17 +11,17 @@ lastLoadedInputPreset=uhhrandompreset
 inputDevice=alsa_input.usb-R__DE_R__DE_NT-USB__151081CE-00.mono-fallback
 mostUsedPresets=uhhrandompreset,fifine_masc_voice_noise_reduction
 plugins=stereo_tools#0,speex#0,deepfilternet#0
+useDefaultInputDevice=false
 usedPresets=uhhrandompreset:6,fifine_masc_voice_noise_reduction:5
 visiblePage=pluginsPage
 visiblePlugin=stereo_tools#0
 
 [StreamOutputs]
 blocklist=WEBRTC VoiceEngine,ARC Raiders,Chromium,spotify
+linkToVirtualSource=true
 outputDevice=alsa_output.usb-R__DE_R__DE_NT-USB__151081CE-00.analog-stereo
 visiblePage=pluginsPage
 
 [Window]
-height=1048
-visiblePage=inputPage
-visiblePipeWirePage=testSignalsPage
-width=956
+height=522
+width=476
