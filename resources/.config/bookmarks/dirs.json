@@ -26,7 +26,6 @@
   "dl": "$HOME/Downloads",
   "krita": "$HOME/.local/share/krita",
   "taskmanger": "$HOME/Repositories/Taskmanger",
-  "programming": "$HOME/Repositories/School/programming",
   "repos": "$HOME/Repositories",
   "waybar": "$HOME/.config/waybar",
   "yazi": "$HOME/nixos/resources/.config/yazi",
