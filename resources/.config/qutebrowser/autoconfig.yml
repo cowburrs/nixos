@@ -6,10 +6,8 @@
 
 config_version: 2
 settings:
-  aliases:
+  url.default_page:
+    global: https://
+  url.searchengines:
     global:
-      q: close
-      qa: quit
-      w: session-save
-      wq: quit --save
-      wqa: quit --save
+      DEFAULT: https://duckduckgo.com/?q={}

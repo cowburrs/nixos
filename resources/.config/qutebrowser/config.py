@@ -42,6 +42,9 @@ c.tabs.last_close = 'startpage'
 c.auto_save.session = True
 c.session.lazy_restore = True
 c.colors.webpage.darkmode.enabled = True
+c.url.searchengines = {"DEFAULT": "https://www.google.com/search?q={}"}
+c.url.default_page = "https://google.com"
+c.url.start_pages = "https://google.com"
 catppuccin.setup(c, 'macchiato', True)
 # c.qt.args = ['disable-features=HardwareMediaKeyHandling']
 c.input.media_keys = False
