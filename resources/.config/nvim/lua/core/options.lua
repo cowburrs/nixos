@@ -9,6 +9,14 @@ vim.o.number = true -- Make line numbers default
 vim.o.relativenumber = true
 vim.o.signcolumn = "number"
 
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "text",
+	callback = function()
+		vim.opt_local.wrap = true
+	end,
+})
+-- text file wrapping
+
 -- kinda unsafe idk but i like it
 vim.o.exrc = true
 -- You can also add relative line numbers, to help with jumping.
