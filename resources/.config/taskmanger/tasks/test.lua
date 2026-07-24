@@ -246,5 +246,6 @@ return {
 		"stream a video of me using bookmarks on youtube/twitch",
 		"Dryer",
 		"Get a camera",
+		"christmas, goals, schedule, goats",
 	}),
 }

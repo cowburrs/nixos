@@ -11,6 +11,7 @@
       noto-fonts
       comfortaa
       public-sans # The university font
+      inter
     ]
     ++ [
       inputs.self.packages.${pkgs.system}.exo2
