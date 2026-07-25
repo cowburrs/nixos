@@ -21,8 +21,8 @@
   services.logind.powerKeyLongPress = "poweroff";
 
   # Define time delay for hibernation
-  systemd.sleep.extraConfig = ''
-    HibernateDelaySec=10m
-    SuspendState=mem
-  '';
+  systemd.sleep.settings.Sleep = {
+    HibernateDelaySec = "10m";
+    SuspendState = "mem";
+  };
 }
