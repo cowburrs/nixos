@@ -26,6 +26,7 @@ return {
 			formatters_by_ft = {
 				htmldjango = { "djlint" },
 				yaml = { "yamlfmt" },
+				typst = { "typstyle" },
 				markdown = { "mdformat" },
 				lua = { "stylua" },
 				python = { "isort", "black" },

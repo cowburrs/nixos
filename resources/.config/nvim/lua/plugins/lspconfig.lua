@@ -27,6 +27,7 @@ return {
 		vim.lsp.enable("pyright")
 		vim.lsp.enable("texlab")
 		vim.lsp.enable("arduino_language_server")
+		vim.lsp.enable("tinymist")
 		vim.lsp.config("arduino_language_server", {
 			cmd = {
 				"arduino-language-server",
