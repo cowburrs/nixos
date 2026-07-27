@@ -17,7 +17,7 @@
       "davinci-resolve"
       "discord"
       "spotify"
-      "nvidia-x11"
+      "nvidia-x11" # TODO: Isolate this to laptop
       "nvidia-settings"
       "nvidia-kernel-modules"
     ];
