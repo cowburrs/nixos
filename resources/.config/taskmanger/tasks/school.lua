@@ -101,6 +101,33 @@ local returntable = {
 	lectureTasks("ENGN1218", 6, {
 		{ 0, dt(2026, 7, 27, 10) },
 	}, 1),
+	lectureTasks("ENGN1217", 6, {
+		{ 0, dt(2026, 7, 27, 13) },
+	}, 1),
+	lectureTasks("MATH1014", 6, {
+		{ 0, dt(2026, 7, 27, 16) },
+	}, 1),
+	lectureTasks("ENGN1217", 6, {
+		{ 1, dt(2026, 7, 27, 8) },
+	}, 1),
+	lectureTasks("ENGN1218", 6, {
+		{ 2, dt(2026, 7, 27, 11) },
+	}, 1),
+	lectureTasks("MATH1014", 6, {
+		{ 2, dt(2026, 7, 27, 13) },
+	}, 1),
+	lectureTasks("MATH1014", 6, {
+		{ 3, dt(2026, 7, 27, 11) },
+	}, 1),
+	lectureTasks("DESN1003", 6, {
+		{ 4, dt(2026, 7, 27, 10) },
+	}, 1),
+	lectureTasks("MATH1014", 6, {
+		{ 4, dt(2026, 7, 27, 11) },
+	}, 1),
+	lectureTasks("ENGN1218", 6, {
+		{ 4, dt(2026, 7, 27, 13) },
+	}, 1),
 	worksheetTasks("Lambda Calculus", dt(2026, 4, 4), timedelta(5), 8, { 4, 6, 10 }),
 	worksheetTasks("Phys Openstax", dt(2026, 4, 4), timedelta(0), 16, {}),
 	worksheetTasks("Math Essential Calculus", dt(2026, 4, 4), timedelta(0), 13, {}),
