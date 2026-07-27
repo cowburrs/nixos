@@ -132,6 +132,7 @@ local returntable = {
 		"Choose document creator (cn)",
 		"Timetable on here",
 		"Create the timetable",
+		"buy a  new fucken calculator",
 	}),
 }
 
