@@ -98,6 +98,9 @@ local returntable = {
 		{ 0, dt(2026, 4, 14, 14) },
 		{ 1, dt(2026, 4, 14, 16) },
 	}, 7),
+	lectureTasks("ENGN1218", 6, {
+		{ 0, dt(2026, 7, 27, 10) },
+	}, 1),
 	worksheetTasks("Lambda Calculus", dt(2026, 4, 4), timedelta(5), 8, { 4, 6, 10 }),
 	worksheetTasks("Phys Openstax", dt(2026, 4, 4), timedelta(0), 16, {}),
 	worksheetTasks("Math Essential Calculus", dt(2026, 4, 4), timedelta(0), 13, {}),
