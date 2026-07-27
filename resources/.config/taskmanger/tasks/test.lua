@@ -16,6 +16,8 @@ return {
 	wt("check emails"),
 	wt("nix flake update"),
 	wt("refill pocari sweat & ice cubes"),
+	wt("find one song"),
+	wt("find one manga"),
 	wt5("clean"),
 	wt5("cut nails"),
 	wt5("clear tabs"),

@@ -20,8 +20,6 @@ local dailyTask = m.dailyTask
 local wt = m.weeklyTask
 local returntable = {
 	wt("check school email"),
-	wt("find one song"),
-	wt("find one manga"),
 	oneTimeTask("Engn Team (TMC1)", dt(2026, 3, 30), dt(2026, 4, 19)),
 	oneTimeTask("Engn Milestone 3", dt(2026, 3, 30), dt(2026, 4, 21)),
 	oneTimeTask("Engn Self-Assessment Milestone 3", dt(2026, 4, 21), dt(2026, 4, 28)),
@@ -133,6 +131,7 @@ local returntable = {
 		"Learn geogebra",
 		"Choose document creator (cn)",
 		"Timetable on here",
+		"Create the timetable",
 	}),
 }
 
