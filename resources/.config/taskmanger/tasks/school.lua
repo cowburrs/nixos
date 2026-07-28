@@ -18,6 +18,7 @@ local quizTask = m.quizTask
 local worksheetTasks = m.worksheetTasks
 local dailyTask = m.dailyTask
 local wt = m.weeklyTask
+local textBookTasks = m.textBookTasks
 local returntable = {
 	wt("check school email"),
 	oneTimeTask("Engn Team (TMC1)", dt(2026, 3, 30), dt(2026, 4, 19)),
@@ -64,6 +65,12 @@ local returntable = {
 	quizTask("Phys", "Workshop Quiz", dt(2026, 3, 30), timedelta(7), 6, 6),
 	quizTask("Phys", "Pre-Reading Quiz", dt(2026, 3, 30), timedelta(7), 6, 6),
 	quizTask("Phys", "Lectures", dt(2026, 3, 30), timedelta(5), 6, 6),
+	worksheetTasks("Lambda Calculus", dt(2026, 4, 4), timedelta(5), 8, { 4, 6, 10 }),
+	worksheetTasks("Phys Openstax", dt(2026, 4, 4), timedelta(0), 16, {}),
+	worksheetTasks("Math Essential Calculus", dt(2026, 4, 4), timedelta(0), 13, {}),
+	worksheetTasks("Math Linear Algebra", dt(2026, 4, 4), timedelta(0), 8, {}),
+	worksheetTasks("Comp Exercises", dt(2026, 4, 4), timedelta(0), 14, {}),
+
 	{
 		name = function(date, n)
 			return "Phys Week " .. (n + 6) .. " Lab Prep"
@@ -100,40 +107,77 @@ local returntable = {
 	}, 7),
 	lectureTasks("ENGN1218", 6, {
 		{ 0, dt(2026, 7, 27, 10) },
+		{ 2, dt(2026, 7, 27, 11) },
+		{ 4, dt(2026, 7, 27, 13) },
 	}, 1),
 	lectureTasks("ENGN1217", 6, {
 		{ 0, dt(2026, 7, 27, 13) },
+		{ 1, dt(2026, 7, 27, 8) },
 	}, 1),
 	lectureTasks("MATH1014", 6, {
 		{ 0, dt(2026, 7, 27, 16) },
-	}, 1),
-	lectureTasks("ENGN1217", 6, {
-		{ 1, dt(2026, 7, 27, 8) },
-	}, 1),
-	lectureTasks("ENGN1218", 6, {
-		{ 2, dt(2026, 7, 27, 11) },
-	}, 1),
-	lectureTasks("MATH1014", 6, {
 		{ 2, dt(2026, 7, 27, 13) },
-	}, 1),
-	lectureTasks("MATH1014", 6, {
 		{ 3, dt(2026, 7, 27, 11) },
-	}, 1),
-	lectureTasks("DESN1003", 6, {
-		{ 4, dt(2026, 7, 27, 10) },
-	}, 1),
-	lectureTasks("MATH1014", 6, {
 		{ 4, dt(2026, 7, 27, 11) },
 	}, 1),
-	lectureTasks("ENGN1218", 6, {
-		{ 4, dt(2026, 7, 27, 13) },
-	}, 1),
-	worksheetTasks("Lambda Calculus", dt(2026, 4, 4), timedelta(5), 8, { 4, 6, 10 }),
-	worksheetTasks("Phys Openstax", dt(2026, 4, 4), timedelta(0), 16, {}),
-	worksheetTasks("Math Essential Calculus", dt(2026, 4, 4), timedelta(0), 13, {}),
-	worksheetTasks("Math Linear Algebra", dt(2026, 4, 4), timedelta(0), 8, {}),
-	worksheetTasks("Comp Exercises", dt(2026, 4, 4), timedelta(0), 14, {}),
+	{
+		name = function(date, n)
+			return "PHYS1201 Week " .. (n + 1) .. " Lab Prep"
+		end,
+		conditions = { isDayOfWeek(0), isNotTeachingBreak() },
+		duetime = dueIn(1, 13),
+		checkstart = just(dt(2026, 7, 25)),
+		checkrepeats = justRepeats(6),
+	},
+	-- TODO: I could make the top and bottom lab function the same thing.
+	{
+		name = function(date, n)
+			return "PHYS1201 Week " .. (n + 1) .. " Lab Submission"
+		end,
+		conditions = { isDayOfWeek(1), isNotTeachingBreak() },
+		duetime = dueIn(1),
+		checkstart = just(dt(2026, 7, 25, 13)),
+		checkrepeats = justRepeats(6),
+	},
+	{
+		name = function(date, n)
+			return "ENGN1218 Week " .. (n + 1) .. " Lectorial Prep"
+		end,
+		conditions = { isDayOfWeek(0), isNotTeachingBreak() },
+		duetime = dueIn(2, 11),
+		checkstart = just(dt(2026, 7, 25)),
+		checkrepeats = justRepeats(6),
+	},
+	{
+		name = function(date, n)
+			return "ENGN1218 Week " .. (n + 1) .. " Lab Prep"
+		end,
+		conditions = { isDayOfWeek(0), isNotTeachingBreak() },
+		duetime = dueIn(1, 9),
+		checkstart = just(dt(2026, 7, 25)),
+		checkrepeats = justRepeats(6),
+	},
+	{
+		name = function(date, n)
+			return "ENGN1217 Week " .. (n + 1) .. " Lab Prep"
+		end,
+		conditions = { isDayOfWeek(0), isNotTeachingBreak() },
+		duetime = dueIn(0, 16),
+		checkstart = just(dt(2026, 7, 25)),
+		checkrepeats = justRepeats(6),
+	},
+	quizTask("MATH1014", "MatLab", dt(2026, 7, 25), timedelta(3), 6, 1),
+	quizTask("MATH1014", "Quiz/Assignment", dt(2026, 7, 25), timedelta(3), 6, 1),
+	quizTask("ENGN1218", "Mastering", dt(2026, 7, 25), timedelta(7), 6, 1),
+	quizTask("ENGN1217", "Mastering", dt(2026, 7, 25), timedelta(7), 6, 1),
+	quizTask("MATH1014", "Textbooks", dt(2026, 7, 25), timedelta(7), 6, 1),
+	quizTask("ENGN1217", "Textbooks", dt(2026, 7, 25), timedelta(7), 6, 1),
+	quizTask("PHYS1201", "Lectures", dt(2026, 7, 25), timedelta(7), 6, 1),
+	quizTask("PHYS1201", "Quiz", dt(2026, 7, 25), timedelta(5), 6, 1),
+	quizTask("PHYS1201", "Practice Problems", dt(2026, 7, 25), timedelta(7), 6, 1),
+	-- worksheetTasks("cock", dt(2026, 4, 4), timedelta(5), 12, { 4, 6, 10 }),
 	-- textBookTasks("Jstweart", dt(2026, 4, 4), dt(2026, 5, 4), { 6, 8, 7, 5, 8, 6, 7, 8, 5, 9, 8, 8, 9 }),
+
 	singleTasks({
 		"Understand Nullspaces",
 		"vpython",
@@ -162,7 +206,8 @@ local returntable = {
 		"Choose document creator (cn)",
 		"Timetable on here",
 		"Create the timetable",
-		"buy a  new fucken calculator",
+		"buy a new fucken calculator",
+		"ENGN1217 textbook"
 	}),
 }
 
