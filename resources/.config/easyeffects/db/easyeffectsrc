@@ -19,7 +19,7 @@ visiblePlugin=stereo_tools#0
 [StreamOutputs]
 blocklist=WEBRTC VoiceEngine,ARC Raiders,Chromium,spotify
 linkToVirtualSource=true
-outputDevice=alsa_output.usb-R__DE_R__DE_NT-USB__151081CE-00.analog-stereo
+outputDevice=bluez_output.C0_86_B3_FF_18_65.1
 visiblePage=pluginsPage
 
 [Window]
