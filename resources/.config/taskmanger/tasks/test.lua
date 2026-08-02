@@ -14,6 +14,7 @@ local et = m.eventTask
 return {
 	wt("shave"),
 	wt("check emails"),
+	wt("groceries"),
 	wt5("nix flake update"),
 	wt5("refill pocari sweat & ice cubes"),
 	wt5("find one song"),
@@ -250,5 +251,8 @@ return {
 		"Get a camera",
 		"christmas, goals, schedule, goats",
 		"100 games, movie makers/ilogies, tvshows, books",
+		"THE CENSUS",
+		"Sleep on couch outside",
+		"Weekly groceries task",
 	}),
 }

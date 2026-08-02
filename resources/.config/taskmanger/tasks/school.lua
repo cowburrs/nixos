@@ -213,6 +213,10 @@ local returntable = {
 		"buy a new fucken calculator",
 		"ENGN1217 textbook",
 		"Log into anu internet mobile",
+		"I need a graphing calculator -_-",
+		"Pay non hecs thing",
+		"Bike shelter anu",
+		"workshop calendar task",
 	}),
 }
 
