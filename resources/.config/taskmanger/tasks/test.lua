@@ -254,5 +254,6 @@ return {
 		"THE CENSUS",
 		"Sleep on couch outside",
 		"Weekly groceries task",
+		"Get ankle braces",
 	}),
 }
