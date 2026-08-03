@@ -255,5 +255,6 @@ return {
 		"Sleep on couch outside",
 		"Weekly groceries task",
 		"Get ankle braces",
+		"Panic button for camera and mute",
 	}),
 }
