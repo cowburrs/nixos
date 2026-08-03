@@ -178,7 +178,7 @@ local returntable = {
 	quizTask("PHYS1201", "Quiz", dt(2026, 7, 25), timedelta(5), 6, 1),
 	quizTask("PHYS1201", "Assignment", dt(2026, 7, 25), timedelta(5), 6, 1),
 	quizTask("PHYS1201", "Practice Problems", dt(2026, 7, 25), timedelta(7), 6, 1),
-	quizTask("PHYS1201", "Workshop", dt(2026, 7, 25), timedelta(1, 15), 6, 1),
+	quizTask("PHYS1201", "Workshop", dt(2026, 7, 25), timedelta(3, 14), 6, 1),
 	-- worksheetTasks("cock", dt(2026, 4, 4), timedelta(5), 12, { 4, 6, 10 }),
 	-- textBookTasks("Jstweart", dt(2026, 4, 4), dt(2026, 5, 4), { 6, 8, 7, 5, 8, 6, 7, 8, 5, 9, 8, 8, 9 }),
 
