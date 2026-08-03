@@ -217,6 +217,7 @@ local returntable = {
 		"Pay non hecs thing",
 		"Bike shelter anu",
 		"workshop calendar task",
+		"Quarto otter lsp",
 	}),
 }
 
