@@ -12,9 +12,9 @@
     v4l2loopback
   ];
   boot.extraModprobeConfig = ''
-    options v4l2loopback devices=4 \
-      video_nr=1,2 \
-      card_label="DroidCam,OBS Cam" \
+    options v4l2loopback devices=5 \
+      video_nr=1,2,3 \
+      card_label="DroidCam,OBS Cam,Random" \
       exclusive_caps=1
   '';
 }
