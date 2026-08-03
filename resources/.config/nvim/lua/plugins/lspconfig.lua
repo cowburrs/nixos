@@ -36,6 +36,7 @@ return {
 			},
 		})
 		vim.lsp.enable("ts_ls")
+		vim.lsp.enable("marksman")
 		-- local nvim_lsp = vim.lsp
 		-- nvim_lsp.config("nixd", {
 		-- 	cmd = { "nixd" },
