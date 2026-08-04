@@ -52,3 +52,8 @@ config.bind('gt', 'tab-focus')
 c.aliases = {
     'zotero': 'spawn --userscript qute-zotero',
 }
+c.fileselect.handler = "external"
+
+c.fileselect.single_file.command = ["wezterm", "start", "--always-new-process", "--", "yazi", "--chooser-file={}"]
+c.fileselect.multiple_files.command = ["wezterm", "start", "--always-new-process", "--", "yazi", "--chooser-file={}"]
+c.fileselect.folder.command = ["wezterm", "start", "--always-new-process", "--", "yazi", "--chooser-file={}"]
