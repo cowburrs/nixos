@@ -6,8 +6,13 @@
 
 config_version: 2
 settings:
-  url.default_page:
-    global: https://
-  url.searchengines:
-    global:
-      DEFAULT: https://duckduckgo.com/?q={}
+  colors.webpage.darkmode.algorithm:
+    global: brightness-rgb
+  colors.webpage.darkmode.enabled:
+    global: false
+  colors.webpage.darkmode.policy.images:
+    global: always
+  colors.webpage.darkmode.policy.page:
+    global: smart
+  colors.webpage.preferred_color_scheme:
+    global: auto
