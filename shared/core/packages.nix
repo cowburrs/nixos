@@ -215,6 +215,7 @@
         dependencies = old.dependencies ++ [ python3.pkgs.requests ];
       }))
       (python3.withPackages (ps: [ ps.requests ]))
+      ltspice
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
