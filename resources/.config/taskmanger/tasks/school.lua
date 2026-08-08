@@ -218,6 +218,7 @@ local returntable = {
 		"Bike shelter anu",
 		"workshop calendar task",
 		"Quarto otter lsp",
+		"colab access",
 	}),
 }
 

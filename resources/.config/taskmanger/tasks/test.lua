@@ -46,7 +46,7 @@ return {
 	yt("Wash Backpack"),
 	-- m.multiWeekTask("exercise", { 0, 1, 3, 5, 6, 7 }),
 	(function()
-		local x = m.multiWeekTask("exercise", { 0, 1, 3, 5, 6 })
+		local x = m.multiWeekTask("exercise", { 1, 2, 3, 6, 7 })
 		x.duetime = m.dueTime(td(2))
 		return x
 	end)(),
@@ -257,5 +257,6 @@ return {
 		"Get ankle braces",
 		"Panic button for camera and mute",
 		"Clean light in room",
+		"No exercise monday friday task",
 	}),
 }

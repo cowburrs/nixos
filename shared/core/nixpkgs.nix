@@ -20,6 +20,7 @@
       "nvidia-x11" # TODO: Isolate this to laptop
       "nvidia-settings"
       "nvidia-kernel-modules"
+      "ltspice"
     ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-39.8.10"
