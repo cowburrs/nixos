@@ -24,6 +24,7 @@ hl.bind(
 	hl.dsp.exec_cmd("~/.config/hypr/extra/scripts/wlogout.sh"),
 	{ locked = true, submap_universal = true, ignore_mods = true }
 )
+hl.bind("code:199", hl.dsp.send_shortcut({ mods = "CTRL", key = "2", window = "class:^(com\\.obsproject\\.Studio)$"}))
 hl.bind(
 	"CTRL + ALT + delete",
 	hl.dsp.exec_cmd("~/.config/hypr/extra/scripts/wlogout.sh"),
