@@ -219,6 +219,7 @@ local returntable = {
 		"workshop calendar task",
 		"Quarto otter lsp",
 		"colab access",
+		"Refactor school repo",
 	}),
 }
 
