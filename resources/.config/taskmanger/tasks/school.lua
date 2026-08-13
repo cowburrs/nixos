@@ -220,6 +220,7 @@ local returntable = {
 		"Quarto otter lsp",
 		"colab access",
 		"Refactor school repo",
+		"ENGN1218 lab prep",
 	}),
 }
 
