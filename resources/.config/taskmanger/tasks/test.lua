@@ -69,6 +69,7 @@ return {
 	bd("Stefchan", 21, 3),
 	bd("Kevin", 22, 3),
 	bd("Akira", 19, 5),
+	bd("Lachlan Hynd", 16, 6),
 	bd("Luke", 19, 7),
 	bd("Emaan", 10, 8),
 	bd("Holly", 19, 8),
@@ -258,5 +259,6 @@ return {
 		"Panic button for camera and mute",
 		"Clean light in room",
 		"No exercise monday friday task",
+		"Porn vault",
 	}),
 }
