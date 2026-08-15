@@ -260,5 +260,6 @@ return {
 		"Clean light in room",
 		"No exercise monday friday task",
 		"Porn vault",
+		"Reseat wifi card",
 	}),
 }
