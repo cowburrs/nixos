@@ -1,5 +1,5 @@
 [Default Applications]
-application/pdf=org.qutebrowser.qutebrowser.desktop
+application/pdf=org.kde.okular.desktop
 image/vnd.djvu=org.qutebrowser.qutebrowser.desktop
 text/plain=org.qutebrowser.qutebrowser.desktop
 text/x-markdown=nvim-xdg.desktop
