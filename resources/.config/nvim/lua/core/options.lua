@@ -12,7 +12,9 @@ vim.o.signcolumn = "number"
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "text",
 	callback = function()
+		vim.opt.textwidth = 80
 		vim.opt_local.wrap = true
+		vim.opt_local.formatoptions:append("t")
 	end,
 })
 -- text file wrapping
