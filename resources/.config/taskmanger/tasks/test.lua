@@ -21,7 +21,7 @@ return {
 	wt5("find one manga"),
 	wt5("clean"),
 	wt5("cut nails"),
-	wt5("clear tabs"),
+	wt5("clear tabs/notally"),
 	wt5("clean toothbrush"),
 	wt5("laundry"),
 	wt5("change towel"),
@@ -29,6 +29,7 @@ return {
 	wt5("cooktask"),
 	wt5("musictask"),
 	wt5("osutask"),
+	wt5("retainer"),
 	wt5("line up clothes"),
 	{
 		name = m.just("Humble Bundle"),
