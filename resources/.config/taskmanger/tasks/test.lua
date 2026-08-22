@@ -261,5 +261,6 @@ return {
 		"No exercise monday friday task",
 		"Porn vault",
 		"Reseat wifi card",
+		"Wear retainer task",
 	}),
 }
