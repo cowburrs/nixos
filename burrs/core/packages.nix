@@ -66,7 +66,6 @@
       pipes
       cmatrix
 
-      godot-mono
       droidcam
       lshw # Installed for davincibox
       davinci-resolve
