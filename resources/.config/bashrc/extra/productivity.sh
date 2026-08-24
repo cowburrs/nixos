@@ -16,5 +16,5 @@ burrsgs() {
     lua $HOME/.config/bashrc/scripts/burrsgs.lua "$@"
 }
 school() {
-	nix develop ~/Repositories/School/.
+	nix develop ~/Repositories/School/.#"$@"
 }
