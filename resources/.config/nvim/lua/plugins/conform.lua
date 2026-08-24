@@ -44,6 +44,7 @@ return {
 				cs = { "csharpier" },
 				matlab = { "mh_style" },
 				tex = { "tex-fmt" },
+				gdscript = { "gdscript-formatter" },
 			},
 		})
 	end,
