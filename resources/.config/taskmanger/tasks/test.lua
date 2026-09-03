@@ -264,5 +264,7 @@ return {
 		"Reseat wifi card",
 		"Wear retainer task",
 		"Note taking mobile app",
+		"New shorts, pjs are unnecessary",
+		"Godot ci/cd"
 	}),
 }
