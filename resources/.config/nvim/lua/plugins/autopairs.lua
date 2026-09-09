@@ -29,6 +29,7 @@ return {
 		local Rule = require("nvim-autopairs.rule")
 		npairs.add_rules({
 			Rule("<", ">", "rust"),
+			Rule("$", "$", "typst"),
 		})
 	end,
 }
