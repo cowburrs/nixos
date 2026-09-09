@@ -18,7 +18,15 @@ return {
 							end,
 							find = function() end,
 							delete = function() end,
-							label = "<word>...<word>"
+							label = "<word>..<word>",
+						},
+						["$"] = {
+							add = function()
+								return { { "$" }, { "$" } }
+							end,
+							find = function() end,
+							delete = function() end,
+							label = "$...$",
 						},
 					},
 				})

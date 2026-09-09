@@ -222,6 +222,9 @@ local returntable = {
 		"Refactor school repo",
 		"ENGN1218 lab prep",
 		"app on phone to make physics lab easier",
+		"Record how long it takes to walk to the bus station",
+		"ENGN LAB",
+		"PySpice"
 	}),
 }
 

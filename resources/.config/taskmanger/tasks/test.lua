@@ -265,6 +265,7 @@ return {
 		"Wear retainer task",
 		"Note taking mobile app",
 		"New shorts, pjs are unnecessary",
-		"Godot ci/cd"
+		"Godot ci/cd",
+		"Count how many hours it takes to do phys work and stuff (time blocking i guess)",
 	}),
 }

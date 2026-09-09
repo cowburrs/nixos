@@ -102,6 +102,8 @@
       sqlite
       librsvg
       yamlfmt
+      libstrangle
+      itch
     ]
     ++ (with pkgs-unstable; [
       lunar-client
