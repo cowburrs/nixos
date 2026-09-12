@@ -51,6 +51,7 @@ c.input.media_keys = False
 config.bind('gt', 'tab-focus')
 c.aliases = {
     'zotero': 'spawn --userscript qute-zotero',
+    'show': 'config-cycle tabs.show always never'
 }
 c.fileselect.handler = "external"
 

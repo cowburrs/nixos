@@ -6,13 +6,5 @@
 
 config_version: 2
 settings:
-  colors.webpage.darkmode.algorithm:
-    global: brightness-rgb
-  colors.webpage.darkmode.enabled:
-    global: false
-  colors.webpage.darkmode.policy.images:
+  tabs.show:
     global: always
-  colors.webpage.darkmode.policy.page:
-    global: smart
-  colors.webpage.preferred_color_scheme:
-    global: auto

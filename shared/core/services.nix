@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   # Enable CUPS to print documents.
@@ -30,6 +30,10 @@
     asterisk = "";
     vi_mode = true;
     clear_password = true;
+  };
+  services.dictd = {
+    enable = true;
+    DBs = with pkgs.dictdDBs; [ wiktionary ];
   };
 
   # Bluetooth
