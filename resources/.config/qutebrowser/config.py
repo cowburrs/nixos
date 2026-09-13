@@ -51,8 +51,9 @@ c.input.media_keys = False
 config.bind('gt', 'tab-focus')
 c.aliases = {
     'zotero': 'spawn --userscript qute-zotero',
-    'show': 'config-cycle tabs.show always never'
+    'show': 'config-cycle tabs.show always never',
 }
+c.statusbar.show = "in-mode"
 c.fileselect.handler = "external"
 
 c.fileselect.single_file.command = ["wezterm", "start", "--always-new-process", "--", "yazi", "--chooser-file={}"]
