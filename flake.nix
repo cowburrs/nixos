@@ -41,6 +41,10 @@
     pomodoro = {
       url = "github:cowburrs/pomodoro";
     };
+    mcsr-nixos = {
+      url = "https://git.uku3lig.net/uku/mcsr-nixos/archive/main.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs =
     {
@@ -72,6 +76,7 @@
             inputs.home-manager.nixosModules.home-manager
             inputs.nix-flatpak.nixosModules.nix-flatpak
             inputs.bookmarks.nixosModules.default
+            inputs.mcsr-nixos.nixosModules.waywall
             {
               home-manager.extraSpecialArgs = { inherit self; };
               home-manager.useGlobalPkgs = true;

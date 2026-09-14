@@ -199,6 +199,24 @@
         "type": "github"
       }
     },
+    "mcsr-nixos": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1789149434,
+        "narHash": "sha256-U42QlbfKk9TkbXu/aJjgjeeB5excabGPQzn+YmDZvtk=",
+        "rev": "bcadcea41eefbbd1a868fe1d78a22bf2913eae65",
+        "type": "tarball",
+        "url": "https://git.uku3lig.net/api/v1/repos/uku/mcsr-nixos/archive/bcadcea41eefbbd1a868fe1d78a22bf2913eae65.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://git.uku3lig.net/uku/mcsr-nixos/archive/main.tar.gz"
+      }
+    },
     "mikuboot": {
       "inputs": {
         "nixpkgs": [],
@@ -372,6 +390,7 @@
         "catppuccin": "catppuccin",
         "exo2": "exo2",
         "home-manager": "home-manager",
+        "mcsr-nixos": "mcsr-nixos",
         "mikuboot": "mikuboot",
         "musnix": "musnix",
         "nix-flatpak": "nix-flatpak",

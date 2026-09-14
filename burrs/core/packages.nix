@@ -47,6 +47,19 @@
     ];
   };
 
+  programs.waywall = {
+    enable = true;
+    config = {
+      enableWaywork = true;
+      programs = [ inputs.mcsr-nixos.packages."x86_64-linux".ninjabrain-bot ];
+      # files = {
+      # thin_bg = ./thin-bg.png;
+      # wide_bg = ./wide-bg.png;
+      # };
+
+      source = ../../resources/misc/waywall/init.lua;
+    };
+  };
   environment.systemPackages =
     with pkgs;
     [
