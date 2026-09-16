@@ -35,6 +35,7 @@
     enable = true;
     DBs = with pkgs.dictdDBs; [ wiktionary ];
   };
+  services.gvfs.enable = true;
 
   # Bluetooth
   services.blueman.enable = true;
