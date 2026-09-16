@@ -51,7 +51,9 @@
     enable = true;
     config = {
       enableWaywork = true;
-      programs = [ inputs.mcsr-nixos.packages."x86_64-linux".ninjabrain-bot ];
+      programs = [
+        inputs.mcsr-nixos.packages."x86_64-linux".ninjabrain-bot
+      ];
       # files = {
       # thin_bg = ./thin-bg.png;
       # wide_bg = ./wide-bg.png;
