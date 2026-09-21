@@ -44,3 +44,4 @@ x-scheme-handler/lunarclient=lunarclient.desktop
 x-scheme-handler/discord-562286213059444737=lunarclient.desktop
 x-scheme-handler/ror2mm=r2modman.desktop
 text/markdown=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/discord-671636579701358592=lunarclient.desktop
