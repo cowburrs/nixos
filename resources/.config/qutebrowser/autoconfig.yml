@@ -6,5 +6,11 @@
 
 config_version: 2
 settings:
-  tabs.show:
-    global: always
+  colors.webpage.darkmode.enabled:
+    global: false
+  colors.webpage.darkmode.policy.images:
+    global: never
+  colors.webpage.darkmode.policy.page:
+    global: smart
+  colors.webpage.preferred_color_scheme:
+    global: light

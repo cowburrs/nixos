@@ -101,7 +101,6 @@
           zulu25
         ];
       })
-      bottles
       lmms
       qsynth
       soundfont-ydp-grand

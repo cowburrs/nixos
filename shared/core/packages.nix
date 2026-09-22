@@ -216,6 +216,7 @@
       }))
       (python3.withPackages (ps: [ ps.requests ]))
       ltspice
+      bottles
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
