@@ -181,20 +181,6 @@ local returntable = {
 	-- quizTask("PHYS1201", "Workshop", dt(2026, 7, 25), timedelta(3, 14), 6, 1),
 	-- worksheetTasks("cock", dt(2026, 4, 4), timedelta(5), 12, { 4, 6, 10 }),
 	-- textBookTasks("Jstweart", dt(2026, 4, 4), dt(2026, 5, 4), { 6, 8, 7, 5, 8, 6, 7, 8, 5, 9, 8, 8, 9 }),
-	lectureTasks("math", 6, {
-		{ 1, dt(2026, 9, 20, 9) },
-		{ 2, dt(2026, 9, 20, 9) },
-	}, 7),
-	lectureTasks("comp", 6, {
-		{ 0, dt(2026, 9, 20, 16) },
-		{ 1, dt(2026, 9, 20, 15) },
-		{ 2, dt(2026, 9, 20, 12) },
-		{ 3, dt(2026, 9, 20, 8) },
-	}, 7),
-	lectureTasks("engn", 6, {
-		{ 0, dt(2026, 9, 20, 14) },
-		{ 1, dt(2026, 9, 20, 16) },
-	}, 7),
 	lectureTasks("ENGN1218", 6, {
 		{ 0, dt(2026, 9, 20, 10) },
 		{ 2, dt(2026, 9, 20, 11) },
