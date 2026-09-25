@@ -15,4 +15,4 @@ settings:
   colors.webpage.preferred_color_scheme:
     global: light
   tabs.show:
-    global: never
+    global: always
