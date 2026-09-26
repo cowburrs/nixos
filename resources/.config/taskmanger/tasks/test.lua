@@ -25,10 +25,10 @@ return {
 	wt5("clean toothbrush"),
 	wt5("laundry"),
 	wt5("change towel"),
-	wt5("arttask"),
+	-- wt5("arttask"),
 	wt5("cooktask"),
-	wt5("musictask"),
-	wt5("osutask"),
+	-- wt5("musictask"),
+	-- wt5("osutask"),
 	wt5("retainer"),
 	wt5("line up clothes"),
 	{
