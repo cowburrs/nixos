@@ -252,7 +252,7 @@ local returntable = {
 	quizTask("PHYS1201", "Lectures", dt(2026, 9, 20 - 7), timedelta(7), 6, 7),
 	quizTask("PHYS1201", "Quiz", dt(2026, 9, 20), timedelta(5), 6, 7),
 	quizTask("PHYS1201", "Assignment", dt(2026, 9, 20), timedelta(5), 6, 7),
-	quizTask("PHYS1201", "Practice Problems", dt(2026, 9, 20), timedelta(7), 6, 7),
+	-- quizTask("PHYS1201", "Practice Problems", dt(2026, 9, 20), timedelta(7), 6, 7),
 	quizTask("PHYS1201", "Workshop", dt(2026, 9, 20), timedelta(3, 14), 6, 7),
 
 	singleTasks({
