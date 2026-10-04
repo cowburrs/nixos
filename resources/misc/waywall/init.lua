@@ -20,12 +20,12 @@ scene:register("e_counter", {
 	groups = { "thin" },
 })
 
--- scene:register("eye_overlay", {
--- 	kind = "image",
--- 	path = "/path/to/overlay.png",
--- 	options = { dst = { x = 30, y = 340, w = 700, h = 400 } },
--- 	groups = { "tall" },
--- })
+scene:register("eye_overlay", {
+	kind = "image",
+	path = files.eye_overlay,
+	options = { dst = { x = 30, y = 340, w = 700, h = 400 } },
+	groups = { "tall" },
+})
 --
 -- -- Enable/disable by group
 -- scene:enable_group("thin", true) -- Enable all "thin" objects
@@ -49,6 +49,12 @@ ModeManager:define("thin", {
 })
 
 local tall_sens = 0.1
+
+scene:register("eye_measure", {
+	kind = "mirror",
+	options = { src = { x = 162, y = 7902, w = 60, h = 580 }, dst = { x = 30, y = 340, w = 700, h = 400 } },
+	groups = { "tall" },
+})
 
 ModeManager:define("tall", {
 	width = 384,

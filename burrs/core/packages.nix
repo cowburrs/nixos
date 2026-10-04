@@ -54,10 +54,9 @@
       programs = [
         inputs.mcsr-nixos.packages."x86_64-linux".ninjabrain-bot
       ];
-      # files = {
-      # thin_bg = ./thin-bg.png;
-      # wide_bg = ./wide-bg.png;
-      # };
+      files = {
+        eye_overlay = ../../resources/misc/waywall/overlay.png;
+      };
 
       source = ../../resources/misc/waywall/init.lua;
     };

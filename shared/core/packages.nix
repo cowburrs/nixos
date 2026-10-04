@@ -215,7 +215,7 @@
         dependencies = old.dependencies ++ [ python3.pkgs.requests ];
       }))
       (python3.withPackages (ps: [ ps.requests ]))
-      ltspice
+      # ltspice
       bottles
     ]
     ++ (with pkgs-unstable; [
