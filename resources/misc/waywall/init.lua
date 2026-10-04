@@ -48,7 +48,7 @@ ModeManager:define("thin", {
 	end,
 })
 
-local tall_sens = 0.1
+local tall_sens = 0.05
 
 scene:register("eye_measure", {
 	kind = "mirror",

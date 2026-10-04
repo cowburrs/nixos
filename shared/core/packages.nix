@@ -222,5 +222,6 @@
       tetrio-desktop
       hyprshutdown
       logseq
+      ltspice
     ]);
 }
