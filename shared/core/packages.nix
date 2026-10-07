@@ -79,7 +79,7 @@
     enable = true;
     plugins = {
       git = (with pkgs.yaziPlugins; git);
-      relative-motions = (with pkgs.yaziPlugins; relative-motions);
+      relative-motions = "${inputs.relative-motions}";
       full-border = (with pkgs.yaziPlugins; full-border);
       smart-enter = (with pkgs.yaziPlugins; smart-enter);
       bookmarks = "${inputs.bookmarks}/bookmarks.yazi";

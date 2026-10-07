@@ -31,6 +31,10 @@
       url = "github:googlefonts/Exo-2.0";
       flake = false;
     };
+    relative-motions = {
+      url = "github:cowburrs/relative-motions.yazi";
+      flake = false;
+    };
     syne = {
       url = "git+https://gitlab.com/bonjour-monde/fonderie/syne-typeface.git";
       flake = false;
