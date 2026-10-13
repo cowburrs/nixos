@@ -89,6 +89,10 @@ vim.o.scrolloff = 10 -- Minimal number of screen lines to keep above and below t
 
 vim.o.wrap = false
 
+-- Spell
+vim.opt.spell = true
+vim.opt.spelllang = "en_au"
+
 -- See `:help 'confirm'`
 vim.o.confirm = true
 vim.opt.tabstop = 3
