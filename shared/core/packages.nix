@@ -217,11 +217,11 @@
       (python3.withPackages (ps: [ ps.requests ]))
       # ltspice
       bottles
+      ltspice
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
       hyprshutdown
       logseq
-      ltspice
     ]);
 }
