@@ -27,4 +27,13 @@
     "pnpm-10.29.2"
     "pnpm-9.15.9"
   ];
+  # I just realised I need to comment my shit, I added this because LTSPICE is not working without this, if i don't care
+  # LTSPICE in the future just delete this
+  nixpkgs.overlays = [
+    (final: prev: {
+      msitools = prev.msitools.overrideAttrs (_: {
+        doCheck = false;
+      });
+    })
+  ];
 }
