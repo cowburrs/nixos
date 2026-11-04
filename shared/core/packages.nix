@@ -218,6 +218,7 @@
       # ltspice
       bottles
       ltspice
+      sioyek
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop
