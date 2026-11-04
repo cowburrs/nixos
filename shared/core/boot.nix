@@ -26,6 +26,8 @@
       in
       repo + "/themes/navi";
     # src = "${repo}/themes/navi"; # This also works, you just need to concatenate a string.
+    # Much smarter more nix-centric me from the future, I used ai here and it was stupid. While I'm too lazy to refactor
+    # at the current moment, and know I will be for the immediate future, I shoulda used a fucken flake here. I love nixos
   };
   boot.loader.timeout = 10;
 }
