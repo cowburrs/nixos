@@ -219,6 +219,7 @@
       bottles
       ltspice
       sioyek
+      vivaldi
     ]
     ++ (with pkgs-unstable; [
       tetrio-desktop

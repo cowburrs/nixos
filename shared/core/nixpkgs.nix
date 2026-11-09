@@ -9,6 +9,7 @@
   nixpkgs.config.allowUnfreePredicate =
     pkg:
     builtins.elem (lib.getName pkg) [
+      "vivaldi"
       "geogebra"
       "steam"
       "steam-unwrapped"
