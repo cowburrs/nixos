@@ -157,10 +157,6 @@
 
       nethogs
       music-discord-rpc
-      (discord.override {
-        withOpenASAR = true; # can do this here too
-        withVencord = true;
-      })
       wttrbar
       wezterm
       waybar-mpris
@@ -211,9 +207,9 @@
       geogebra6
       git-lfs
       wlrctl
-      (qutebrowser.overridePythonAttrs (old: {
-        dependencies = old.dependencies ++ [ python3.pkgs.requests ];
-      }))
+      # (qutebrowser.overridePythonAttrs (old: {
+      #   dependencies = old.dependencies ++ [ python3.pkgs.requests ];
+      # }))
       (python3.withPackages (ps: [ ps.requests ]))
       # ltspice
       bottles
@@ -225,5 +221,9 @@
       tetrio-desktop
       hyprshutdown
       logseq
+      (discord.override {
+        withOpenASAR = true; # can do this here too
+        withVencord = true;
+      })
     ]);
 }
