@@ -162,9 +162,6 @@
         "Experiments": {
             "enabled": false
         },
-        "ExpressionCloner": {
-            "enabled": false
-        },
         "F8Break": {
             "enabled": false
         },
@@ -587,6 +584,9 @@
         },
         "NoMiddleClickPaste": {
             "enabled": false
+        },
+        "ExpressionManager": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -599,7 +599,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1793439240093
+        "settingsSyncVersion": 1794545718027
     },
     "uiElements": {
         "chatBarButtons": {},
